@@ -61,9 +61,7 @@ const AboutCompany = () => {
             </li>
           </ul>
 
-          <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded hover:bg-gray-700 transition duration-200">
-            About Us →
-          </button>
+         
         </div>
       </div>
     </section>

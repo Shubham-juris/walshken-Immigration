@@ -64,11 +64,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <img
-            src="/your-image-path.webp"
-            alt="Team Discussion"
-            className="mt-10 rounded-xl shadow-lg"
-          />
+          
         </div>
         <div className="bg-white shadow-xl rounded-xl p-8 flex flex-col justify-center">
           <h3 className="text-2xl font-bold mb-2 text-gray-900">

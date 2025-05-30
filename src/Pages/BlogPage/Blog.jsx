@@ -84,7 +84,7 @@ const Blog = () => {
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
 
         style={{
-          backgroundImage: `linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url(${ImageVisa})`,
+          backgroundImage: `linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url(${BlogImage})`,
         }}
 
       >
@@ -126,12 +126,7 @@ const Blog = () => {
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <a
-                    href="#"
-                    className="text-red-600 font-semibold inline-flex items-center hover:underline"
-                  >
-                    Read More <span className="ml-1">➜</span>
-                  </a>
+                  
                 </div>
               </div>
             ))}

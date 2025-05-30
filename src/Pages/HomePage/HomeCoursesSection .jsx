@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import heroBgImage from "../../assets/hero/studentVisa.webp";
 import heroBgImage1 from "../../assets/hero/AboutImage1.webp";
@@ -11,7 +12,6 @@ import PageImage1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
 import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
 import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
 import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
-
 
 const HomeCoursesSection = () => {
   const coachingData = [
@@ -90,16 +90,10 @@ const HomeCoursesSection = () => {
                 <p className="text-sm text-gray-600 group-hover:text-white">
                   {course.description}
                 </p>
-                <a
-                  href="#"
-                  className="mt-3 inline-block text-red-600 font-semibold hover:underline group-hover:text-white"
-                >
-                  Read More <span className="ml-1">➜</span>
-                </a>
               </div>
             </div>
           ))}
-        </div>  
+        </div>
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
@@ -159,9 +153,11 @@ const HomeCoursesSection = () => {
               </li>
             </ul>
 
-            <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded hover:bg-gray-700 transition duration-200">
-              About Us →
-            </button>
+            <Link to="/about">
+              <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded hover:bg-gray-700 transition duration-200">
+                About Us →
+              </button>
+            </Link>
           </div>
         </div>
       </section>
