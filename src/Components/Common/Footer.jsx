@@ -21,7 +21,7 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-start space-x-4">
+          {/* <div className="flex justify-center md:justify-start space-x-4">
             {[
               { href: "https://www.facebook.com", icon: <FaFacebookF /> },
               { href: "https://www.twitter.com", icon: <FaTwitter /> },
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Services */}
