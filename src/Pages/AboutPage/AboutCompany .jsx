@@ -12,6 +12,9 @@ const AboutCompany = () => {
             alt="Main"
             className="rounded-md w-full h-auto object-cover"
           />
+
+
+
           <img
             src={smallImage}
             alt="Small"
@@ -27,7 +30,7 @@ const AboutCompany = () => {
             Visa Consulting Firm
           </h2>
           <p className="text-gray-600 mb-6">
-            Transmds is the world’s driving worldwide coordinations supplier —
+            Transmds yuikiuokuilis the world’s driving worldwide coordinations supplier —
             we uphold industry and exchange the worldwide trade of merchandi
           </p>
 
