@@ -12,11 +12,9 @@ const Contact = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
-
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1.2)),url(${contactImage})`,
         }}
-
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
         <div className="container mx-auto relative z-10 flex flex-col justify-center h-full px-6 md:px-16">
@@ -40,7 +38,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Call For Inquiry</p>
                 <p className="text-lg font-semibold text-gray-900">
-               +1-888-227-0899
+                  +236 (456) 896 22
                 </p>
               </div>
             </div>
@@ -49,7 +47,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Send Us Email</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  info@walshkenimmigration.com
+                  info@example.com
                 </p>
               </div>
             </div>
@@ -58,13 +56,17 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Location</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  Unit120 3030 3rd Avenue,NE,Calgary,AB
+                  734 H, Bryan Burlington, NC 27215
                 </p>
               </div>
             </div>
           </div>
 
-          
+          <img
+            src="/your-image-path.jpg"
+            alt="Team Discussion"
+            className="mt-10 rounded-xl shadow-lg"
+          />
         </div>
         <div className="bg-white shadow-xl rounded-xl p-8 flex flex-col justify-center">
           <h3 className="text-2xl font-bold mb-2 text-gray-900">
@@ -118,7 +120,18 @@ const Contact = () => {
         </div>
       </div>
 
-     
+      <div className="w-full h-[500px] mt-16">
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.378012819758!2d-0.1415877!3d51.5154196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333cf6beef%3A0x1c5d6f3e7f8a1b62!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1616171900134!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          className="border-0 w-full h-full"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </>
   );
 };

@@ -1,7 +1,5 @@
 import React from "react";
-
-import heroBgImage from "../../assets/hero/HeroBGImage.webp";
-
+import heroBgImage from "../../assets/hero/e813e040-6fa5-42ea-8b94-d4adb0288c35.jpg";
 import HomeCoursesSection from "./HomeCoursesSection ";
 
 const Hero = () => {
@@ -21,7 +19,9 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
             APPLY FOR <br /> IMMIGRATION
           </h1>
-         
+          <button className="mt-6 bg-red-600 hover:bg-gray-600 transition-colors duration-300 px-6 py-3 rounded-md text-white font-semibold">
+            Explore Now
+          </button>
         </div>
       </div>
       <HomeCoursesSection />

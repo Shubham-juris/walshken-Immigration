@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import mainImage from "../../assets/hero/TouristVisa.webp";
-import smallImage from "../../assets/hero/home3.webp";
+import mainImage from "../../assets/hero/TouristVisa.jpg";
+import smallImage from "../../assets/hero/home3.jpg";
 const AboutCompany = () => {
   return (
     <section className="py-16 bg-white">
@@ -12,9 +12,6 @@ const AboutCompany = () => {
             alt="Main"
             className="rounded-md w-full h-auto object-cover"
           />
-
-
-
           <img
             src={smallImage}
             alt="Small"
@@ -30,7 +27,7 @@ const AboutCompany = () => {
             Visa Consulting Firm
           </h2>
           <p className="text-gray-600 mb-6">
-            Transmds yuikiuokuilis the world’s driving worldwide coordinations supplier —
+            Transmds is the world’s driving worldwide coordinations supplier —
             we uphold industry and exchange the worldwide trade of merchandi
           </p>
 
@@ -64,7 +61,9 @@ const AboutCompany = () => {
             </li>
           </ul>
 
-         
+          <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded hover:bg-gray-700 transition duration-200">
+            About Us →
+          </button>
         </div>
       </div>
     </section>

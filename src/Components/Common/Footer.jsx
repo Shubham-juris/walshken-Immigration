@@ -5,10 +5,12 @@ const Footer = () => {
   return (
     <footer className="bg-[#15161a] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
+        
         {/* Logo and Description */}
         <div>
           <div className="flex justify-center md:justify-start items-center mb-4">
             <NavLink to="/" className="flex items-center space-x-2">
+              <span className="text-red-600 text-2xl">🌐</span>
               <h1 className="text-xl font-bold">
                 Walshken<span className="text-red-600">Immigration</span>
               </h1>
@@ -21,12 +23,12 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          {/* <div className="flex justify-center md:justify-start space-x-4">
+          <div className="flex justify-center md:justify-start space-x-4">
             {[
               { href: "https://www.facebook.com", icon: <FaFacebookF /> },
               { href: "https://www.twitter.com", icon: <FaTwitter /> },
               { href: "https://www.vimeo.com", icon: <FaVimeoV /> },
-              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> },
+              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> }
             ].map((social, index) => (
               <a
                 key={index}
@@ -39,24 +41,15 @@ const Footer = () => {
                 </div>
               </a>
             ))}
-          </div> */}
+          </div>
         </div>
 
         {/* Services */}
         <div>
           <h2 className="text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-3 text-gray-400">
-            {[
-              "Canada Visa",
-              "Japan Visa",
-              "Spain Visa",
-              "Germany Visa",
-              "Italy Visa",
-            ].map((service, index) => (
-              <li
-                key={index}
-                className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer"
-              >
+            {["Canada Visa", "Japan Visa", "Spain Visa", "Germany Visa", "Italy Visa"].map((service, index) => (
+              <li key={index} className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer">
                 <span>»</span>
                 <span>{service}</span>
               </li>
@@ -68,20 +61,14 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <p className="text-gray-400 mb-2">
-            Phone: <br /> +1-888-227-0899
+            Phone: <br /> +1 718-904-4450
           </p>
           <p className="text-gray-400 mb-2">
-            Email: <br />
-            <a
-              href="mailto:info@walshkenimmigration.com"
-              className="hover:underline text-white"
-            >
-              info@walshkenimmigration.com
-            </a>
+            Email: <br /> info@visaland.com
           </p>
           <p className="text-gray-400">
             Address: <br />
-            Unit 120 3030 3rd Avenue,NE,Calgary,AB
+            123 canada, City, Country
           </p>
         </div>
 
@@ -91,15 +78,16 @@ const Footer = () => {
           <p className="text-gray-400 mb-4">
             Sign Up For News & Get 30% Off Your Next Course.
           </p>
-          {/* <input
+          <input
             type="email"
             placeholder="Your Email Address"
             className="w-full px-4 py-3 rounded bg-gray-100 text-black mb-4 focus:outline-none"
           />
           <button className="w-full py-3 bg-red-600 hover:bg-red-700 rounded font-semibold">
             Subscribe Now
-          </button> */}
+          </button>
         </div>
+
       </div>
     </footer>
   );

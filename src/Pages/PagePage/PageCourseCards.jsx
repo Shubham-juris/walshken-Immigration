@@ -52,7 +52,12 @@ const PageCourseCards = () => {
                 {item.title}
               </h3>
               <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-             
+              <a
+                href="#"
+                className="text-red-600 font-semibold flex items-center hover:underline"
+              >
+                Read More <span className="ml-1 text-lg">➜</span>
+              </a>
             </div>
           </div>
         ))}
@@ -62,4 +67,3 @@ const PageCourseCards = () => {
 };
 
 export default PageCourseCards;
-

@@ -7,10 +7,9 @@ import {
 } from "react-icons/fa";
 import { FaQuoteLeft, FaStar, FaRegStar } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import AboutImage5 from "../../assets/hero/AboutImage5.webp";
-import AboutImage3 from "../../assets/hero/AboutImage3.webp";
-import AboutImage4 from "../../assets/hero/AboutImage4.webp";
-import img from "../../assets/hero/img1.jpg";
+import AboutImage5 from "../../assets/hero/AboutImage5.jpg";
+import AboutImage3 from "../../assets/hero/AboutImage3.jpg";
+import AboutImage4 from "../../assets/hero/AboutImage4.jpg";
 const testimonials = [
   {
     id: 1,
@@ -46,14 +45,14 @@ const consultants = [
   {
     name: "Sonsil Macron",
     title: "Consultant",
-    img: img,
+    img: AboutImage4,
   },
 ];
 
 const AboutConsultants = () => {
   return (
     <>
-      {/* <section className="bg-[#151515] py-16 text-white">
+      <section className="bg-[#151515] py-16 text-white">
         <div className="max-w-7xl mx-auto text-center px-4">
           <p className="uppercase text-red-500 font-semibold  mb-2">
             Professional People
@@ -97,7 +96,7 @@ const AboutConsultants = () => {
           </div>
         </div>
         4
-      </section> */}
+      </section>
       <div className="py-16 px-4 md:px-10 bg-white">
         <div className="text-center mb-12">
           <h4 className="text-red-600 font-semibold uppercase mb-2 tracking-wide">
@@ -137,7 +136,7 @@ const AboutConsultants = () => {
       </div>
       <section className="font-sans">
         <div className="relative bg-red-700 text-white py-20 px-4 md:px-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.webp')] z-0"></div>
+          <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.jpg')] z-0"></div>
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <p className="uppercase text-sm tracking-widest font-semibold">
               Lorem ipsum dolor sit amet, consectetur notted adipisicin
@@ -145,9 +144,9 @@ const AboutConsultants = () => {
             <h1 className="text-4xl md:text-5xl font-bold mt-4">
               Let’s Discuss & Start Visa <br /> Consultations
             </h1>
-            {/* <button className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded hover:bg-gray-100 transition">
+            <button className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded hover:bg-gray-100 transition">
               Free Consulting
-            </button> */}
+            </button>
           </div>
         </div>
 
@@ -159,7 +158,7 @@ const AboutConsultants = () => {
               </div>
               <div>
                 <p className="text-gray-300 text-sm">Call Us 24/7</p>
-                <p className="font-bold text-lg text-white">+1-888-227-0899</p>
+                <p className="font-bold text-lg text-white">+1 718-904-4450</p>
               </div>
             </div>
 
@@ -169,12 +168,9 @@ const AboutConsultants = () => {
               </div>
               <div>
                 <p className="text-gray-300 text-sm">Make a Quote</p>
-                <a
-                  href="mailto:info@walshkenimmigration.com"
-                  className="font-bold text-lg text-white hover:underline"
-                >
-                  info@walshkenimmigration.com
-                </a>
+                <p className="font-bold text-lg text-white">
+                  info@visaland.com
+                </p>
               </div>
             </div>
 
@@ -185,7 +181,7 @@ const AboutConsultants = () => {
               <div>
                 <p className="text-gray-300 text-sm">Location</p>
                 <p className="font-bold text-lg text-white">
-                  Unit 120 3030 3rd Avenue,NE,Calgary,AB
+                  123 Main St, City, Country
                 </p>
               </div>
             </div>

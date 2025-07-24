@@ -5,7 +5,7 @@ import AboutHeroSection from "./Pages/AboutPage/AboutHeroSection";
 import Visa from "../src/Pages/Visa/visa";
 import PageHeroSection from "./Pages/PagePage/PageHeroSection";
 import Contact from "./Pages/ContactPage/Contact";
-// import Blog from "./Pages/BlogPage/Blog";
+import Blog from "./Pages/BlogPage/Blog";
 const AppRouter = () => {
   return (
     <Routes>
@@ -14,7 +14,7 @@ const AppRouter = () => {
       <Route path="/visa" element={<Visa />} />
       <Route path="/Page" element={<PageHeroSection />} />
       <Route path="/contact" element={<Contact />} />
-      {/* <Route path="/blog" element={<Blog />} /> */}
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   );
 };
