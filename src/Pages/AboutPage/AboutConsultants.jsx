@@ -10,12 +10,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaInstagram,
 } from "react-icons/fa";
-
-import AboutImage5 from "../../assets/hero/AboutImage5.webp";
-import AboutImage3 from "../../assets/hero/AboutImage3.webp";
-import AboutImage4 from "../../assets/hero/AboutImage4.webp";
 
 const testimonials = [
   {
@@ -34,93 +29,13 @@ const testimonials = [
   },
 ];
 
-const consultants = [
-  {
-    name: "Devid Miller",
-    title: "Student Visa Specialist",
-    img: AboutImage4,
-  },
-  {
-    name: "Ritu Ratia",
-    title: "Immigration Consultant",
-    img: AboutImage5,
-  },
-  {
-    name: "Shikhon Islam",
-    title: "Work Permit Expert",
-    img: AboutImage3,
-  },
-  {
-    name: "Sonsil Macron",
-    title: "Permanent Residency Advisor",
-    img: AboutImage4,
-  },
-];
-
 const AboutConsultants = () => {
   return (
     <>
-      <section className="bg-[#151515] py-16 text-white">
-        <div className="max-w-7xl mx-auto text-center px-4">
-          <p className="uppercase text-red-500 font-semibold mb-2">
-            Professional People
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">Consultants</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-14 h-70">
-            {consultants.map((consultant, index) => (
-              <div key={index} className="relative group">
-                <img
-                  src={consultant.img}
-                  alt={consultant.name}
-                  className="w-full h-auto rounded shadow-md"
-                />
-
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="relative group">
-                    {/* Share Icon */}
-                    <div className="bg-[#e4003a] p-2 rounded-full text-white cursor-pointer">
-                      <FaShareAlt />
-                    </div>
-
-                    {/* Social Links on Hover */}
-                    <div className="absolute top-full right-0 mt-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <a
-                        href="https://www.facebook.com/p/Walshken-Immigration-100092211439380/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block bg-white text-black p-2 rounded-full hover:bg-gray-200"
-                      >
-                        <FaFacebookF />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/walshkenimmigration/?hl=en"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block bg-white text-black p-2 rounded-full hover:bg-gray-200"
-                      >
-                        <FaInstagram />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white text-black text-center py-4 mt-2 rounded-b">
-                  <h3 className="font-bold">{consultant.name}</h3>
-                  <p className="text-sm">{consultant.title}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <div className="py-16 px-4 md:px-10 bg-white">
         <div className="text-center mb-12">
-          <h4 className="text-red-600 font-semibold uppercase mb-2 tracking-wide">
-            Our Testimonials
-          </h4>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-            Let’s Explore Why People Say <br className="hidden md:block" />{" "}
+            Let’s Explore Why People Say <br className="hidden md:block" />
             About Our Services
           </h2>
         </div>
@@ -153,21 +68,6 @@ const AboutConsultants = () => {
       </div>
 
       <section className="font-sans">
-        <div className="relative bg-red-700 text-white py-20 px-4 md:px-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.jpg')] z-0"></div>
-          <div className="relative z-10 max-w-5xl mx-auto text-center">
-            <p className="uppercase text-sm tracking-widest font-semibold">
-              Trusted Immigration & Visa Experts
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold mt-4">
-              Let’s Discuss & Start Visa <br /> Consultations
-            </h1>
-            <button className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded hover:bg-gray-100 transition">
-              Free Consulting
-            </button>
-          </div>
-        </div>
-
         <div className="bg-black text-white py-12 px-4 md:px-16">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
             <div className="flex items-center gap-5 justify-center md:justify-start">

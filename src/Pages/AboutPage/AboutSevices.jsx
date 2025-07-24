@@ -71,20 +71,14 @@ const AboutSevices = () => {
       <section className="bg-[#e4003a] text-white py-26 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="uppercase font-semibold tracking-widest text-sm">
-              5M+ Trusted Our Clients
-            </p>
             <h2 className="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">
-              Most Trusted <br /> Immigration Service Provider
+              Most Trusted <br /> Walshken Immigration Service Provider
             </h2>
             <p className="text-base mt-4 mb-8 max-w-md">
-              With 10+ years of experience, we have successfully helped
-              thousands of individuals and families obtain visas, work permits,
-              and residency around the world.
+              With 6+ years of experience, we have successfully helped thousands
+              of individuals and families obtain visas, work permits, and
+              residency around the world.
             </p>
-            <button className="bg-white text-black font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">
-              Explore Our Services →
-            </button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
