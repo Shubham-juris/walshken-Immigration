@@ -22,14 +22,14 @@ const testimonials = [
     rating: 5,
     title: "Professional Guidance",
     feedback:
-      "The consultants at Visaland guided me through every step of my student visa process. From document preparation to interview training, their support was exceptional.",
+      "Thanks to Walshken Immigration, I secured my Canadian work permit without delays. They reviewed my documents, prepared me for the interview, and ensured everything met IRCC standards. Their immigration expertise was truly remarkable.",
   },
   {
     id: 2,
     rating: 4,
     title: "Excellent Support",
     feedback:
-      "I got my Canadian work permit with the help of their expert team. They explained the full procedure clearly and responded promptly to all queries.",
+      "Walshken Immigration made my Canadian student visa journey smooth and stress-free. Their team helped me with every step — from selecting the right college to filing my visa documents. I'm now studying in Canada, all thanks to their expert advice!",
   },
 ];
 
