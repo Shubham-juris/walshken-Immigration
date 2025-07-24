@@ -164,8 +164,8 @@ const AboutConsultants = () => {
                 <FaPhoneAlt className="text-red-500 text-lg" />
               </div>
               <div>
-                <p className="text-gray-300 text-sm">Call Us 24/7</p>
-                <p className="font-bold text-lg text-white">+1 718-904-4450</p>
+                <p className="text-gray-300 text-sm">Call Us </p>
+                <p className="font-bold text-lg text-white">+1 365-363-6067</p>
               </div>
             </div>
 
@@ -174,9 +174,9 @@ const AboutConsultants = () => {
                 <FaEnvelope className="text-red-500 text-lg" />
               </div>
               <div>
-                <p className="text-gray-300 text-sm">Make a Quote</p>
+                <p className="text-gray-300 text-sm">Email</p>
                 <p className="font-bold text-lg text-white">
-                  info@visaland.com
+                  walshkenco@gmail.com
                 </p>
               </div>
             </div>
@@ -188,7 +188,7 @@ const AboutConsultants = () => {
               <div>
                 <p className="text-gray-300 text-sm">Location</p>
                 <p className="font-bold text-lg text-white">
-                  123 Main St, City, Country
+                  3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
                 </p>
               </div>
             </div>

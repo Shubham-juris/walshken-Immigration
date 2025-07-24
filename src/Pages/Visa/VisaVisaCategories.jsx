@@ -23,9 +23,9 @@ const VisaVisaCategories = () => {
           </div>
 
           <div className="md:w-1/2 text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            Transmds is the world’s leading global logistics provider supporting
-            industries and trade for the international exchange of merchandise.
-            Tempor incididunt ut labore et dolore magna aliqua.
+            We are experts in immigration and visa consulting, offering
+            personalized support for students, professionals, and families
+            worldwide
           </div>
         </div>
 

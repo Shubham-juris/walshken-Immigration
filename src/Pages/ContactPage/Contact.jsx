@@ -46,7 +46,7 @@ const Contact = () => {
                   Call For Immigration Inquiry
                 </p>
                 <p className="text-lg font-semibold text-gray-900">
-                  +91 78200 30940
+                  +1 365-363-6067
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Send Us Email</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  contact@greekologyvisa.com
+                  walshkenco@gmail.com
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Office Location</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  734 H, Bryan Burlington, NC 27215, USA
+                  3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
                 </p>
               </div>
             </div>
@@ -134,15 +134,15 @@ const Contact = () => {
       {/* Google Map */}
       <div className="w-full h-[500px] mt-16">
         <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.378012819758!2d-0.1415877!3d51.5154196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333cf6beef%3A0x1c5d6f3e7f8a1b62!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1616171900134!5m2!1sen!2sin"
+          title="Google Map - Walshken Immigration Calgary Office"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.123456789012!2d-114.0350000!3d51.0490000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170db1234567%3A0xabcdef1234567890!2s3030%203%20Ave%20NE%20%23120%2C%20Calgary%2C%20AB%20T2A%206T7%2C%20Canada!5e0!3m2!1sen!2sin!4v1670000000000!5m2!1sen!2sin"
           width="100%"
           height="100%"
-          className="border-0 w-full h-full"
+          className="border-0 w-full h-full rounded-md shadow-md"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        />
       </div>
     </>
   );

@@ -1,4 +1,10 @@
-import { FaFacebookF, FaTwitter, FaVimeoV, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaVimeoV,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -24,10 +30,14 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start space-x-4">
             {[
-              { href: "https://www.facebook.com", icon: <FaFacebookF /> },
-              { href: "https://www.twitter.com", icon: <FaTwitter /> },
-              { href: "https://www.vimeo.com", icon: <FaVimeoV /> },
-              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> },
+              {
+                href: "https://www.facebook.com/p/Walshken-Immigration-100092211439380/",
+                icon: <FaFacebookF />,
+              },
+              {
+                href: "https://www.instagram.com/walshkenimmigration/?hl=en",
+                icon: <FaInstagram />,
+              },
             ].map((social, index) => (
               <a
                 key={index}
@@ -69,14 +79,14 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <p className="text-gray-400 mb-2">
-            Phone: <br /> +1 718-904-4450
+            Phone: <br /> +1 365-363-6067
           </p>
           <p className="text-gray-400 mb-2">
-            Email: <br /> info@visaland.com
+            Email: <br /> walshkenco@gmail.com
           </p>
           <p className="text-gray-400">
             Address: <br />
-            123 canada, City, Country
+            3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
           </p>
         </div>
 

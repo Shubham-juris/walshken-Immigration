@@ -6,7 +6,6 @@ import BlogImage3 from "../../assets/hero/BlogImage3.webp";
 import BlogImage4 from "../../assets/hero/BlogImage4.webp";
 import BlogImage5 from "../../assets/hero/BlogImage5.webp";
 import ImageVisa from "../../assets/hero/VisaImg.jpg";
-
 const Blog = () => {
   const blogPosts = [
     {
@@ -14,10 +13,10 @@ const Blog = () => {
       date: "07 Jul",
       author: "salman",
       comments: 0,
-      category: "Visa Guidance",
-      title: "Top Mistakes to Avoid in Your Visa Application",
+      category: "Consulting",
+      title: "Journeys Of Discovery Uncovering Hidden Treasures",
       excerpt:
-        "Submitting incorrect information or missing documents can lead to visa rejections. Learn how to prepare your application correctly with insights from industry experts...",
+        "With global digital ad spending exceeding $325 billion annually, the quest for visibility has never been more intense. Discover how strategic consulting uncovers hidden opportunities...",
       image: BlogImage,
     },
     {
@@ -26,7 +25,7 @@ const Blog = () => {
       author: "salman",
       comments: 0,
       category: "Immigration",
-      title: "Unlocking Opportunities: The Visa Journey Unveiled",
+      title: "Unlocking Opportunities The Visa Journey Unveiled",
       excerpt:
         "Navigating the visa process can be complex, but it opens doors to life-changing opportunities. Explore key insights that make immigration a journey worth taking...",
       image: BlogImage1,
@@ -36,10 +35,10 @@ const Blog = () => {
       date: "12 May",
       author: "salman",
       comments: 0,
-      category: "Work Visa",
-      title: "How to Get a Work Visa for Canada: A Step-by-Step Guide",
+      category: "Business",
+      title: "Navigating Borders Ultimate Guide To Visa Success",
       excerpt:
-        "Canada offers great career opportunities for skilled workers. Discover the essential steps, eligibility, and documentation required for a successful work visa application...",
+        "In a globalized world, borders are more than just lines on a map—they’re opportunities. This ultimate guide walks you through the essential steps for visa approval, offering expert tips and common pitfalls to avoid in your business travel journey...",
       image: BlogImage2,
     },
     {
@@ -48,9 +47,9 @@ const Blog = () => {
       author: "salman",
       comments: 0,
       category: "Green Card",
-      title: "Pathway to UK Residency: A Complete Citizenship Guide",
+      title: "Citizenship Concept On How To Become A UK Resident",
       excerpt:
-        "Dreaming of settling in the UK? This guide outlines all the stages involved in acquiring residency and citizenship—from application to legal compliance and beyond...",
+        "Dreaming of settling in the UK? From eligibility to application, this comprehensive overview breaks down the UK residency and citizenship process, providing insights into key legal requirements and strategic steps to make your transition smoother...",
       image: BlogImage3,
     },
     {
@@ -58,10 +57,10 @@ const Blog = () => {
       date: "16 Sep",
       author: "salman",
       comments: 0,
-      category: "Student Visa",
-      title: "Study Abroad 101: Navigating Your Student Visa",
+      category: "Green Card",
+      title: "Wonders Of Ancient Civilizations Through Egypt",
       excerpt:
-        "Studying abroad starts with the right visa. Learn how to prepare financials, admission proof, SOPs, and more for your successful student visa application...",
+        "Travel back in time and explore the architectural wonders and timeless wisdom of ancient Egypt. This piece isn’t just a history lesson—it highlights how cultural immersion can enhance your global mobility journey, especially for heritage-based visa paths...",
       image: BlogImage4,
     },
     {
@@ -69,10 +68,10 @@ const Blog = () => {
       date: "15 Sep",
       author: "salman",
       comments: 2,
-      category: "Tourist Visa",
-      title: "Planning Your First Trip Abroad? Get Your Tourist Visa Right",
+      category: "Business",
+      title: "The Road To Adventure Embarking On New Horizons",
       excerpt:
-        "A tourist visa is your gateway to exploring new cultures and destinations. This article walks you through the do's and don’ts of the tourist visa process...",
+        "Setting out into the unknown can be daunting, but it's also where growth begins. Discover how business visas and global mobility open doors to new markets, fresh perspectives, and life-changing opportunities around the world...",
       image: BlogImage5,
     },
   ];
