@@ -7,9 +7,11 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import contactImage from "../../assets/hero/ContactImg.jpg";
+
 const Contact = () => {
   return (
     <>
+      {/* Hero Banner */}
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{
@@ -24,21 +26,27 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* Contact Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-10">
         <div className="flex flex-col justify-center">
           <h4 className="text-red-600 font-bold uppercase">Get in Touch</h4>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Contact Us</h2>
           <p className="text-gray-600 mb-8">
-            We denounce with righteous indignation...
+            Looking to study, work, or settle abroad? Our expert immigration
+            consultants are here to guide you through the entire visa process —
+            from documentation and eligibility assessment to final application
+            and post-approval support.
           </p>
 
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
               <FaPhoneAlt className="text-red-600 text-xl mt-1" />
               <div>
-                <p className="text-sm text-red-600">Call For Inquiry</p>
+                <p className="text-sm text-red-600">
+                  Call For Immigration Inquiry
+                </p>
                 <p className="text-lg font-semibold text-gray-900">
-                  +236 (456) 896 22
+                  +91 78200 30940
                 </p>
               </div>
             </div>
@@ -47,34 +55,37 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Send Us Email</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  info@example.com
+                  contact@greekologyvisa.com
                 </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <FaMapMarkerAlt className="text-red-600 text-xl mt-1" />
               <div>
-                <p className="text-sm text-red-600">Location</p>
+                <p className="text-sm text-red-600">Office Location</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  734 H, Bryan Burlington, NC 27215
+                  734 H, Bryan Burlington, NC 27215, USA
                 </p>
               </div>
             </div>
           </div>
 
           <img
-            src="/your-image-path.jpg"
-            alt="Team Discussion"
+            src={contactImage}
+            alt="Visa Consultation Team"
             className="mt-10 rounded-xl shadow-lg"
           />
         </div>
+
+        {/* Contact Form */}
         <div className="bg-white shadow-xl rounded-xl p-8 flex flex-col justify-center">
           <h3 className="text-2xl font-bold mb-2 text-gray-900">
-            Fill Up The Form
+            Request a Free Immigration Consultation
           </h3>
           <p className="text-gray-600 text-sm mb-6">
-            Your email address will not be published. Required fields are marked{" "}
-            <span className="text-red-600">*</span>
+            Have a question about your visa or immigration plan? Fill out this
+            form and our experts will reach out to you shortly. Required fields
+            are marked <span className="text-red-600">*</span>
           </p>
 
           <form className="space-y-4">
@@ -101,11 +112,11 @@ const Contact = () => {
 
             <input
               type="text"
-              placeholder="Subject"
+              placeholder="Subject (e.g. Student Visa for Canada)"
               className="w-full border rounded px-4 py-2 text-sm"
             />
             <textarea
-              placeholder="Write Your Message"
+              placeholder="Tell us about your visa requirement..."
               rows={5}
               className="w-full border rounded px-4 py-2 text-sm"
             ></textarea>
@@ -120,6 +131,7 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* Google Map */}
       <div className="w-full h-[500px] mt-16">
         <iframe
           title="Google Map"

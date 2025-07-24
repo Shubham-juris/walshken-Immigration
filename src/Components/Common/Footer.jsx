@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#15161a] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
-        
         {/* Logo and Description */}
         <div>
           <div className="flex justify-center md:justify-start items-center mb-4">
@@ -17,9 +16,9 @@ const Footer = () => {
             </NavLink>
           </div>
           <p className="text-gray-400 mb-6">
-            Your trusted partner for IELTS, TOEFL, PTE coaching & Citizenship
-            Test preparation, guiding you every step of the way to global
-            success.
+            We specialize in IELTS, PTE, and TOEFL coaching, as well as
+            Citizenship Test preparation — supporting you every step toward
+            global success.
           </p>
 
           {/* Social Icons */}
@@ -28,7 +27,7 @@ const Footer = () => {
               { href: "https://www.facebook.com", icon: <FaFacebookF /> },
               { href: "https://www.twitter.com", icon: <FaTwitter /> },
               { href: "https://www.vimeo.com", icon: <FaVimeoV /> },
-              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> }
+              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> },
             ].map((social, index) => (
               <a
                 key={index}
@@ -48,8 +47,17 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-3 text-gray-400">
-            {["Canada Visa", "Japan Visa", "Spain Visa", "Germany Visa", "Italy Visa"].map((service, index) => (
-              <li key={index} className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer">
+            {[
+              "Canada Visa",
+              "Japan Visa",
+              "Spain Visa",
+              "Germany Visa",
+              "Italy Visa",
+            ].map((service, index) => (
+              <li
+                key={index}
+                className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer"
+              >
                 <span>»</span>
                 <span>{service}</span>
               </li>
@@ -87,7 +95,6 @@ const Footer = () => {
             Subscribe Now
           </button>
         </div>
-
       </div>
     </footer>
   );

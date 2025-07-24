@@ -4,47 +4,54 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaShareAlt,
+  FaQuoteLeft,
+  FaStar,
+  FaRegStar,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
-import { FaQuoteLeft, FaStar, FaRegStar } from "react-icons/fa";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
 import AboutImage5 from "../../assets/hero/AboutImage5.webp";
 import AboutImage3 from "../../assets/hero/AboutImage3.webp";
 import AboutImage4 from "../../assets/hero/AboutImage4.webp";
+
 const testimonials = [
   {
     id: 1,
-    rating: 4,
-    title: "Quality Services",
+    rating: 5,
+    title: "Professional Guidance",
     feedback:
-      "creative agency, we believe in the Eid and innovation. We are constantly melt of what is possible, and strive to cat only beautiful and effective, but shark inventore veritatis et quasi architecto beatae vitae dicta sunt atlantic",
+      "The consultants at Visaland guided me through every step of my student visa process. From document preparation to interview training, their support was exceptional.",
   },
   {
     id: 2,
-    rating: 3,
-    title: "Client-Focused Support",
+    rating: 4,
+    title: "Excellent Support",
     feedback:
-      "Our support team is always ready to help, offering quick responses and effective solutions. Whether you need assistance with documentation or follow-up services, we’re here for you every step of the way.",
+      "I got my Canadian work permit with the help of their expert team. They explained the full procedure clearly and responded promptly to all queries.",
   },
 ];
+
 const consultants = [
   {
     name: "Devid Miller",
-    title: "Consultant",
+    title: "Student Visa Specialist",
     img: AboutImage4,
   },
   {
     name: "Ritu Ratia",
-    title: "Consultant",
+    title: "Immigration Consultant",
     img: AboutImage5,
   },
   {
     name: "Shikhon Islam",
-    title: "Consultant",
+    title: "Work Permit Expert",
     img: AboutImage3,
   },
   {
     name: "Sonsil Macron",
-    title: "Consultant",
+    title: "Permanent Residency Advisor",
     img: AboutImage4,
   },
 ];
@@ -54,7 +61,7 @@ const AboutConsultants = () => {
     <>
       <section className="bg-[#151515] py-16 text-white">
         <div className="max-w-7xl mx-auto text-center px-4">
-          <p className="uppercase text-red-500 font-semibold  mb-2">
+          <p className="uppercase text-red-500 font-semibold mb-2">
             Professional People
           </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-2">Consultants</h2>
@@ -63,7 +70,6 @@ const AboutConsultants = () => {
               <div key={index} className="relative group">
                 <img
                   src={consultant.img}
-                  x
                   alt={consultant.name}
                   className="w-full h-auto rounded shadow-md"
                 />
@@ -95,8 +101,8 @@ const AboutConsultants = () => {
             ))}
           </div>
         </div>
-        4
       </section>
+
       <div className="py-16 px-4 md:px-10 bg-white">
         <div className="text-center mb-12">
           <h4 className="text-red-600 font-semibold uppercase mb-2 tracking-wide">
@@ -134,12 +140,13 @@ const AboutConsultants = () => {
           ))}
         </div>
       </div>
+
       <section className="font-sans">
         <div className="relative bg-red-700 text-white py-20 px-4 md:px-16 overflow-hidden">
           <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.jpg')] z-0"></div>
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <p className="uppercase text-sm tracking-widest font-semibold">
-              Lorem ipsum dolor sit amet, consectetur notted adipisicin
+              Trusted Immigration & Visa Experts
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mt-4">
               Let’s Discuss & Start Visa <br /> Consultations

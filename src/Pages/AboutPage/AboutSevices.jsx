@@ -3,29 +3,30 @@ import Studentvisa from "../../assets/hero/studentVisa.webp";
 import BusinessVisa from "../../assets/hero/BusinessVisa.webp";
 import WorkVisa from "../../assets/hero/WorkVisa.webp";
 import TouristVisa from "../../assets/hero/TouristVisa.webp";
+
 const services = [
   {
     title: "Business Visa",
     description:
-      "Our Business Visa program provides tailored guidance for professionals and entrepreneurs planning to expand their ventures globally. With expert consultation on documentation.",
+      "We assist entrepreneurs and investors in obtaining business visas to explore global opportunities. Our experts help with legal documentation, eligibility assessment, and embassy interview preparation.",
     image: BusinessVisa,
   },
   {
     title: "Student Visa",
     description:
-      "Our Student Visa guidance program is designed to help students successfully apply for study abroad opportunities.    for a smooth transition to your dream education destination.",
+      "Get complete support for your dream of studying abroad. From university selection to visa filing, we help students at every step to secure admissions and approvals with confidence.",
     image: Studentvisa,
   },
   {
     title: "Work Visa",
     description:
-      "Our Work Visa support program helps professionals navigate the application process with ease. We provide personalized assistance for job , documentation, interview preparation.",
+      "We guide skilled professionals in obtaining work visas for countries like Canada, UK, Australia, and more. Our team supports job matching, application paperwork, and embassy processes.",
     image: WorkVisa,
   },
   {
     title: "Tourist Visa",
     description:
-      "Planning a vacation abroad? Our Tourist Visa service ensures  documentation to travel tips nsures you have everything in place—from documentation to travel tips",
+      "Planning to travel abroad? Our Tourist Visa services ensure you have all documents ready and assist in smooth visa filing, so you can focus on enjoying your journey.",
     image: TouristVisa,
   },
 ];
@@ -39,14 +40,14 @@ const AboutSevices = () => {
             Service We Provide
           </p>
           <h2 className="text-4xl font-bold mb-10">
-            Explore Our Visa Citizenship <br />& Immigration Services
+            Explore Our Visa, Citizenship <br /> & Immigration Services
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className=" p-6 flex flex-col justify-between shadow-sm  hover:shadow-lg transition-all duration-300 rounded-lg"
+                className="p-6 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300 rounded-lg"
               >
                 <div>
                   <h3 className="text-lg font-semibold mb-2">
@@ -66,6 +67,7 @@ const AboutSevices = () => {
           </div>
         </div>
       </section>
+
       <section className="bg-[#e4003a] text-white py-26 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
@@ -73,16 +75,18 @@ const AboutSevices = () => {
               5M+ Trusted Our Clients
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">
-              Most Experienced <br /> Our Services
+              Most Trusted <br /> Immigration Service Provider
             </h2>
             <p className="text-base mt-4 mb-8 max-w-md">
-              Transmds is the world’s driving worldwide exchange the worldwide
-              trade of
+              With 10+ years of experience, we have successfully helped
+              thousands of individuals and families obtain visas, work permits,
+              and residency around the world.
             </p>
             <button className="bg-white text-black font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">
-              Explore Our Service →
+              Explore Our Services →
             </button>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="flex flex-col items-center text-center py-6 px-4 rounded-lg shadow">
               <div className="bg-white text-[#e4003a] rounded-full p-4 mb-4 text-2xl"></div>
@@ -93,13 +97,13 @@ const AboutSevices = () => {
             <div className="flex flex-col items-center text-center py-6 px-4 rounded-lg shadow">
               <div className="bg-white text-[#e4003a] rounded-full p-4 mb-4 text-2xl"></div>
               <h3 className="text-3xl font-bold">25K+</h3>
-              <p className="mt-1 text-sm">Visa Delivery</p>
+              <p className="mt-1 text-sm">Successful Visas Delivered</p>
             </div>
 
             <div className="flex flex-col items-center text-center py-6 px-4 rounded-lg shadow">
               <div className="bg-white text-[#e4003a] rounded-full p-4 mb-4 text-2xl"></div>
               <h3 className="text-3xl font-bold">99%</h3>
-              <p className="mt-1 text-sm">Success Rate</p>
+              <p className="mt-1 text-sm">Approval Rate</p>
             </div>
           </div>
         </div>
