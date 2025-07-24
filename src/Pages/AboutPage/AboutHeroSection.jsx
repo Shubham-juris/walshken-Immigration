@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/hero/WorkVisa.jpg";
+import image from "../../assets/hero/WorkVisa.webp";
 import AboutCompany from "./AboutCompany ";
 import AboutSevices from "./AboutSevices";
 import AboutConsultants from "./AboutConsultants";

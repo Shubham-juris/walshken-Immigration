@@ -1,8 +1,8 @@
 import React from "react";
-import Studentvisa from "../../assets/hero/studentVisa.jpg";
-import BusinessVisa from "../../assets/hero/BusinessVisa.jpg";
-import WorkVisa from "../../assets/hero/WorkVisa.jpg";
-import TouristVisa from "../../assets/hero/TouristVisa.jpg";
+import Studentvisa from "../../assets/hero/studentVisa.webp";
+import BusinessVisa from "../../assets/hero/BusinessVisa.webp";
+import WorkVisa from "../../assets/hero/WorkVisa.webp";
+import TouristVisa from "../../assets/hero/TouristVisa.webp";
 const services = [
   {
     title: "Business Visa",

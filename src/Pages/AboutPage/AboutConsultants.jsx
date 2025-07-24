@@ -7,9 +7,9 @@ import {
 } from "react-icons/fa";
 import { FaQuoteLeft, FaStar, FaRegStar } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import AboutImage5 from "../../assets/hero/AboutImage5.jpg";
-import AboutImage3 from "../../assets/hero/AboutImage3.jpg";
-import AboutImage4 from "../../assets/hero/AboutImage4.jpg";
+import AboutImage5 from "../../assets/hero/AboutImage5.webp";
+import AboutImage3 from "../../assets/hero/AboutImage3.webp";
+import AboutImage4 from "../../assets/hero/AboutImage4.webp";
 const testimonials = [
   {
     id: 1,

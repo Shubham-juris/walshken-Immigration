@@ -1,10 +1,10 @@
 import React from "react";
-import BlogImage from "../../assets/hero/BlogImage.jpg";
-import BlogImage1 from "../../assets/hero/BlogImage1.jpg";
-import BlogImage2 from "../../assets/hero/BlogImage2.jpg";
-import BlogImage3 from "../../assets/hero/BlogImage3.jpg";
-import BlogImage4 from "../../assets/hero/BlogImage4.jpg";
-import BlogImage5 from "../../assets/hero/BlogImage5.jpg";
+import BlogImage from "../../assets/hero/BlogImage.webp";
+import BlogImage1 from "../../assets/hero/BlogImage1.webp";
+import BlogImage2 from "../../assets/hero/BlogImage2.webp";
+import BlogImage3 from "../../assets/hero/BlogImage3.webp";
+import BlogImage4 from "../../assets/hero/BlogImage4.webp";
+import BlogImage5 from "../../assets/hero/BlogImage5.webp";
 import ImageVisa from "../../assets/hero/VisaImg.jpg";
 const Blog = () => {
   const blogPosts = [

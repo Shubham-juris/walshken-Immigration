@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import mainImage from "../../assets/hero/TouristVisa.jpg";
-import smallImage from "../../assets/hero/home3.jpg";
+import mainImage from "../../assets/hero/TouristVisa.webp";
+import smallImage from "../../assets/hero/home3.webp";
 const AboutCompany = () => {
   return (
     <section className="py-16 bg-white">
