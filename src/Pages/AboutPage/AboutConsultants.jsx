@@ -10,6 +10,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaInstagram,
 } from "react-icons/fa";
 
 import AboutImage5 from "../../assets/hero/AboutImage5.webp";
@@ -76,19 +77,29 @@ const AboutConsultants = () => {
 
                 <div className="absolute top-4 right-4 z-10">
                   <div className="relative group">
+                    {/* Share Icon */}
                     <div className="bg-[#e4003a] p-2 rounded-full text-white cursor-pointer">
                       <FaShareAlt />
                     </div>
+
+                    {/* Social Links on Hover */}
                     <div className="absolute top-full right-0 mt-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="bg-white text-black p-2 rounded-full hover:bg-gray-200">
+                      <a
+                        href="https://www.facebook.com/p/Walshken-Immigration-100092211439380/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-white text-black p-2 rounded-full hover:bg-gray-200"
+                      >
                         <FaFacebookF />
-                      </div>
-                      <div className="bg-white text-black p-2 rounded-full hover:bg-gray-200">
-                        <FaTwitter />
-                      </div>
-                      <div className="bg-white text-black p-2 rounded-full hover:bg-gray-200">
-                        <FaLinkedinIn />
-                      </div>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/walshkenimmigration/?hl=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-white text-black p-2 rounded-full hover:bg-gray-200"
+                      >
+                        <FaInstagram />
+                      </a>
                     </div>
                   </div>
                 </div>
