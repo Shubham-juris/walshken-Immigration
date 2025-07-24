@@ -1,10 +1,4 @@
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaVimeoV,
-  FaLinkedinIn,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -95,14 +89,26 @@ const Footer = () => {
           <p className="text-gray-400 mb-4">
             Sign Up For News & Get 30% Off Your Next Course.
           </p>
-          <input
-            type="email"
-            placeholder="Your Email Address"
-            className="w-full px-4 py-3 rounded bg-gray-100 text-black mb-4 focus:outline-none"
-          />
-          <button className="w-full py-3 bg-red-600 hover:bg-red-700 rounded font-semibold">
-            Subscribe Now
-          </button>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Subscribed successfully!");
+            }}
+          >
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              className="w-full px-4 py-3 rounded bg-gray-100 text-black mb-4 focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              className="w-full py-3 bg-red-600 hover:bg-red-700 rounded font-semibold text-white"
+            >
+              Subscribe Now
+            </button>
+          </form>
         </div>
       </div>
     </footer>
