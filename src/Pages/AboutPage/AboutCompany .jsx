@@ -27,7 +27,7 @@ const AboutCompany = () => {
             Visa Consulting Firm
           </h2>
           <p className="text-gray-600 mb-6">
-            We are experts in immigration and visa consulting, offering
+                    We are experts in immigration and visa consulting, offering
             personalized support for students, professionals, and families
             worldwide
           </p>
