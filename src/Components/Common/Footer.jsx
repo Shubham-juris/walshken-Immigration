@@ -15,7 +15,6 @@ const Footer = () => {
         <div>
           <div className="flex justify-center md:justify-start items-center mb-4">
             <NavLink to="/" className="flex items-center space-x-2">
-              <span className="text-red-600 text-2xl">🌐</span>
               <h1 className="text-xl font-bold">
                 Walshken<span className="text-red-600">Immigration</span>
               </h1>
