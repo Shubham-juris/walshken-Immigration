@@ -9,9 +9,6 @@ const VisaContactSection = () => {
             <p className="uppercase font-semibold tracking-wider text-center lg:text-left text-red-600">
               Contact Us
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center lg:text-left">
-              Get A Call Back
-            </h2>
 
             <form className="space-y-4">
               <div className="flex flex-col sm:flex-row gap-4">

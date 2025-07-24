@@ -43,12 +43,6 @@ const VisaVisaCategories = () => {
 
         <div className="text-center font-semibold text-sm sm:text-base lg:text-lg">
           Bring Them Together And You Overcome The Ordinary.
-          <span className="text-black font-normal ml-2">
-            View More Services
-          </span>
-          <button className="ml-2 w-6 h-6 rounded-full bg-red-600 text-white font-bold">
-            +
-          </button>
         </div>
       </div>
     </div>
