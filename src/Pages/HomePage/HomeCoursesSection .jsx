@@ -117,8 +117,9 @@ const HomeCoursesSection = () => {
               Visa Consulting Firm
             </h2>
             <p className="text-gray-600 mb-6">
-              Transmds is the world’s driving worldwide coordinations supplier —
-              we uphold industry and exchange the worldwide trade of merchandi
+              We are experts in immigration and visa consulting, offering
+              personalized support for students, professionals, and families
+              worldwide
             </p>
 
             <div className="flex gap-10 mb-6">
