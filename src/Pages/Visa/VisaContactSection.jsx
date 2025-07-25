@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
 const VisaContactSection = () => {
+  // Separate state for each field
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = {
+      firstName,
+      email,
+      phone,
+      service,
+      message,
+    };
+
+    // Save to localStorage
+    localStorage.setItem("visaContactForm", JSON.stringify(formData));
+
+    alert("Your message is submitted successfully!");
+    console.log("Saved to localStorage:", formData);
+
+    // Optional: Clear form after submission
+    setFirstName("");
+    setEmail("");
+    setPhone("");
+    setService("");
+    setMessage("");
+  };
+
   return (
     <div className="w-full bg-gray-100 px-4 sm:px-6 lg:px-16 py-12 flex justify-center">
       <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-10">
@@ -10,16 +42,22 @@ const VisaContactSection = () => {
               Contact Us
             </p>
 
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
                   placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required
                   className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-500 focus:outline-none"
                 />
                 <input
                   type="email"
                   placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-500 focus:outline-none"
                 />
               </div>
@@ -28,9 +66,17 @@ const VisaContactSection = () => {
                 <input
                   type="text"
                   placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
                   className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-500 focus:outline-none"
                 />
-                <select className="w-full p-3 rounded-md border border-gray-300 text-black bg-white focus:outline-none">
+                <select
+                  value={service}
+                  onChange={(e) => setService(e.target.value)}
+                  required
+                  className="w-full p-3 rounded-md border border-gray-300 text-black bg-white focus:outline-none"
+                >
                   <option value="">Choose Services</option>
                   <option value="tourist">Tourist Visa</option>
                   <option value="work">Work Visa</option>
@@ -41,6 +87,9 @@ const VisaContactSection = () => {
               <textarea
                 placeholder="Write Your Message"
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
                 className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-500 focus:outline-none"
               />
 
@@ -53,6 +102,7 @@ const VisaContactSection = () => {
             </form>
           </div>
         </div>
+
         <div className="w-full lg:w-1/2 min-h-[400px]">
           <iframe
             title="map"
