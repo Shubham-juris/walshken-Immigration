@@ -11,12 +11,11 @@ const Navbar = () => {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Visa", path: "/visa" },
-    // { label: "Pages", path: "/page" },
     { label: "Contact", path: "/contact" },
-  ];
+          ];
 
   return (
-    <header className="bg-white shadow-md py-2 sticky top-0 z-50">
+    <header className="bg-white shadow-md py-5 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <NavLink to="/" className="flex items-center space-x-2">
           <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
@@ -25,7 +24,7 @@ const Navbar = () => {
           </h1>
         </NavLink>
 
-        <nav className="hidden lg:flex space-x-4 items-center">
+        <nav className="hidden lg:flex space-x-8 items-center">
           {menuItems.map((item, index) => (
             <NavLink
               key={index}
