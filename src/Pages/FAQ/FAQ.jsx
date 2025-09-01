@@ -56,15 +56,10 @@ const faqs = [
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-  const filteredFaqs = faqs.filter((faq) =>
-    faq.question.toLowerCase().includes(searchQuery.toLowerCase())
-  );
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -80,46 +75,30 @@ const FAQ = () => {
 
       {/* FAQ Section */}
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        {/* Search Bar */}
-        <div className="mb-8">
-          <input
-            type="text"
-            placeholder="Search questions..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-600 focus:outline-none"
-          />
-        </div>
-
-        {/* FAQs */}
         <div className="space-y-4">
-          {filteredFaqs.length > 0 ? (
-            filteredFaqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-md rounded-2xl p-4 transition-all"
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-2xl p-4 transition-all"
+            >
+              <button
+                className="flex justify-between items-center w-full text-left"
+                onClick={() => toggleFAQ(index)}
               >
-                <button
-                  className="flex justify-between items-center w-full text-left"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  <span className="text-lg font-medium text-gray-800">
-                    {faq.question}
-                  </span>
-                  <span className="ml-2 text-gray-600 text-2xl">
-                    {openIndex === index ? "−" : "+"}
-                  </span>
-                </button>
-                {openIndex === index && (
-                  <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-                    {faq.answer}
-                  </p>
-                )}
-              </div>
-            ))
-          ) : (
-            <p className="text-gray-600 text-center">No results found.</p>
-          )}
+                <span className="text-lg font-medium text-gray-800">
+                  {faq.question}
+                </span>
+                <span className="ml-2 text-gray-600 text-2xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="mt-3 text-gray-600 text-sm leading-relaxed">
+                  {faq.answer}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

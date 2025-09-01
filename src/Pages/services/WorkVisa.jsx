@@ -39,8 +39,8 @@ const WorkVisa = () => {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1581092334964-581fd8a6a6f2?auto=format&fit=crop&w=900&q=80"
-              alt="Work Visa"
+              src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=900&q=80"
+              alt="Work Abroad"
               className="rounded-2xl shadow-lg w-full object-cover"
             />
           </div>

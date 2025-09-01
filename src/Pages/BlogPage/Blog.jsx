@@ -6,6 +6,7 @@ import BlogImage3 from "../../assets/hero/BlogImage3.webp";
 import BlogImage4 from "../../assets/hero/BlogImage4.webp";
 import BlogImage5 from "../../assets/hero/BlogImage5.webp";
 import ImageVisa from "../../assets/hero/VisaImg.jpg";
+import FAQ from "../FAQ/FAQ";
 
 const Blog = () => {
   const blogPosts = [
@@ -140,6 +141,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      <FAQ />
     </>
   );
 };

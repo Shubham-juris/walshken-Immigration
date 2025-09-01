@@ -2,8 +2,23 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const services = [
+    { name: "Study Visa", path: "/study-visa" },
+    { name: "Work Visa", path: "/work-visa" },
+    { name: "Permanent Residency", path: "/pr" },
+    {
+      name: "Family & Spousal Sponsorship",
+      path: "/family",
+    },
+    { name: "Business & Investor Visa", path: "/business-visa" },
+    { name: "Visitor Visa", path: "/visitor-visa" },
+    { name: "Divorce & Family Law", path: "/divorce-family" },
+    { name: "International Adoptions", path: "/adoptions" },
+    { name: "Property Legal Disputes", path: "/property" },
+  ];
+
   return (
-    <footer className="bg-[#15161a] text-white py-16">
+    <footer className="bg-[#15161a] text-white py-10">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
         {/* Logo and Description */}
         <div>
@@ -50,19 +65,15 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-3 text-gray-400">
-            {[
-              "Canada Visa",
-              "Japan Visa",
-              "Spain Visa",
-              "Germany Visa",
-              "Italy Visa",
-            ].map((service, index) => (
-              <li
-                key={index}
-                className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer"
-              >
-                <span>»</span>
-                <span>{service}</span>
+            {services.map((service, index) => (
+              <li key={index}>
+                <NavLink
+                  to={service.path}
+                  className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer"
+                >
+                  <span>»</span>
+                  <span>{service.name}</span>
+                </NavLink>
               </li>
             ))}
           </ul>

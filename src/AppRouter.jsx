@@ -6,7 +6,7 @@ import Visa from "../src/Pages/Visa/visa";
 import PageHeroSection from "./Pages/PagePage/PageHeroSection";
 import Contact from "./Pages/ContactPage/Contact";
 import Blog from "./Pages/BlogPage/Blog";
-import FAQ from "./Pages/FAQ/FAQ";
+// import FAQ from "./Pages/FAQ/FAQ";
 import StudyVisa from "./Pages/services/StudyVisa";
 import WorkVisa from "./Pages/services/WorkVisa";
 import PermanentResidency from "./Pages/services/PermanentResidency";
@@ -25,7 +25,7 @@ const AppRouter = () => {
       <Route path="/Page" element={<PageHeroSection />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/faq" element={<FAQ />} />
+      {/* <Route path="/faq" element={<FAQ />} /> */}
       <Route path="/study-visa" element={<StudyVisa />} />
       <Route path="/work-visa" element={<WorkVisa />} />
       <Route path="/pr" element={<PermanentResidency />} />
