@@ -1,1 +1,35 @@
 @import 'tailwindcss';
+
+/* Hide default cursor */
+body {
+  cursor: none; /* Hide default cursor */
+  /* Global background gradient */
+  background: linear-gradient(135deg, #000000, #1f1f1f, #b91c1c);
+  min-height: 100vh;
+  color: white; /* Default text color */
+  font-family: 'Inter', sans-serif; /* Optional: global font */
+}
+
+/* Custom glowing cursor */
+.cursor-glow {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(220,38,38,0.3) 0%, transparent 70%);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  transition: all 0.05s linear;
+  z-index: 9999;
+}
+
+/* Optional: Ensure links and buttons are readable on dark gradient */
+a, button {
+  color: white;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover, button:hover {
+  color: #b91c1c; /* red shade hover */
+}

@@ -1,15 +1,13 @@
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/hero/logo.webp"; // ✅ Import logo
 
 const Footer = () => {
   const services = [
     { name: "Study Visa", path: "/study-visa" },
     { name: "Work Visa", path: "/work-visa" },
     { name: "Permanent Residency", path: "/pr" },
-    {
-      name: "Family & Spousal Sponsorship",
-      path: "/family",
-    },
+    { name: "Family & Spousal Sponsorship", path: "/family" },
     { name: "Business & Investor Visa", path: "/business-visa" },
     { name: "Visitor Visa", path: "/visitor-visa" },
     { name: "Divorce & Family Law", path: "/divorce-family" },
@@ -18,25 +16,32 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#15161a] text-white py-10">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
-        {/* Logo and Description */}
-        <div>
-          <div className="flex justify-center md:justify-start items-center mb-4">
-            <NavLink to="/" className="flex items-center space-x-2">
-              <h1 className="text-xl font-bold">
-                Walshken<span className="text-red-600">Immigration</span>
+    <footer className="bg-black text-white py-12 border-t border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
+        
+        {/* Logo & About */}
+        <div className="text-center md:text-left">
+          <div className="flex flex-col items-center mb-5">
+            <NavLink to="/" className="flex flex-col items-center space-y-2">
+              {/* ✅ Logo centered above text */}
+              <img
+                src={logo}
+                alt="Walshken Immigration"
+                className="w-16 h-16 object-contain"
+              />
+              <h1 className="text-xl font-bold tracking-wide text-center">
+                Walshken <span className="text-gray-400">Immigration</span>
               </h1>
             </NavLink>
           </div>
-          <p className="text-gray-400 mb-6">
-            We specialize in IELTS, PTE, and TOEFL coaching, as well as
-            Citizenship Test preparation — supporting you every step toward
-            global success.
+          <p className="text-gray-400 text-sm leading-relaxed mb-6 text-center md:text-left">
+            We specialize in IELTS, PTE, and TOEFL coaching, along with
+            Citizenship Test preparation — guiding you step by step
+            toward success abroad.
           </p>
 
-          {/* Social Icons */}
-          <div className="flex justify-center md:justify-start space-x-4">
+          {/* Socials */}
+          <div className="flex justify-center md:justify-start space-x-3">
             {[
               {
                 href: "https://www.facebook.com/p/Walshken-Immigration-100092211439380/",
@@ -46,16 +51,15 @@ const Footer = () => {
                 href: "https://www.instagram.com/walshkenimmigration/?hl=en",
                 icon: <FaInstagram />,
               },
-            ].map((social, index) => (
+            ].map((social, i) => (
               <a
-                key={index}
+                key={i}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-700 p-2 rounded-full w-10 h-10 flex items-center justify-center transition transform hover:scale-110"
               >
-                <div className="text-lg bg-gray-800 hover:bg-blue-600 p-2 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out">
-                  {social.icon}
-                </div>
+                {social.icon}
               </a>
             ))}
           </div>
@@ -63,15 +67,15 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Services</h2>
-          <ul className="space-y-3 text-gray-400">
+          <h2 className="text-lg font-bold mb-5">Services</h2>
+          <ul className="space-y-3 text-gray-400 text-sm">
             {services.map((service, index) => (
               <li key={index}>
                 <NavLink
                   to={service.path}
-                  className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer"
+                  className="flex justify-center md:justify-start items-center space-x-2 hover:text-white font-medium transition"
                 >
-                  <span>»</span>
+                  <span className="text-gray-500">›</span>
                   <span>{service.name}</span>
                 </NavLink>
               </li>
@@ -79,28 +83,29 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Contact</h2>
-          <p className="text-gray-400 mb-2">
-            Phone: <br /> +1 365-363-6067
+          <h2 className="text-lg font-bold mb-5">Contact</h2>
+          <p className="text-gray-400 text-sm mb-2">
+            Phone: <br /> <span className="text-white font-medium">+1 365-363-6067</span>
           </p>
-          <p className="text-gray-400 mb-2">
-            Email: <br /> walshkenco@gmail.com
+          <p className="text-gray-400 text-sm mb-2">
+            Email: <br /> <span className="text-white font-medium">walshkenco@gmail.com</span>
           </p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-sm">
             Address: <br />
-            3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
+            <span className="text-white font-medium">
+              3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
+            </span>
           </p>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Newsletters</h2>
-          <p className="text-gray-400 mb-4">
-            Sign Up For News & Get 30% Off Your Next Course.
+          <h2 className="text-lg font-bold mb-5">Newsletter</h2>
+          <p className="text-gray-400 text-sm mb-4">
+            Sign up to get updates & exclusive offers directly to your inbox.
           </p>
-
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -109,18 +114,23 @@ const Footer = () => {
           >
             <input
               type="email"
-              placeholder="Your Email Address"
-              className="w-full px-4 py-3 rounded bg-gray-100 text-black mb-4 focus:outline-none"
+              placeholder="Enter your email"
+              className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-sm mb-4 focus:outline-none focus:ring-2 focus:ring-gray-600"
               required
             />
             <button
               type="submit"
-              className="w-full py-3 bg-red-600 hover:bg-red-700 rounded font-semibold text-white"
+              className="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-md font-semibold text-white text-sm transition"
             >
               Subscribe Now
             </button>
           </form>
         </div>
+      </div>
+
+      {/* Bottom Note */}
+      <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+        © {new Date().getFullYear()} Walshken Immigration. All rights reserved.
       </div>
     </footer>
   );

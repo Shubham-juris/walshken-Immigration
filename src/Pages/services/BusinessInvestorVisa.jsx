@@ -1,57 +1,93 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const BusinessInvestorVisa = () => {
   const navigate = useNavigate();
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    }),
+  };
+
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gradient-to-br from-black via-gray-900 to-red-950 text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-800 to-indigo-700 text-white py-20 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
+      <section className="py-20 px-6 text-center">
+        <motion.div
+          className="max-w-4xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-red-500">
             Business & Investor Visa
           </h1>
-          <p className="text-lg md:text-xl text-gray-200">
+          <p className="text-lg md:text-xl text-gray-300">
             Unlock global opportunities by investing abroad and expanding your
             business internationally.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* About Section */}
-      <section className="max-w-7xl mx-auto py-14 px-6 md:px-12 lg:px-20">
+      <section className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Why Choose a Business Investor Visa?
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+          >
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Why Choose a{" "}
+              <span className="text-red-500">Business Investor Visa?</span>
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-300 leading-relaxed mb-4">
               A Business or Investor Visa provides individuals and companies the
               opportunity to invest, establish, or expand their businesses in a
               foreign country. This visa opens doors to permanent residency,
               global trade, and new markets.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               Our expert visa consultants help you navigate the process with
               ease, ensuring compliance with immigration laws while maximizing
               your business potential abroad.
             </p>
-          </div>
-          <div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <img
               src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
               alt="Business Investor Visa"
               className="rounded-2xl shadow-lg w-full object-cover"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10">
-            Key Benefits of Business & Investor Visas
+      <section className="py-16 px-6 md:px-12 lg:px-20">
+        <motion.div
+          className="max-w-6xl mx-auto text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="text-3xl font-bold mb-10 text-white">
+            Key Benefits of{" "}
+            <span className="text-red-500">Business & Investor Visas</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
@@ -80,59 +116,83 @@ const BusinessInvestorVisa = () => {
                 desc: "Expand professional networks and trade partnerships worldwide.",
               },
             ].map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+                className="bg-gradient-to-br from-gray-800 to-black p-6 rounded-xl shadow-lg border border-red-800"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                variants={fadeUp}
               >
-                <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                <h3 className="text-xl font-semibold text-red-500 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-700">{item.desc}</p>
-              </div>
+                <p className="text-gray-300">{item.desc}</p>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Process Section */}
-      <section className="bg-gradient-to-r from-indigo-700 to-blue-800 text-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Application Process</h2>
+      <section className="py-16 px-6 md:px-12 lg:px-20">
+        <motion.div
+          className="max-w-6xl mx-auto text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="text-3xl font-bold mb-8 text-white">
+            Our <span className="text-red-500">Application Process</span>
+          </h2>
           <div className="grid gap-10 md:grid-cols-3">
-            <div className="p-6 bg-indigo-900 rounded-xl">
-              <h3 className="text-xl font-semibold mb-3">
-                Step 1: Consultation
-              </h3>
-              <p className="text-gray-200">
-                We assess your eligibility and recommend the best visa options
-                for your business goals.
-              </p>
-            </div>
-            <div className="p-6 bg-indigo-900 rounded-xl">
-              <h3 className="text-xl font-semibold mb-3">
-                Step 2: Documentation
-              </h3>
-              <p className="text-gray-200">
-                Assistance with preparing financial records, investment proofs,
-                and legal documents.
-              </p>
-            </div>
-            <div className="p-6 bg-indigo-900 rounded-xl">
-              <h3 className="text-xl font-semibold mb-3">Step 3: Submission</h3>
-              <p className="text-gray-200">
-                We file your visa application and provide guidance until you
-                receive approval.
-              </p>
-            </div>
+            {[
+              {
+                step: "Step 1: Consultation",
+                desc: "We assess your eligibility and recommend the best visa options for your business goals.",
+              },
+              {
+                step: "Step 2: Documentation",
+                desc: "Assistance with preparing financial records, investment proofs, and legal documents.",
+              },
+              {
+                step: "Step 3: Submission",
+                desc: "We file your visa application and provide guidance until you receive approval.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="p-6 bg-gradient-to-br from-red-900 to-black rounded-xl shadow-lg"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                variants={fadeUp}
+              >
+                <h3 className="text-xl font-semibold mb-3 text-white">
+                  {item.step}
+                </h3>
+                <p className="text-gray-300">{item.desc}</p>
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Popular Countries Section */}
-      <section className="bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10">
-            Popular Destinations for Business & Investor Visas
+      <section className="py-16 px-6 md:px-12 lg:px-20">
+        <motion.div
+          className="max-w-6xl mx-auto text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="text-3xl font-bold mb-10 text-white">
+            Popular Destinations for{" "}
+            <span className="text-red-500">Business & Investor Visas</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-4">
             {[
@@ -145,63 +205,158 @@ const BusinessInvestorVisa = () => {
               "Singapore",
               "New Zealand",
             ].map((country, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-gray-100 p-6 rounded-xl shadow hover:bg-gray-200 transition"
+                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-xl shadow-lg border border-red-700 hover:bg-red-900 hover:text-white transition"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                variants={fadeUp}
               >
-                <h3 className="text-xl font-semibold text-indigo-700">
+                <h3 className="text-lg font-semibold text-red-500">
                   {country}
                 </h3>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
+      </section>
+
+      {/* Country-wise Programs Section */}
+      <section className="py-16 px-6 md:px-12 lg:px-20">
+        <motion.div
+          className="max-w-6xl mx-auto text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="text-3xl font-bold mb-10 text-white">
+            Country-wise <span className="text-red-500">Business Visa Programs</span>
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                country: "USA",
+                program: "EB-5 Immigrant Investor Program",
+                desc: "Invest $800,000+ in U.S. commercial enterprises to obtain Green Card eligibility.",
+              },
+              {
+                country: "Canada",
+                program: "Start-Up Visa & Provincial Nominee Programs",
+                desc: "Launch innovative businesses or invest in provincial business streams with PR pathways.",
+              },
+              {
+                country: "UK",
+                program: "Innovator Founder Visa",
+                desc: "Invest in innovative business ideas with approval from UK endorsing bodies.",
+              },
+              {
+                country: "Australia",
+                program: "Business Innovation & Investment Visa (Subclass 188/888)",
+                desc: "Multiple streams for investors, entrepreneurs, and significant investors.",
+              },
+              {
+                country: "Portugal",
+                program: "Golden Visa",
+                desc: "Invest in real estate, funds, or job creation to secure residency in the EU.",
+              },
+              {
+                country: "UAE",
+                program: "Investor & Golden Visa",
+                desc: "Long-term residency options for entrepreneurs and investors in UAE free zones.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="p-6 bg-gradient-to-br from-gray-900 to-black rounded-xl shadow-lg border border-red-700 text-left"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                variants={fadeUp}
+              >
+                <h3 className="text-xl font-semibold text-red-500 mb-2">
+                  {item.country}
+                </h3>
+                <p className="text-white font-medium mb-1">{item.program}</p>
+                <p className="text-gray-300 text-sm">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="bg-gray-50 py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10">
-            Why Choose Us?
+      <section className="py-16 px-6 md:px-12 lg:px-20">
+        <motion.div
+          className="max-w-6xl mx-auto text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="text-3xl font-bold mb-10 text-white">
+            Why <span className="text-red-500">Choose Us?</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="p-6 bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">Expert Guidance</h3>
-              <p className="text-gray-700">
-                Years of experience in immigration and business consultancy.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">Tailored Solutions</h3>
-              <p className="text-gray-700">
-                Customized visa plans based on your investment and goals.
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-3">High Success Rate</h3>
-              <p className="text-gray-700">
-                Trusted track record with successful visa approvals worldwide.
-              </p>
-            </div>
+            {[
+              {
+                title: "Expert Guidance",
+                desc: "Years of experience in immigration and business consultancy.",
+              },
+              {
+                title: "Tailored Solutions",
+                desc: "Customized visa plans based on your investment and goals.",
+              },
+              {
+                title: "High Success Rate",
+                desc: "Trusted track record with successful visa approvals worldwide.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="p-6 bg-gradient-to-br from-gray-900 to-black rounded-xl shadow border border-red-700"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                variants={fadeUp}
+              >
+                <h3 className="text-xl font-semibold mb-3 text-red-500">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300">{item.desc}</p>
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Call to Action */}
-      <section className="bg-blue-800 py-14 text-center text-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Expand Your Business Globally?
-        </h2>
-        <p className="mb-6 text-lg">
-          Contact our experts today to explore the right Business & Investor
-          Visa options for you.
-        </p>
-        <button
-          onClick={() => navigate("/contact")}
-          className="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition"
+      <section className="py-14 text-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
         >
-          Get Free Consultation
-        </button>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Ready to{" "}
+            <span className="text-red-500">Expand Your Business</span> Globally?
+          </h2>
+          <p className="mb-6 text-lg text-gray-300">
+            Contact our experts today to explore the right Business & Investor
+            Visa options for you.
+          </p>
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold shadow transition"
+          >
+            Get Free Consultation
+          </button>
+        </motion.div>
       </section>
     </div>
   );

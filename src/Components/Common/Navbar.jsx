@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import logo from "../../assets/hero/logo.webp";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,32 +24,33 @@ const Navbar = () => {
         { label: "Family & Spousal Sponsorship", path: "/family" },
       ],
     },
-    {
-      label: "International Services",
-      dropdown: [
-        { label: "International Adoptions", path: "/adoptions" },
-        { label: "Divorce & Family Law", path: "/divorce-family" },
-        { label: "Property & Legal Disputes", path: "/property" },
-      ],
-    },
+   { label: "Services", path: "/services" },
     { label: "Blog", path: "/blog" },
-    // { label: "FAQ", path: "/faq" },
     { label: "Contact", path: "/contact" },
   ];
 
-  // Function to check if any dropdown child matches current route
-  const isDropdownActive = (dropdown) => {
-    return dropdown?.some((item) => location.pathname === item.path);
-  };
+  const isDropdownActive = (dropdown) =>
+    dropdown?.some((item) => location.pathname === item.path);
 
   return (
-    <header className="bg-white shadow-md py-3 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <motion.header
+      initial={{ y: -60, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="bg-black shadow-md sticky top-0 z-50"
+    >
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-3">
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
-          <h1 className="text-base md:text-lg font-bold">
-            Walshken<span className="text-red-600">Immigration</span>
+          <motion.img
+            src={logo}
+            alt="logo"
+            className="w-10 h-10 object-contain"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          />
+          <h1 className="text-base md:text-lg font-bold text-white tracking-wide">
+            Walshken <span className="text-gray-400">Immigration</span>
           </h1>
         </NavLink>
 
@@ -63,16 +65,34 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <span
-                  className={`flex items-center cursor-pointer text-[14px] font-medium ${
+                  className={`flex items-center cursor-pointer text-[15px] font-semibold relative ${
                     isDropdownActive(item.dropdown)
-                      ? "text-red-600 font-semibold"
-                      : "text-black hover:text-red-600"
+                      ? "text-red-500"
+                      : "text-white hover:text-gray-300"
                   }`}
                 >
-                  {item.label} <FaChevronDown className="ml-1 text-xs" />
+                  {item.label}
+                  <FaChevronDown className="ml-1 text-xs" />
+                  {/* Animated underline for active dropdown */}
+                  {isDropdownActive(item.dropdown) && (
+                    <motion.div
+                      layoutId="active-underline"
+                      className="absolute -bottom-2 left-0 w-full h-[3px] bg-gradient-to-r from-red-500 to-white rounded-full"
+                      initial={{ opacity: 0, scaleX: 0 }}
+                      animate={{ opacity: 1, scaleX: 1 }}
+                      transition={{ duration: 0.4 }}
+                    />
+                  )}
                 </span>
-                <div
-                  className={`absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 ${
+                {/* Dropdown Menu */}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{
+                    opacity: openDropdown === item.label ? 1 : 0,
+                    y: openDropdown === item.label ? 0 : 10,
+                  }}
+                  transition={{ duration: 0.25 }}
+                  className={`absolute left-0 mt-2 w-56 bg-gray-900 shadow-lg rounded-lg py-2 border border-gray-700 ${
                     openDropdown === item.label ? "block" : "hidden"
                   }`}
                 >
@@ -81,29 +101,44 @@ const Navbar = () => {
                       key={subIndex}
                       to={subItem.path}
                       className={({ isActive }) =>
-                        `block px-4 py-2 text-sm ${
+                        `block px-4 py-2 text-sm font-medium rounded-md relative ${
                           isActive
-                            ? "text-red-600 font-semibold"
-                            : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                            ? "text-red-500 bg-gray-800"
+                            : "text-gray-300 hover:bg-gray-800 hover:text-white"
                         }`
                       }
                     >
                       {subItem.label}
                     </NavLink>
                   ))}
-                </div>
+                </motion.div>
               </div>
             ) : (
               <NavLink
                 key={index}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-[14px] font-medium ${
-                    isActive ? "text-red-600 font-semibold" : "text-black"
-                  } hover:text-red-600`
+                  `relative text-[15px] font-semibold transition-colors ${
+                    isActive
+                      ? "text-red-500"
+                      : "text-white hover:text-gray-300"
+                  }`
                 }
               >
-                {item.label}
+                {({ isActive }) => (
+                  <>
+                    {item.label}
+                    {isActive && (
+                      <motion.div
+                        layoutId="active-underline"
+                        className="absolute -bottom-2 left-0 w-full h-[3px] bg-gradient-to-r from-red-500 to-white rounded-full"
+                        initial={{ opacity: 0, scaleX: 0 }}
+                        animate={{ opacity: 1, scaleX: 1 }}
+                        transition={{ duration: 0.4 }}
+                      />
+                    )}
+                  </>
+                )}
               </NavLink>
             )
           )}
@@ -111,15 +146,17 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="flex items-center space-x-2">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/contact")}
-            className="hidden lg:flex bg-red-600 hover:bg-gray-700 text-white text-xs font-medium px-3 py-1.5 rounded"
+            className="hidden lg:flex bg-gray-800 hover:bg-gray-700 text-white text-xs font-bold px-4 py-2 rounded-md transition-colors"
           >
             Get A Quote
-          </button>
+          </motion.button>
 
           <button
-            className="lg:hidden text-xl"
+            className="lg:hidden text-2xl text-white"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <FaBars />
@@ -129,12 +166,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white shadow-md mt-2 px-4 pb-3">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="lg:hidden bg-gray-900 shadow-md mt-2 px-4 pb-3 rounded-b-lg border-t border-gray-800"
+        >
           {menuItems.map((item, index) =>
             item.dropdown ? (
               <div key={index}>
                 <span
-                  className="flex justify-between items-center py-1.5 text-sm font-medium text-gray-800 cursor-pointer"
+                  className="flex justify-between items-center py-2 text-sm font-semibold text-white cursor-pointer"
                   onClick={() =>
                     setOpenDropdown(
                       openDropdown === item.label ? null : item.label
@@ -153,10 +194,16 @@ const Navbar = () => {
                     <NavLink
                       key={subIndex}
                       to={subItem.path}
-                      className="block pl-4 py-1.5 text-sm text-gray-600 hover:text-red-600"
+                      className={({ isActive }) =>
+                        `block pl-4 py-1.5 text-sm rounded-md relative ${
+                          isActive
+                            ? "text-red-500 bg-gray-800"
+                            : "text-gray-300 hover:text-white hover:bg-gray-800"
+                        }`
+                      }
                       onClick={() => {
-                        setMenuOpen(false); // Close mobile menu
-                        setOpenDropdown(null); // Collapse dropdown
+                        setMenuOpen(false);
+                        setOpenDropdown(null);
                       }}
                     >
                       {subItem.label}
@@ -168,9 +215,11 @@ const Navbar = () => {
                 key={index}
                 to={item.path}
                 className={({ isActive }) =>
-                  `block py-1.5 border-b text-sm ${
-                    isActive ? "text-red-600 font-semibold" : "text-gray-800"
-                  } hover:text-red-600`
+                  `block py-2 text-sm font-semibold rounded-md relative ${
+                    isActive
+                      ? "text-red-500 bg-gray-800"
+                      : "text-gray-300 hover:text-white hover:bg-gray-800"
+                  }`
                 }
                 onClick={() => setMenuOpen(false)}
               >
@@ -178,9 +227,9 @@ const Navbar = () => {
               </NavLink>
             )
           )}
-        </div>
+        </motion.div>
       )}
-    </header>
+    </motion.header>
   );
 };
 

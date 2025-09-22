@@ -13,29 +13,32 @@ import PermanentResidency from "./Pages/services/PermanentResidency";
 import VisitorVisa from "./Pages/services/VisitorVisa";
 import BusinessInvestorVisa from "./Pages/services/BusinessInvestorVisa";
 import FamilySpousalSponsorship from "./Pages/services/FamilySpousalSponsorship";
-import DivorceFamilyLaw from "./Pages/internationalServices/DivorceFamilyLaw";
-import InternationalAdoptions from "./Pages/internationalServices/InternationalAdoptions";
-import PropertyLegalDisputes from "./Pages/internationalServices/PropertyLegalDisputes";
+
+import ScrollToTop from "./Components/ScrollToTop";
+import Services from "./Pages/Service/Services";
+
 const AppRouter = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Hero />} />
-      <Route path="/about" element={<AboutHeroSection />} />
-      <Route path="/visa" element={<Visa />} />
-      <Route path="/Page" element={<PageHeroSection />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/blog" element={<Blog />} />
-      {/* <Route path="/faq" element={<FAQ />} /> */}
-      <Route path="/study-visa" element={<StudyVisa />} />
-      <Route path="/work-visa" element={<WorkVisa />} />
-      <Route path="/pr" element={<PermanentResidency />} />
-      <Route path="/visitor-visa" element={<VisitorVisa />} />
-      <Route path="/business-visa" element={<BusinessInvestorVisa />} />
-      <Route path="/family" element={<FamilySpousalSponsorship />} />
-      <Route path="/divorce-family" element={<DivorceFamilyLaw />} />
-      <Route path="/adoptions" element={<InternationalAdoptions />} />
-      <Route path="/property" element={<PropertyLegalDisputes />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<AboutHeroSection />} />
+        <Route path="/visa" element={<Visa />} />
+        <Route path="/Page" element={<PageHeroSection />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/faq" element={<FAQ />} /> */}
+        <Route path="/study-visa" element={<StudyVisa />} />
+        <Route path="/work-visa" element={<WorkVisa />} />
+        <Route path="/pr" element={<PermanentResidency />} />
+        <Route path="/visitor-visa" element={<VisitorVisa />} />
+        <Route path="/business-visa" element={<BusinessInvestorVisa />} />
+        <Route path="/family" element={<FamilySpousalSponsorship />} />
+        <Route path="/services" element={<Services />} />
+       
+      </Routes>
+    </>
   );
 };
 
