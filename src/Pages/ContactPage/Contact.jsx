@@ -161,13 +161,16 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-bold text-white text-center mb-6">Visit Our Office</h2>
           <div className="rounded-xl overflow-hidden border border-gray-700 shadow-xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18..."
-              title="Office Location"
-              className="w-full h-[250px] sm:h-[350px] md:h-[450px]"
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
+           <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.173762579436!2d-113.99314792417627!3d51.05512004364403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717ad5f9ce4e89%3A0x931cb72901e313c1!2s3030%203%20Ave%20NE%20%23120%2C%20Calgary%2C%20AB%20T2A%202L5%2C%20Canada!5e1!3m2!1sen!2sin!4v1758603141221!5m2!1sen!2sin"
+  width="1268"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
           </div>
         </div>
       </section>
