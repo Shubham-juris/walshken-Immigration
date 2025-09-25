@@ -21,7 +21,7 @@ const WorkVisa = () => {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <motion.h1
-            className="text-4xl md:text-6xl font-extrabold mb-6"
+            className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent"
             variants={fadeUp}
             initial="hidden"
             animate="visible"

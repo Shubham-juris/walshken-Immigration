@@ -46,12 +46,13 @@ const AboutCompany = () => {
           <p className="text-red-500 font-semibold uppercase tracking-wide">
             About Company
           </p>
-          <h2 className="text-4xl lg:text-5xl font-extrabold leading-snug">
-            Welcome To Experience <br />
-            <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
-              Visa Consulting Firm
-            </span>
-          </h2>
+         <h2 className="text-4xl lg:text-5xl font-extrabold leading-snug bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+  Welcome To Experience <br />
+  <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+    Visa Consulting Firm
+  </span>
+</h2>
+
           <p className="text-gray-300 text-lg leading-relaxed">
             We are experts in immigration and visa consulting, offering
             personalized support for students, professionals, and families

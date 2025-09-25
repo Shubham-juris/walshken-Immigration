@@ -56,7 +56,7 @@ const ContactForm = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-14 text-white drop-shadow-lg">
-            <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
               Connect with Us
             </span>
           </h2>

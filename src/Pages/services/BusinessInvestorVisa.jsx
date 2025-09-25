@@ -25,7 +25,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-red-500">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Business & Investor Visa
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
@@ -44,7 +44,7 @@ const BusinessInvestorVisa = () => {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <h2 className="text-3xl font-bold mb-6 text-white">
+            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
               Why Choose a{" "}
               <span className="text-red-500">Business Investor Visa?</span>
             </h2>
@@ -85,7 +85,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Key Benefits of{" "}
             <span className="text-red-500">Business & Investor Visas</span>
           </h2>
@@ -144,7 +144,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-8 text-white">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Our <span className="text-red-500">Application Process</span>
           </h2>
           <div className="grid gap-10 md:grid-cols-3">
@@ -190,7 +190,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Popular Destinations for{" "}
             <span className="text-red-500">Business & Investor Visas</span>
           </h2>
@@ -232,7 +232,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Country-wise <span className="text-red-500">Business Visa Programs</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -297,7 +297,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Why <span className="text-red-500">Choose Us?</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -342,7 +342,7 @@ const BusinessInvestorVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Ready to{" "}
             <span className="text-red-500">Expand Your Business</span> Globally?
           </h2>

@@ -57,10 +57,10 @@ const AboutServices = () => {
             viewport={{ once: true }}
             className="text-4xl font-extrabold mb-12"
           >
-            <span className="text-white">Explore Our</span>{" "}
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Explore Our</span>{" "}
             <span className="text-red-500">Visa, Citizenship</span>{" "}
             <br />
-            <span className="text-white"> & Immigration </span>
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent"> & Immigration </span>
             <span className="text-red-500">Services</span>
             <motion.div
               initial={{ scaleX: 0 }}
@@ -116,10 +116,10 @@ const AboutServices = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Most Trusted</span>{" "}
+              <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Most Trusted</span>{" "}
               <span className="text-red-500">Walshken Immigration</span>{" "}
               <br />
-              <span className="text-white">Service</span>{" "}
+              <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Service</span>{" "}
               <span className="text-red-500">Provider</span>
               <motion.div
                 initial={{ scaleX: 0 }}
@@ -158,7 +158,7 @@ const AboutServices = () => {
                   {stat.icon}
                 </div>
                 <h3 className="text-3xl font-bold">
-                  <span className="text-white">{stat.value}</span>
+                  <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">{stat.value}</span>
                 </h3>
                 <p className="mt-1 text-sm text-gray-300">{stat.label}</p>
               </motion.div>

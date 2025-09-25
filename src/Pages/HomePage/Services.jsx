@@ -53,7 +53,7 @@ const CoachingMarquee = () => {
     <section className="relative py-20 px-6 bg-gradient-to-r from-black via-gray-900 to-red-900 overflow-hidden">
       <div className="max-w-7xl mx-auto relative mb-2">
         <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-14 text-white drop-shadow-lg">
-          <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Our Coaching Services
           </span>
         </h2>
@@ -110,7 +110,7 @@ const CoachingMarquee = () => {
                   className="w-24 h-24 rounded-full object-cover border-4 border-red-500 shadow-lg"
                 />
                 <div>
-                  <h3 className="text-2xl font-extrabold text-white mb-2 leading-snug">
+                  <h3 className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
                     {service.title}
                   </h3>
                   <p className="text-gray-300 text-base font-medium">

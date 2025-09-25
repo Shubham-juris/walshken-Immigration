@@ -39,7 +39,7 @@ const AboutConsultants = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-extrabold leading-tight"
           >
-            <span className="text-white">Why People </span>
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Why People </span>
             <span className="text-red-500">Trust Us</span>
           </motion.h2>
           <motion.div

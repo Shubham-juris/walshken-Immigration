@@ -19,7 +19,6 @@ const AboutHeroSection = () => {
           </h1>
         </div>
       </div>
-
       <AboutCompany />
       <AboutSevices />
       <AboutConsultants />

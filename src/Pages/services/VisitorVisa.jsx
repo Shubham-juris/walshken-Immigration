@@ -21,7 +21,7 @@ const VisitorVisa = () => {
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <motion.h1
-            className="text-4xl md:text-6xl font-extrabold mb-6 text-white"
+            className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -216,7 +216,7 @@ const VisitorVisa = () => {
       {/* Call to Action */}
       <section className="py-14 text-center bg-gradient-to-r from-red-900 via-black to-gray-900">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-4 text-white"
+          className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"

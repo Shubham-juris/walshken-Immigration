@@ -80,7 +80,7 @@ const Header = () => {
               transition={{ duration: 2, delay: 0.3, ease: "easeInOut" }}
               className="text-4xl md:text-6xl font-extrabold leading-tight"
             >
-              <span className="text-white">Walshken</span>{" "}
+              <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Walshken</span>{" "}
               <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
                 Immigration
               </span>

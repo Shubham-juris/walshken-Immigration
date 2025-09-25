@@ -107,7 +107,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-red-500">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Family & Spousal Sponsorship
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
@@ -126,7 +126,7 @@ const FamilySpousalSponsorship = () => {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <h2 className="text-3xl font-bold mb-6 text-white">
+            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
               Bringing <span className="text-red-500">Families Together</span>
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
@@ -162,7 +162,7 @@ const FamilySpousalSponsorship = () => {
       <section className="py-16 px-6 md:px-12 lg:px-20 bg-black/40">
         <div className="max-w-6xl mx-auto">
           <motion.h2 
-            className="text-3xl font-bold text-red-500 mb-10 text-center"
+            className="text-3xl font-bold bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent mb-10 text-center"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -225,7 +225,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Benefits of <span className="text-red-500">Family Sponsorship</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -283,7 +283,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Who Can You <span className="text-red-500">Sponsor?</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-4">
@@ -320,7 +320,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-8 text-white">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Sponsorship <span className="text-red-500">Process</span>
           </h2>
           <div className="grid gap-10 md:grid-cols-3">
@@ -366,7 +366,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Why <span className="text-red-500">Choose Us?</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -411,7 +411,7 @@ const FamilySpousalSponsorship = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Ready to <span className="text-red-500">Reunite</span> with Your
             Family?
           </h2>

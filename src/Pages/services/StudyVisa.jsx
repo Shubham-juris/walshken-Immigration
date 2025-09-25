@@ -34,7 +34,7 @@ const StudyVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-red-500">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Study Visa Assistance
           </h1>
           <p className="text-lg md:text-xl text-gray-300">
@@ -54,7 +54,7 @@ const StudyVisa = () => {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <h2 className="text-3xl font-bold mb-6 text-white">
+            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
               Why Choose a{" "}
               <span className="text-red-500">Study Visa?</span>
             </h2>
@@ -95,7 +95,7 @@ const StudyVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Benefits of a <span className="text-red-500">Study Visa</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -153,7 +153,7 @@ const StudyVisa = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl font-bold mb-10 text-white">
+          <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Global <span className="text-red-500">Study Destinations</span>
           </h2>
           <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7">
