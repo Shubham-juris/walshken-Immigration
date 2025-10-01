@@ -9,6 +9,8 @@ const CanadaImmigrationForm = () => {
     dateOfBirth: '',
     countryOfCitizenship: '',
     contactInfo: '',
+    passportNumber: '',
+    maritalStatus: '',
     
     // FSWP Eligibility Factors
     age: '',
@@ -53,12 +55,77 @@ const CanadaImmigrationForm = () => {
     ieltsReading: '',
     ieltsWriting: '',
     ieltsSpeaking: '',
+    celpipListening: '',
+    celpipReading: '',
+    celpipWriting: '',
+    celpipSpeaking: '',
+    tefListening: '',
+    tefReading: '',
+    tefWriting: '',
+    tefSpeaking: '',
+    
+    // Education Details
+    highestEducation: '',
+    fieldOfStudy: '',
+    institutionName: '',
+    countryOfEducation: '',
+    yearOfGraduation: '',
+    educationCredentialAssessment: '',
+    
+    // Work Experience
+    primaryOccupation: '',
+    yearsOfExperience: '',
+    nocCode: '',
+    currentEmployer: '',
+    jobTitle: '',
+    
+    // Family Information
+    spouseName: '',
+    spouseDateOfBirth: '',
+    spouseCountryOfCitizenship: '',
+    childrenCount: '',
+    childrenAges: '',
+    
+    // Medical & Security
+    medicalCondition: '',
+    criminalRecord: '',
+    
+    // Previous Canada Experience
+    previousVisit: '',
+    previousStudy: '',
+    previousWork: '',
+    relativesInCanada: '',
     
     // Province Selection
     selectedProvince: '',
     
     // Consultation
     consultationType: '',
+    
+    // Additional Documents
+    hasLanguageTest: '',
+    hasEducationalCredentials: '',
+    hasWorkReference: '',
+    hasFundsProof: '',
+    
+    // Express Entry Profile
+    expressEntryProfile: '',
+    jobBankRegistration: '',
+    
+    // PNP Specific
+    pnpStream: '',
+    pnpStatus: '',
+    
+    // Business Immigration
+    businessExperience: '',
+    netWorth: '',
+    investmentAmount: '',
+    
+    // Study Permit
+    intendedProgram: '',
+    institutionCanada: '',
+    tuitionPaid: '',
+    gicAmount: '',
   });
 
   // Handle input changes
@@ -271,6 +338,429 @@ const CanadaImmigrationForm = () => {
                   placeholder="Email or phone number"
                 />
               </div>
+              <div>
+                <label className="block mb-2">Passport Number</label>
+                <input 
+                  type="text" 
+                  name="passportNumber"
+                  value={formData.passportNumber}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Passport number"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Marital Status</label>
+                <select 
+                  name="maritalStatus"
+                  value={formData.maritalStatus}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select marital status</option>
+                  <option value="Single">Single</option>
+                  <option value="Married">Married</option>
+                  <option value="Common-Law">Common-Law</option>
+                  <option value="Divorced">Divorced</option>
+                  <option value="Widowed">Widowed</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Family Information Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Family Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Spouse/Partner Name</label>
+                <input 
+                  type="text" 
+                  name="spouseName"
+                  value={formData.spouseName}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Spouse/partner full name"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Spouse Date of Birth</label>
+                <input 
+                  type="date" 
+                  name="spouseDateOfBirth"
+                  value={formData.spouseDateOfBirth}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Spouse Country of Citizenship</label>
+                <input 
+                  type="text" 
+                  name="spouseCountryOfCitizenship"
+                  value={formData.spouseCountryOfCitizenship}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Spouse country of citizenship"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Number of Children</label>
+                <input 
+                  type="number" 
+                  name="childrenCount"
+                  value={formData.childrenCount}
+                  onChange={handleChange}
+                  min="0"
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Number of children"
+                />
+              </div>
+              <div className="md:col-span-2">
+                <label className="block mb-2">Children Ages (if any)</label>
+                <input 
+                  type="text" 
+                  name="childrenAges"
+                  value={formData.childrenAges}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="e.g., 5, 8, 12"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Education Details Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Education Details</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Highest Education Level</label>
+                <select 
+                  name="highestEducation"
+                  value={formData.highestEducation}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select education level</option>
+                  <option value="High School">High School</option>
+                  <option value="Diploma/Certificate">Diploma/Certificate</option>
+                  <option value="Bachelor's Degree">Bachelor's Degree</option>
+                  <option value="Master's Degree">Master's Degree</option>
+                  <option value="PhD/Doctorate">PhD/Doctorate</option>
+                  <option value="Post-Graduate Diploma">Post-Graduate Diploma</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Field of Study</label>
+                <input 
+                  type="text" 
+                  name="fieldOfStudy"
+                  value={formData.fieldOfStudy}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Your field of study"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Institution Name</label>
+                <input 
+                  type="text" 
+                  name="institutionName"
+                  value={formData.institutionName}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="University/College name"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Country of Education</label>
+                <input 
+                  type="text" 
+                  name="countryOfEducation"
+                  value={formData.countryOfEducation}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Country where you studied"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Year of Graduation</label>
+                <input 
+                  type="number" 
+                  name="yearOfGraduation"
+                  value={formData.yearOfGraduation}
+                  onChange={handleChange}
+                  min="1950"
+                  max="2025"
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Graduation year"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Education Credential Assessment (ECA)</label>
+                <select 
+                  name="educationCredentialAssessment"
+                  value={formData.educationCredentialAssessment}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select ECA status</option>
+                  <option value="Completed">Completed</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Not Started">Not Started</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Work Experience Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Work Experience</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Primary Occupation</label>
+                <input 
+                  type="text" 
+                  name="primaryOccupation"
+                  value={formData.primaryOccupation}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Your main occupation"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Years of Experience</label>
+                <input 
+                  type="number" 
+                  name="yearsOfExperience"
+                  value={formData.yearsOfExperience}
+                  onChange={handleChange}
+                  min="0"
+                  max="50"
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Total years of experience"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">NOC Code</label>
+                <input 
+                  type="text" 
+                  name="nocCode"
+                  value={formData.nocCode}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="e.g., 2173, 1241"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Current Employer</label>
+                <input 
+                  type="text" 
+                  name="currentEmployer"
+                  value={formData.currentEmployer}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Current company name"
+                />
+              </div>
+              <div className="md:col-span-2">
+                <label className="block mb-2">Job Title</label>
+                <input 
+                  type="text" 
+                  name="jobTitle"
+                  value={formData.jobTitle}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Your current job title"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Language Test Results - Expanded */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Language Test Results</h2>
+            
+            {/* IELTS */}
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-3 text-yellow-400">IELTS (International English Language Testing System)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block mb-2">Listening Score</label>
+                  <input 
+                    type="number" 
+                    name="ieltsListening"
+                    value={formData.ieltsListening}
+                    onChange={handleChange}
+                    step="0.5" 
+                    min="0" 
+                    max="9"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-9"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Reading Score</label>
+                  <input 
+                    type="number" 
+                    name="ieltsReading"
+                    value={formData.ieltsReading}
+                    onChange={handleChange}
+                    step="0.5" 
+                    min="0" 
+                    max="9"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-9"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Writing Score</label>
+                  <input 
+                    type="number" 
+                    name="ieltsWriting"
+                    value={formData.ieltsWriting}
+                    onChange={handleChange}
+                    step="0.5" 
+                    min="0" 
+                    max="9"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-9"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Speaking Score</label>
+                  <input 
+                    type="number" 
+                    name="ieltsSpeaking"
+                    value={formData.ieltsSpeaking}
+                    onChange={handleChange}
+                    step="0.5" 
+                    min="0" 
+                    max="9"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-9"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* CELPIP */}
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-3 text-green-400">CELPIP (Canadian English Language Proficiency Index Program)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block mb-2">Listening Score</label>
+                  <input 
+                    type="number" 
+                    name="celpipListening"
+                    value={formData.celpipListening}
+                    onChange={handleChange}
+                    min="0" 
+                    max="12"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-12"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Reading Score</label>
+                  <input 
+                    type="number" 
+                    name="celpipReading"
+                    value={formData.celpipReading}
+                    onChange={handleChange}
+                    min="0" 
+                    max="12"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-12"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Writing Score</label>
+                  <input 
+                    type="number" 
+                    name="celpipWriting"
+                    value={formData.celpipWriting}
+                    onChange={handleChange}
+                    min="0" 
+                    max="12"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-12"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Speaking Score</label>
+                  <input 
+                    type="number" 
+                    name="celpipSpeaking"
+                    value={formData.celpipSpeaking}
+                    onChange={handleChange}
+                    min="0" 
+                    max="12"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-12"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* TEF */}
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-400">TEF (Test d'évaluation de français)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block mb-2">Compréhension Orale</label>
+                  <input 
+                    type="number" 
+                    name="tefListening"
+                    value={formData.tefListening}
+                    onChange={handleChange}
+                    min="0" 
+                    max="450"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-450"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Compréhension Écrite</label>
+                  <input 
+                    type="number" 
+                    name="tefReading"
+                    value={formData.tefReading}
+                    onChange={handleChange}
+                    min="0" 
+                    max="450"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-450"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Expression Écrite</label>
+                  <input 
+                    type="number" 
+                    name="tefWriting"
+                    value={formData.tefWriting}
+                    onChange={handleChange}
+                    min="0" 
+                    max="450"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-450"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Expression Orale</label>
+                  <input 
+                    type="number" 
+                    name="tefSpeaking"
+                    value={formData.tefSpeaking}
+                    onChange={handleChange}
+                    min="0" 
+                    max="450"
+                    className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                    placeholder="0-450"
+                  />
+                </div>
+              </div>
             </div>
           </section>
 
@@ -402,13 +892,13 @@ const CanadaImmigrationForm = () => {
             </div>
           </section>
 
-          {/* CRS Score Card Section */}
+          {/* CRS Score Card Section - Updated */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">
               CRS (Comprehensive Ranking System) - Score Card
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Core Factors */}
               <div>
                 <h3 className="text-xl font-semibold mb-3">Core / Human Capital Factors</h3>
@@ -476,6 +966,121 @@ const CanadaImmigrationForm = () => {
                       max="70"
                       className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
                       placeholder="0-70"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Spouse Factors */}
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Spouse Factors</h3>
+                <div className="space-y-3">
+                  <div>
+                    <label className="block mb-1">Spouse Education (Max: 10)</label>
+                    <input 
+                      type="number" 
+                      name="spouseEducation"
+                      value={formData.spouseEducation}
+                      onChange={handleChange}
+                      min="0" 
+                      max="10"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-10"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Spouse Language (Max: 20)</label>
+                    <input 
+                      type="number" 
+                      name="spouseLanguage"
+                      value={formData.spouseLanguage}
+                      onChange={handleChange}
+                      min="0" 
+                      max="20"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-20"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Spouse Canadian Work Experience (Max: 10)</label>
+                    <input 
+                      type="number" 
+                      name="spouseCanadianWorkExperience"
+                      value={formData.spouseCanadianWorkExperience}
+                      onChange={handleChange}
+                      min="0" 
+                      max="10"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-10"
+                    />
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-semibold mb-3 mt-6">Skill Transferability</h3>
+                <div className="space-y-3">
+                  <div>
+                    <label className="block mb-1">Education + Language (Max: 50)</label>
+                    <input 
+                      type="number" 
+                      name="educationLanguage"
+                      value={formData.educationLanguage}
+                      onChange={handleChange}
+                      min="0" 
+                      max="50"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-50"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Education + Canadian Exp (Max: 50)</label>
+                    <input 
+                      type="number" 
+                      name="educationCanadianExp"
+                      value={formData.educationCanadianExp}
+                      onChange={handleChange}
+                      min="0" 
+                      max="50"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-50"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Foreign Exp + Language (Max: 50)</label>
+                    <input 
+                      type="number" 
+                      name="foreignExpLanguage"
+                      value={formData.foreignExpLanguage}
+                      onChange={handleChange}
+                      min="0" 
+                      max="50"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-50"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Foreign Exp + Canadian (Max: 50)</label>
+                    <input 
+                      type="number" 
+                      name="foreignExpCanadian"
+                      value={formData.foreignExpCanadian}
+                      onChange={handleChange}
+                      min="0" 
+                      max="50"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-50"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1">Certificate of Qualification (Max: 50)</label>
+                    <input 
+                      type="number" 
+                      name="certificateOfQualification"
+                      value={formData.certificateOfQualification}
+                      onChange={handleChange}
+                      min="0" 
+                      max="50"
+                      className="w-full p-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                      placeholder="0-50"
                     />
                   </div>
                 </div>
@@ -568,64 +1173,286 @@ const CanadaImmigrationForm = () => {
             </div>
           </section>
 
-          {/* Language Test Results */}
+          {/* Previous Canada Experience */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Language Test Results</h2>
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Previous Canada Experience</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block mb-2">IELTS Listening Score</label>
+                <label className="block mb-2">Previous Visit to Canada</label>
+                <select 
+                  name="previousVisit"
+                  value={formData.previousVisit}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Previous Study in Canada</label>
+                <select 
+                  name="previousStudy"
+                  value={formData.previousStudy}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Previous Work in Canada</label>
+                <select 
+                  name="previousWork"
+                  value={formData.previousWork}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Relatives in Canada</label>
+                <select 
+                  name="relativesInCanada"
+                  value={formData.relativesInCanada}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Medical & Security */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Medical & Security Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Any Medical Conditions?</label>
+                <select 
+                  name="medicalCondition"
+                  value={formData.medicalCondition}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Criminal Record?</label>
+                <select 
+                  name="criminalRecord"
+                  value={formData.criminalRecord}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Additional Documents */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Additional Documents Status</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Language Test Results</label>
+                <select 
+                  name="hasLanguageTest"
+                  value={formData.hasLanguageTest}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select status</option>
+                  <option value="Available">Available</option>
+                  <option value="Scheduled">Scheduled</option>
+                  <option value="Not Taken">Not Taken</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Educational Credentials</label>
+                <select 
+                  name="hasEducationalCredentials"
+                  value={formData.hasEducationalCredentials}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select status</option>
+                  <option value="Available">Available</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Not Available">Not Available</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Work Reference Letters</label>
+                <select 
+                  name="hasWorkReference"
+                  value={formData.hasWorkReference}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select status</option>
+                  <option value="Available">Available</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Not Available">Not Available</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Proof of Funds</label>
+                <select 
+                  name="hasFundsProof"
+                  value={formData.hasFundsProof}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select status</option>
+                  <option value="Available">Available</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Not Available">Not Available</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Express Entry Profile */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Express Entry Profile</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Express Entry Profile Created?</label>
+                <select 
+                  name="expressEntryProfile"
+                  value={formData.expressEntryProfile}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="In Progress">In Progress</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">Job Bank Registration</label>
+                <select 
+                  name="jobBankRegistration"
+                  value={formData.jobBankRegistration}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Completed">Completed</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Not Required">Not Required</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          {/* Business Immigration Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Business Immigration (If Applicable)</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label className="block mb-2">Business Experience (Years)</label>
                 <input 
                   type="number" 
-                  name="ieltsListening"
-                  value={formData.ieltsListening}
+                  name="businessExperience"
+                  value={formData.businessExperience}
                   onChange={handleChange}
-                  step="0.5" 
-                  min="0" 
-                  max="9"
+                  min="0"
                   className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
-                  placeholder="0-9"
+                  placeholder="Years of business experience"
                 />
               </div>
               <div>
-                <label className="block mb-2">IELTS Reading Score</label>
+                <label className="block mb-2">Net Worth (CAD)</label>
                 <input 
                   type="number" 
-                  name="ieltsReading"
-                  value={formData.ieltsReading}
+                  name="netWorth"
+                  value={formData.netWorth}
                   onChange={handleChange}
-                  step="0.5" 
-                  min="0" 
-                  max="9"
                   className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
-                  placeholder="0-9"
+                  placeholder="Personal net worth"
                 />
               </div>
               <div>
-                <label className="block mb-2">IELTS Writing Score</label>
+                <label className="block mb-2">Investment Amount (CAD)</label>
                 <input 
                   type="number" 
-                  name="ieltsWriting"
-                  value={formData.ieltsWriting}
+                  name="investmentAmount"
+                  value={formData.investmentAmount}
                   onChange={handleChange}
-                  step="0.5" 
-                  min="0" 
-                  max="9"
                   className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
-                  placeholder="0-9"
+                  placeholder="Intended investment amount"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Study Permit Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Study Permit Information (If Applicable)</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">Intended Program of Study</label>
+                <input 
+                  type="text" 
+                  name="intendedProgram"
+                  value={formData.intendedProgram}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="Program name"
                 />
               </div>
               <div>
-                <label className="block mb-2">IELTS Speaking Score</label>
+                <label className="block mb-2">Institution in Canada</label>
+                <input 
+                  type="text" 
+                  name="institutionCanada"
+                  value={formData.institutionCanada}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                  placeholder="University/College name"
+                />
+              </div>
+              <div>
+                <label className="block mb-2">Tuition Paid</label>
+                <select 
+                  name="tuitionPaid"
+                  value={formData.tuitionPaid}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Partial">Partial</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">GIC Amount (CAD)</label>
                 <input 
                   type="number" 
-                  name="ieltsSpeaking"
-                  value={formData.ieltsSpeaking}
+                  name="gicAmount"
+                  value={formData.gicAmount}
                   onChange={handleChange}
-                  step="0.5" 
-                  min="0" 
-                  max="9"
                   className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
-                  placeholder="0-9"
+                  placeholder="Guaranteed Investment Certificate"
                 />
               </div>
             </div>
@@ -659,6 +1486,46 @@ const CanadaImmigrationForm = () => {
             </div>
           </section>
 
+          {/* PNP Specific Information */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Provincial Nominee Program (PNP) Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2">PNP Stream of Interest</label>
+                <select 
+                  name="pnpStream"
+                  value={formData.pnpStream}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select PNP stream</option>
+                  <option value="Express Entry Linked">Express Entry Linked</option>
+                  <option value="Skilled Worker">Skilled Worker</option>
+                  <option value="Business/Entrepreneur">Business/Entrepreneur</option>
+                  <option value="International Graduate">International Graduate</option>
+                  <option value="Semi-Skilled">Semi-Skilled</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-2">PNP Application Status</label>
+                <select 
+                  name="pnpStatus"
+                  value={formData.pnpStatus}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:outline-none"
+                >
+                  <option value="">Select status</option>
+                  <option value="Not Applied">Not Applied</option>
+                  <option value="Expression of Interest">Expression of Interest</option>
+                  <option value="Invitation Received">Invitation Received</option>
+                  <option value="Application Submitted">Application Submitted</option>
+                  <option value="Nomination Received">Nomination Received</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
           {/* Consultation Type */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 border-b border-red-500 pb-2">Consultation Type</h2>
@@ -679,6 +1546,10 @@ const CanadaImmigrationForm = () => {
                 <option value="Visitor Visa">Visitor Visa / TRV</option>
                 <option value="PR Card Renewal">PR Card Renewal</option>
                 <option value="Citizenship Application">Citizenship Application</option>
+                <option value="Business Immigration">Business Immigration</option>
+                <option value="Refugee Claim">Refugee Claim</option>
+                <option value="Appeal Cases">Appeal Cases</option>
+                <option value="Comprehensive Assessment">Comprehensive Assessment</option>
               </select>
             </div>
           </section>
