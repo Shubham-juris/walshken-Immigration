@@ -2,7 +2,7 @@
 
 /* Hide default cursor */
 body {
-  cursor: none; /* Hide default cursor */
+  cursor: default; /* Hide default cursor */
   /* Global background gradient */
   background: linear-gradient(135deg, #000000, #1f1f1f, #b91c1c);
   min-height: 100vh;

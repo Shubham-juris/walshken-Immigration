@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./index.css";
 import AppRouter from "./AppRouter";
 import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
