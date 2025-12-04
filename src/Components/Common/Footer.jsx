@@ -95,7 +95,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             Address: <br />
             <span className="text-white font-medium">
-              3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
+              Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7
             </span>
           </p>
         </div>
