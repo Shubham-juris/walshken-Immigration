@@ -79,7 +79,7 @@ const ContactForm = () => {
               <Phone className="w-6 h-6 text-red-500" /> +1 365-363-6067
             </li>
             <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
-              <MapPin className="w-6 h-6 text-red-500" /> 3030 3 Ave NE #120, Calgary, AB, Canada, Alberta
+              <MapPin className="w-6 h-6 text-red-500" /> Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7
             </li>
           </ul>
         </motion.div>
