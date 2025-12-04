@@ -102,7 +102,7 @@ const AboutConsultants = () => {
             {
               icon: <FaMapMarkerAlt className="text-red-500 text-lg" />,
               label: "Location",
-              value: "3030 3 Ave NE #120, Calgary, AB, Canada, Alberta",
+              value: "Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7",
             },
           ].map((item, i) => (
             <motion.div
