@@ -18,7 +18,6 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
-        
         {/* Logo & About */}
         <div className="text-center md:text-left">
           <div className="flex flex-col items-center mb-5">
@@ -36,8 +35,8 @@ const Footer = () => {
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6 text-center md:text-left">
             We specialize in IELTS, PTE, and TOEFL coaching, along with
-            Citizenship Test preparation — guiding you step by step
-            toward success abroad.
+            Citizenship Test preparation — guiding you step by step toward
+            success abroad.
           </p>
 
           {/* Socials */}
@@ -48,7 +47,7 @@ const Footer = () => {
                 icon: <FaFacebookF />,
               },
               {
-                href: "https://www.instagram.com/walshkenimmigration/?hl=en",
+                href: "https://instagram.com/walshkenimmigration",
                 icon: <FaInstagram />,
               },
             ].map((social, i) => (
@@ -87,10 +86,12 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-5">Contact</h2>
           <p className="text-gray-400 text-sm mb-2">
-            Phone: <br /> <span className="text-white font-medium">+1 365-363-6067</span>
+            Phone: <br />{" "}
+            <span className="text-white font-medium">+1 365-363-6067</span>
           </p>
           <p className="text-gray-400 text-sm mb-2">
-            Email: <br /> <span className="text-white font-medium">walshkenco@gmail.com</span>
+            Email: <br />{" "}
+            <span className="text-white font-medium">walshkenco@gmail.com</span>
           </p>
           <p className="text-gray-400 text-sm">
             Address: <br />
