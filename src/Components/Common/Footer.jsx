@@ -10,9 +10,9 @@ const Footer = () => {
     { name: "Family & Spousal Sponsorship", path: "/family" },
     { name: "Business & Investor Visa", path: "/business-visa" },
     { name: "Visitor Visa", path: "/visitor-visa" },
-    { name: "Divorce & Family Law", path: "/divorce-family" },
-    { name: "International Adoptions", path: "/adoptions" },
-    { name: "Property Legal Disputes", path: "/property" },
+    // { name: "Divorce & Family Law", path: "/divorce-family" },
+    // { name: "International Adoptions", path: "/adoptions" },
+    // { name: "Property Legal Disputes", path: "/property" },
   ];
 
   return (
