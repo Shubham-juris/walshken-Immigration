@@ -90,7 +90,7 @@ const Contact = () => {
               {
                 icon: <FaMapMarkerAlt />,
                 title: "Location",
-                text: "Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7",
+                text: "12885 80 Ave Unit 201, Surrey, BC V3W 0K8",
               },
             ].map((c, i) => (
               <div
