@@ -212,15 +212,15 @@ const Contact = () => {
             Visit Our Office
           </h2>
           <div className="rounded-xl overflow-hidden border border-gray-700 shadow-xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.35322472652!2d-113.98696542387968!3d51.06702497171927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717af9b36d3c75%3A0x52b0c27eb15307c9!2s3016%205%20Ave%20NE%20%23307%2C%20Calgary%2C%20AB%20T2A%205L7%2C%20Canada!5e0!3m2!1sen!2sin!4v1733300000000!5m2!1sen!2sin"
-              width="1268"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+           <iframe
+  src="https://www.google.com/maps?q=12885+80+Ave+Unit+201,+Surrey,+BC+V3W+0K8&output=embed"
+  width="1268"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
           </div>
         </div>
       </section>
