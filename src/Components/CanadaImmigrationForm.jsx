@@ -281,12 +281,43 @@ const CanadaImmigrationForm = () => {
     <div className="min-h-screen bg-gradient-to-br from-black to-red-900 text-white p-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <header className="text-center py-8">
+        {/* <header className="text-center py-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent mb-2">
             Canada Immigration Eligibility Report
           </h1>
           <p className="text-gray-300">This report is for evaluation purposes only and does not guarantee visa approval.</p>
-        </header>
+        </header> */}
+{/* Header */}
+          <header className="text-center py-8">
+          
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent mb-2">
+              Canada Immigration Eligibility Report
+            </h1>
+          
+            <p className="text-gray-300 mb-5">
+              This report is for evaluation purposes only and does not guarantee visa approval.
+            </p>
+          
+            {/* IMPORTANT NOTICE */}
+            <div className="max-w-2xl mx-auto bg-red-500/10 border border-red-500 rounded-xl px-6 py-4">
+          
+              <p className="text-red-400 text-sm md:text-base leading-relaxed font-medium">
+          
+                Each and every text msg and call is paid.
+          
+                <br />
+                <br />
+          
+                Someone will get back to you in
+                <span className="text-white font-bold">
+                  {" "}42 to 72hr
+                </span>
+          
+              </p>
+          
+            </div>
+          
+          </header>
 
         <form onSubmit={handleSubmit} className="bg-gradient-to-br from-gray-900 to-red-800 rounded-xl shadow-2xl p-6 mb-8">
           
