@@ -200,51 +200,203 @@ const CanadaImmigrationForm = () => {
     const fswpTotal = calculateFSWPTotal();
     const crsTotal = calculateCRSTotal();
     
-    Swal.fire({
-      title: `<span style="color: #1a202c; font-weight: bold;">Thank You, ${userName}!</span>`,
-      html: `
-        <div style="text-align: left; color: #2d3748;">
-          <p style="margin-bottom: 15px; font-size: 16px; color: #4a5568;">Your Canada Immigration Eligibility Assessment has been successfully submitted!</p>
-          <div style="background: #fed7d7; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #e53e3e;">
-            <h4 style="font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #1a202c;">Your Assessment Results:</h4>
-            <p style="margin-bottom: 8px; color: #2d3748;">📊 <strong>FSWP Score:</strong> ${fswpTotal}/100 
-              <span style="color: ${fswpTotal >= 67 ? '#38a169' : '#e53e3e'}; font-weight: bold;">
-                ${fswpTotal >= 67 ? '✅ Eligible' : '❌ Needs Improvement'}
-              </span>
-            </p>
-            <p style="margin-bottom: 8px; color: #2d3748;">🎯 <strong>CRS Score:</strong> ${crsTotal}/1200 
-              <span style="color: ${crsTotal >= 470 ? '#38a169' : '#d69e2e'}; font-weight: bold;">
-                ${crsTotal >= 470 ? '✅ Competitive' : '⚠️ Could be Improved'}
-              </span>
-            </p>
-          </div>
-          <p style="font-size: 14px; color: #718096; margin-bottom: 10px;">
-            Our immigration experts will review your profile and contact you within 24-48 hours with personalized recommendations.
-          </p>
-          <p style="font-size: 12px; color: #a0aec0; border-top: 1px solid #e2e8f0; padding-top: 10px;">
-            This assessment is for evaluation purposes only and does not guarantee visa approval.
-          </p>
-        </div>
-      `,
-      icon: 'success',
-      iconColor: '#38a169',
-      background: '#ffffff',
-      color: '#2d3748',
-      confirmButtonColor: '#e53e3e',
-      confirmButtonText: 'Great! What\'s Next?',
-      customClass: {
-        popup: 'rounded-xl border-2 border-red-500 shadow-2xl',
-        title: 'mb-4',
-        confirmButton: 'px-6 py-2 rounded-lg font-semibold text-white hover:bg-red-700 transition duration-300'
-      },
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown animate__faster'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp animate__faster'
-      }
-    });
-  };
+  //   Swal.fire({
+  //     title: `<span style="color: #1a202c; font-weight: bold;">Thank You, ${userName}!</span>`,
+  //     html: `
+  //       <div style="text-align: left; color: #2d3748;">
+  //         <p style="margin-bottom: 15px; font-size: 16px; color: #4a5568;">Your Canada Immigration Eligibility Assessment has been successfully submitted!</p>
+  //         <div style="background: #fed7d7; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #e53e3e;">
+  //           <h4 style="font-weight: bold; font-size: 18px; margin-bottom: 10px; color: #1a202c;">Your Assessment Results:</h4>
+  //           <p style="margin-bottom: 8px; color: #2d3748;">📊 <strong>FSWP Score:</strong> ${fswpTotal}/100 
+  //             <span style="color: ${fswpTotal >= 67 ? '#38a169' : '#e53e3e'}; font-weight: bold;">
+  //               ${fswpTotal >= 67 ? '✅ Eligible' : '❌ Needs Improvement'}
+  //             </span>
+  //           </p>
+  //           <p style="margin-bottom: 8px; color: #2d3748;">🎯 <strong>CRS Score:</strong> ${crsTotal}/1200 
+  //             <span style="color: ${crsTotal >= 470 ? '#38a169' : '#d69e2e'}; font-weight: bold;">
+  //               ${crsTotal >= 470 ? '✅ Competitive' : '⚠️ Could be Improved'}
+  //             </span>
+  //           </p>
+  //         </div>
+  //         <p style="font-size: 14px; color: #718096; margin-bottom: 10px;">
+  //           Our immigration experts will review your profile and contact you within 24-48 hours with personalized recommendations.
+  //         </p>
+  //         <p style="font-size: 12px; color: #a0aec0; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+  //           This assessment is for evaluation purposes only and does not guarantee visa approval.
+  //         </p>
+  //       </div>
+  //     `,
+  //     icon: 'success',
+  //     iconColor: '#38a169',
+  //     background: '#ffffff',
+  //     color: '#2d3748',
+  //     confirmButtonColor: '#e53e3e',
+  //     confirmButtonText: 'Great! What\'s Next?',
+  //     customClass: {
+  //       popup: 'rounded-xl border-2 border-red-500 shadow-2xl',
+  //       title: 'mb-4',
+  //       confirmButton: 'px-6 py-2 rounded-lg font-semibold text-white hover:bg-red-700 transition duration-300'
+  //     },
+  //     showClass: {
+  //       popup: 'animate__animated animate__fadeInDown animate__faster'
+  //     },
+  //     hideClass: {
+  //       popup: 'animate__animated animate__fadeOutUp animate__faster'
+  //     }
+  //   });
+  // };
+
+
+Swal.fire({
+  title: `
+    <span style="color: #1a202c; font-weight: bold;">
+      Thank You, ${userName}!
+    </span>
+  `,
+
+  html: `
+    <div style="text-align: left; color: #2d3748;">
+
+      <p style="margin-bottom: 18px; font-size: 16px; color: #4a5568; line-height:1.7;">
+        Your Canada Immigration Eligibility Assessment has been successfully submitted!
+      </p>
+
+      <!-- IMPORTANT NOTICE -->
+      <div style="
+        background: #fff5f5;
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 18px;
+        border-left: 5px solid #e53e3e;
+      ">
+
+        <p style="
+          margin-bottom: 12px;
+          color: #c53030;
+          font-size: 15px;
+          font-weight: 600;
+          line-height:1.7;
+        ">
+          Each and every text msg and call is paid.
+        </p>
+
+        <p style="
+          color: #2d3748;
+          font-size: 15px;
+          font-weight: 500;
+          line-height:1.7;
+        ">
+          Someone will get back to you in
+          <span style="
+            color:#e53e3e;
+            font-weight:bold;
+          ">
+            42 to 72hr
+          </span>
+        </p>
+
+      </div>
+
+      <!-- SCORE BOX -->
+      <div style="
+        background: #fed7d7;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border-left: 4px solid #e53e3e;
+      ">
+
+        <h4 style="
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 10px;
+          color: #1a202c;
+        ">
+          Your Assessment Results:
+        </h4>
+
+        <p style="margin-bottom: 8px; color: #2d3748;">
+
+          📊 <strong>FSWP Score:</strong> ${fswpTotal}/100
+
+          <span style="
+            color: ${fswpTotal >= 67 ? '#38a169' : '#e53e3e'};
+            font-weight: bold;
+          ">
+            ${fswpTotal >= 67
+              ? ' ✅ Eligible'
+              : ' ❌ Needs Improvement'}
+          </span>
+
+        </p>
+
+        <p style="margin-bottom: 8px; color: #2d3748;">
+
+          🎯 <strong>CRS Score:</strong> ${crsTotal}/1200
+
+          <span style="
+            color: ${crsTotal >= 470 ? '#38a169' : '#d69e2e'};
+            font-weight: bold;
+          ">
+            ${crsTotal >= 470
+              ? ' ✅ Competitive'
+              : ' ⚠️ Could be Improved'}
+          </span>
+
+        </p>
+
+      </div>
+
+      <p style="
+        font-size: 14px;
+        color: #718096;
+        margin-bottom: 10px;
+        line-height:1.7;
+      ">
+        Our immigration experts will review your profile and provide further guidance based on your assessment results.
+      </p>
+
+      <p style="
+        font-size: 12px;
+        color: #a0aec0;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 10px;
+        line-height:1.7;
+      ">
+        This assessment is for evaluation purposes only and does not guarantee visa approval.
+      </p>
+
+    </div>
+  `,
+
+  icon: "success",
+
+  iconColor: "#38a169",
+
+  background: "#ffffff",
+
+  color: "#2d3748",
+
+  confirmButtonColor: "#e53e3e",
+
+  confirmButtonText: "Close",
+
+  customClass: {
+    popup: "rounded-xl border-2 border-red-500 shadow-2xl",
+    title: "mb-4",
+    confirmButton:
+      "px-6 py-2 rounded-lg font-semibold text-white hover:bg-red-700 transition duration-300",
+  },
+
+  showClass: {
+    popup: "animate__animated animate__fadeInDown animate__faster",
+  },
+
+  hideClass: {
+    popup: "animate__animated animate__fadeOutUp animate__faster",
+  },
+});
+
 
   // Handle form submission
   const handleSubmit = (e) => {
