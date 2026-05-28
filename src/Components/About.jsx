@@ -123,6 +123,26 @@ const AboutVisa = () => {
             worldwide.
           </p>
 
+          {/* IMPORTANT NOTICE */}
+          <div className="bg-red-500/10 border border-red-500 rounded-2xl p-5 mb-8 backdrop-blur-sm shadow-lg">
+          
+            <p className="text-red-400 text-sm md:text-base font-medium leading-relaxed">
+          
+              Each and every text msg and call is paid.
+          
+              <br />
+              <br />
+          
+              Someone will get back to you in
+              <span className="text-white font-bold">
+                {" "}42 to 72hr
+              </span>
+          
+            </p>
+          
+          </div>
+
+
           {/* Stats with animated circle + counter */}
           <div className="flex gap-10 mb-8">
             <CircleStat value={76} label="Business Strategy" delay={0.2} />
