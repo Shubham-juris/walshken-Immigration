@@ -259,18 +259,18 @@ const ContactForm = () => {
             Fill out the form and our team will get back to you as soon as possible.
           </p>
         
-          <ul className="space-y-4">
+          <ul className="space-y-5">
         
-            {/* EMAILS */}
-            <li className="flex flex-col gap-1 text-gray-200 font-medium text-lg">
-              <div className="flex items-center gap-3">
-                <Mail className="w-6 h-6 text-red-500" />
-                walshkenco@gmail.com
-              </div>
-              <div className="flex items-center gap-3 ml-9 text-gray-300 text-base">
-                <Mail className="w-5 h-5 text-red-500" />
-                info@walshkenimmigration.com
-              </div>
+            {/* EMAIL 1 */}
+            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
+              <Mail className="w-6 h-6 text-red-500" />
+              walshkenco@gmail.com
+            </li>
+        
+            {/* EMAIL 2 */}
+            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
+              <Mail className="w-6 h-6 text-red-500" />
+              info@walshkenimmigration.com
             </li>
         
             {/* PHONE */}
@@ -279,22 +279,22 @@ const ContactForm = () => {
               +1 365-363-6067
             </li>
         
-            {/* LOCATIONS */}
-            <li className="flex flex-col gap-2 text-gray-200 font-medium text-lg">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-6 h-6 text-red-500 mt-1" />
-                <span>12885 80 Ave Unit 201, Surrey, BC V3W 0K8</span>
-              </div>
+            {/* ADDRESS 1 */}
+            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
+              <MapPin className="w-6 h-6 text-red-500" />
+              12885 80 Ave Unit 201, Surrey, BC V3W 0K8
+            </li>
         
-              <div className="flex items-start gap-3 ml-9 text-gray-300">
-                <MapPin className="w-5 h-5 text-red-500 mt-1" />
-                <span>Unit-304, 3016 5 Ave NE Calgary, AB T2A 6K4</span>
-              </div>
+            {/* ADDRESS 2 */}
+            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
+              <MapPin className="w-6 h-6 text-red-500" />
+              Unit-304, 3016 5 Ave NE Calgary, AB T2A 6K4
             </li>
         
           </ul>
         
         </motion.div>
+              
         {/* RIGHT SIDE FORM */}
         <motion.form
           onSubmit={handleSubmit}
