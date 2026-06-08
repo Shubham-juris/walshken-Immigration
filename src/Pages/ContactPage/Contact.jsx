@@ -876,9 +876,19 @@ const Contact = () => {
                 text: "walshkenco@gmail.com",
               },
               {
+                icon: <FaEnvelope />,
+                title: "Email",
+                text: "info@walshkenimmigration.com",
+              },
+              {
                 icon: <FaMapMarkerAlt />,
                 title: "Location",
                 text: "12885 80 Ave Unit 201, Surrey, BC V3W 0K8",
+              },
+              {
+                icon: <FaMapMarkerAlt />,
+                title: "Location",
+                text: "Unit-304, 3016 5 Ave NE Calgary, AB T2A 6K4",
               },
             ].map((c, i) => (
               <div
