@@ -233,58 +233,68 @@ const ContactForm = () => {
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        {/* LEFT SIDE */}
+       {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-
+        
           <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-14 text-white drop-shadow-lg">
-
             <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
               Connect with Us
             </span>
-
           </h2>
-
+        
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-
             Get In Touch <br />
-
             <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
               We’d Love To Hear From You
             </span>
-
           </h2>
-
+        
           <p className="text-gray-300 text-lg mb-8 leading-relaxed">
             Have questions about our visa consulting services?
             Fill out the form and our team will get back to you as soon as possible.
           </p>
-
+        
           <ul className="space-y-4">
-
-            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
-              <Mail className="w-6 h-6 text-red-500" />
-              walshkenco@gmail.com
+        
+            {/* EMAILS */}
+            <li className="flex flex-col gap-1 text-gray-200 font-medium text-lg">
+              <div className="flex items-center gap-3">
+                <Mail className="w-6 h-6 text-red-500" />
+                walshkenco@gmail.com
+              </div>
+              <div className="flex items-center gap-3 ml-9 text-gray-300 text-base">
+                <Mail className="w-5 h-5 text-red-500" />
+                info@walshkenimmigration.com
+              </div>
             </li>
-
+        
+            {/* PHONE */}
             <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
               <Phone className="w-6 h-6 text-red-500" />
               +1 365-363-6067
             </li>
-
-            <li className="flex items-center gap-3 text-gray-200 font-medium text-lg">
-              <MapPin className="w-6 h-6 text-red-500" />
-              12885 80 Ave Unit 201, Surrey, BC V3W 0K8
+        
+            {/* LOCATIONS */}
+            <li className="flex flex-col gap-2 text-gray-200 font-medium text-lg">
+              <div className="flex items-start gap-3">
+                <MapPin className="w-6 h-6 text-red-500 mt-1" />
+                <span>12885 80 Ave Unit 201, Surrey, BC V3W 0K8</span>
+              </div>
+        
+              <div className="flex items-start gap-3 ml-9 text-gray-300">
+                <MapPin className="w-5 h-5 text-red-500 mt-1" />
+                <span>Unit-304, 3016 5 Ave NE Calgary, AB T2A 6K4</span>
+              </div>
             </li>
-
+        
           </ul>
-
+        
         </motion.div>
-
         {/* RIGHT SIDE FORM */}
         <motion.form
           onSubmit={handleSubmit}
