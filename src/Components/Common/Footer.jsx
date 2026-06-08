@@ -82,24 +82,37 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
+       {/* Contact */}
         <div>
-          <h2 className="text-lg font-bold mb-5">Contact</h2>
-          <p className="text-gray-400 text-sm mb-2">
-            Phone: <br />{" "}
-            <span className="text-white font-medium">+1 365-363-6067</span>
-          </p>
-          <p className="text-gray-400 text-sm mb-2">
-            Email: <br />{" "}
-            <span className="text-white font-medium">walshkenco@gmail.com</span>
-          </p>
-          <p className="text-gray-400 text-sm">
-            Address: <br />
-            <span className="text-white font-medium">
-              {/* Unit 307-B , 3016 5 Ave NE, Calgary, AB T2A 5L7  */}
+          <h2 className="text-lg font-bold mb-5 text-white">Contact</h2>
+        
+          {/* Phone */}
+          <div className="mb-4">
+            <p className="text-gray-400 text-sm">Phone</p>
+            <p className="text-white font-medium">+1 365-363-6067</p>
+          </div>
+        
+          <hr className="border-gray-700 mb-4" />
+        
+          {/* Emails */}
+          <div className="mb-4">
+            <p className="text-gray-400 text-sm mb-1">Email</p>
+            <p className="text-white font-medium">walshkenco@gmail.com</p>
+            <p className="text-white font-medium">info@walshkenimmigration.com</p>
+          </div>
+        
+          <hr className="border-gray-700 mb-4" />
+        
+          {/* Addresses */}
+          <div>
+            <p className="text-gray-400 text-sm mb-1">Address</p>
+            <p className="text-white font-medium mb-2">
               12885 80 Ave Unit 201, Surrey, BC V3W 0K8
-            </span>
-          </p>
+            </p>
+            <p className="text-white font-medium">
+              Unit-304, 3016 5 Ave NE Calgary, AB T2A 6K4
+            </p>
+          </div>
         </div>
 
         {/* Newsletter */}
