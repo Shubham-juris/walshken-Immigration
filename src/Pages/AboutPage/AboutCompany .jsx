@@ -1,150 +1,136 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-// images
-import team1 from "../../assets/hero/team1.png";
-import team2 from "../../assets/hero/team2.png";
-import team3 from "../../assets/hero/team3.png";
-import team4 from "../../assets/hero/team4.png";
-import team5 from "../../assets/hero/team5.png";
-import team6 from "../../assets/hero/team6.png";
-import team7 from "../../assets/hero/team7.png";
-import team8 from "../../assets/hero/team8.png";
-import team9 from "../../assets/hero/team9.png";
+import mainImage from "../../assets/hero/TouristVisa.webp";
+import smallImage from "../../assets/hero/home3.webp";
 
-const team = [
-  {
-    name: "Harman",
-    role: "Founder & Managing Director",
-    desc: "Driven by integrity, excellence, and client success.",
-    img: team1,
-  },
-  {
-    name: "Ardaman",
-    role: "Immigration Documentation Specialist",
-    desc: "Ensuring accuracy and efficiency in every application.",
-    img: team2,
-  },
-  {
-    name: "Arjinder",
-    role: "Case Processing Specialist",
-    desc: "Supporting clients with precision and care.",
-    img: team3,
-  },
-  {
-    name: "Harveen",
-    role: "Client Documentation Coordinator",
-    desc: "Maintaining structured and reliable case records.",
-    img: team4,
-  },
-  {
-    name: "Maphy",
-    role: "Marketing & Client Relations",
-    desc: "Building strong client relationships globally.",
-    img: team5,
-  },
-  {
-    name: "Navneet",
-    role: "Business Development Executive",
-    desc: "Connecting clients with trusted immigration solutions.",
-    img: team6,
-  },
-  {
-    name: "Ahmed",
-    role: "Finance & Accounts Officer",
-    desc: "Ensuring financial transparency and accuracy.",
-    img: team7,
-  },
-  {
-    name: "Mariyam",
-    role: "Immigration Case Coordinator",
-    desc: "Managing client files with detail and structure.",
-    img: team8,
-  },
-  {
-    name: "Anureet",
-    role: "Accounts & Admin Coordinator",
-    desc: "Supporting smooth administrative operations.",
-    img: team9,
-  },
-];
-
-const AboutTeam = () => {
+const AboutCompany = () => {
   return (
     <section className="py-20 bg-gradient-to-r from-black via-gray-900 to-black text-white relative overflow-hidden">
-
-      {/* Background Accent (MATCH ABOUT COMPANY) */}
+      
+      {/* Background Accent */}
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.3)_0%,transparent_70%)]"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-
-        {/* HEADER (EXACT STYLE LIKE ABOUT COMPANY) */}
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16 relative z-10">
+        
+        {/* Left Side Images */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="relative w-full md:w-1/2"
+        >
+          <img
+            src={mainImage}
+            alt="Main"
+            className="rounded-2xl w-full h-auto object-cover shadow-2xl"
+          />
+
+          <motion.img
+            src={smallImage}
+            alt="Small"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="absolute -bottom-12 left-10 w-2/3 rounded-xl shadow-2xl border-4 border-gray-900"
+          />
+        </motion.div>
+
+        {/* Right Side Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/2 space-y-6"
         >
           <p className="text-red-500 font-semibold uppercase tracking-wide">
-            Meet Our Experts
+            About Company
           </p>
 
           <h2 className="text-4xl lg:text-5xl font-extrabold leading-snug bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
-            Professional Immigration <br />
-            <span className="text-white">
-              Leadership Team
+            Welcome To Experience <br />
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+              Visa Consulting Firm
             </span>
           </h2>
-        </motion.div>
 
-        {/* GRID (same clean system vibe as leadership HTML) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-20">
+          <p className="text-gray-300 text-lg leading-relaxed">
+            We are experts in immigration and visa consulting, offering personalized support for students, professionals, and families worldwide. With a proven track record and 99% success rate, we make your global journey smoother.
+          </p>
 
-          {team.map((member, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: index * 0.05 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-start"
-            >
+          {/* IMPORTANT NOTICE */}
+          <div className="bg-red-500/10 border border-red-500 rounded-2xl p-5 mb-8 backdrop-blur-sm shadow-lg">
+            <p className="text-red-400 text-sm md:text-base font-medium leading-relaxed">
+              Each and every text msg and call is paid.
+              <br />
+              <br />
+              Someone will get back to you in{" "}
+              <span className="text-white font-bold">42 to 72hr</span>
+            </p>
+          </div>
 
-              {/* CIRCLE IMAGE (FIX FACE CUT ISSUE) */}
-              <div className="w-40 h-40 rounded-full overflow-hidden bg-gray-800 mb-6 border-2 border-gray-700">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-full h-full object-cover object-top scale-105"
-                />
+          {/* Stats */}
+          <div className="flex gap-10 mb-6">
+            <motion.div whileHover={{ scale: 1.1 }} className="text-center">
+              <div className="w-24 h-24 rounded-full border-4 border-red-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+                68%
               </div>
-
-              {/* NAME (MATCH DESIGN SYSTEM) */}
-              <h4 className="text-xl font-semibold text-white mb-1">
-                {member.name}
-              </h4>
-
-              {/* ROLE (RED ACCENT LIKE ABOUT COMPANY) */}
-              <span className="text-red-500 text-sm uppercase tracking-wider font-semibold mb-4">
-                {member.role}
-              </span>
-
-              {/* DIVIDER + DESCRIPTION (GRAY SYSTEM LIKE ABOUT COMPANY TEXT) */}
-              <div className="w-full border-t border-gray-700 pt-4">
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {member.desc}
-                </p>
-              </div>
-
+              <p className="mt-2 font-semibold text-gray-300">
+                Business Strategy
+              </p>
             </motion.div>
-          ))}
 
-        </div>
+            <motion.div whileHover={{ scale: 1.1 }} className="text-center">
+              <div className="w-24 h-24 rounded-full border-4 border-red-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+                93%
+              </div>
+              <p className="mt-2 font-semibold text-gray-300">
+                Real Tech Solutions
+              </p>
+            </motion.div>
+          </div>
 
+          {/* Bullet Points */}
+          <ul className="space-y-4 text-gray-300 font-medium">
+            <motion.li whileHover={{ x: 10 }} className="flex items-center">
+              <FaCheckCircle className="text-red-500 mr-2" />
+              Immigration & Visa Consulting
+            </motion.li>
+
+            <motion.li whileHover={{ x: 10 }} className="flex items-center">
+              <FaCheckCircle className="text-red-500 mr-2" />
+              Direct Online Interview
+            </motion.li>
+
+            <motion.li whileHover={{ x: 10 }} className="flex items-center">
+              <FaCheckCircle className="text-red-500 mr-2" />
+              99% Visa Approvals
+            </motion.li>
+          </ul>
+
+          {/* Extra Highlight Box */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-8 p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl shadow-lg"
+          >
+            <h3 className="text-xl font-bold mb-2 text-white">
+              Why Choose Us?
+            </h3>
+            <p className="text-gray-300">
+              Our experienced team provides personalized consultations, reliable strategies, and complete end-to-end visa assistance. We ensure your application is smooth, fast, and stress-free.
+            </p>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default AboutTeam;
+export default AboutCompany;
