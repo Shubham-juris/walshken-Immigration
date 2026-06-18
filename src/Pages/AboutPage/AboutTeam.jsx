@@ -16,55 +16,55 @@ const team = [
   {
     name: "Harman",
     role: "Founder & Managing Director",
-    desc: "Driven by integrity, excellence, and client success.",
+    desc: "Driven by a commitment to integrity, excellence, and client success, leading our team in helping individuals and families achieve their immigration goals with confidence.",
     img: team1,
   },
   {
     name: "Ardaman",
     role: "Immigration Documentation Specialist",
-    desc: "Ensuring accuracy and efficiency in every application.",
+    desc: "Committed to accuracy and efficiency, ensuring every application is prepared with meticulous attention to detail.",
     img: team2,
   },
   {
     name: "Arjinder",
     role: "Case Processing Specialist",
-    desc: "Supporting clients with precision and care.",
+    desc: "Dedicated to supporting clients throughout the application process with professionalism, precision, and care.",
     img: team3,
   },
   {
     name: "Harveen",
     role: "Client Documentation Coordinator",
-    desc: "Maintaining structured and reliable case records.",
+    desc: "Focused on maintaining organized case records and delivering reliable support at every stage of the immigration journey",
     img: team4,
   },
   {
     name: "Maphy",
-    role: "Marketing & Client Relations",
-    desc: "Building strong client relationships globally.",
+    role: "Marketing & Client Relations Coordinator",
+    desc: "Building strong client relationships and helping individuals discover the right pathway toward their immigration goals",
     img: team5,
   },
   {
     name: "Navneet",
-    role: "Business Development Executive",
-    desc: "Connecting clients with trusted immigration solutions.",
+    role: "Business Development And Marketing Executive",
+    desc: "Passionate about connecting clients with trusted immigration solutions through meaningful engagement and outreach.",
     img: team6,
   },
   {
     name: "Ahmed",
     role: "Finance & Accounts Officer",
-    desc: "Ensuring financial transparency and accuracy.",
+    desc: "Ensuring financial accuracy, transparency, and efficient operational support for both clients and the organization.",
     img: team7,
   },
   {
     name: "Mariyam",
     role: "Immigration Case Coordinator",
-    desc: "Managing client files with detail and structure.",
+    desc: "Dedicated to ensuring every client file is managed with accuracy, organization, and attention to detail throughout the application process.",
     img: team8,
   },
   {
     name: "Anureet",
-    role: "Accounts & Admin Coordinator",
-    desc: "Supporting smooth administrative operations.",
+    role: "Accounts & Administrative Coordinator",
+    desc: "Committed to maintaining efficient financial processes and providing reliable administrative support for a seamless client experience.",
     img: team9,
   },
 ];
@@ -86,11 +86,11 @@ const AboutTeam = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="text-red-500 font-semibold uppercase tracking-wide">
+          <p className="text-red-500 font-semibold uppercase tracking-wide text-center">
             Meet Our Experts
           </p>
 
-          <h2 className="text-4xl lg:text-5xl font-extrabold leading-snug bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl text-center font-extrabold leading-snug bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
             Professional Immigration <br />
             <span className="text-white">
               Leadership Team
