@@ -16,31 +16,31 @@ const team = [
   {
     name: "Harman",
     role: "Founder & Managing Director",
-    desc: "Driven by a commitment to integrity, excellence, and client success.",
+    desc: "Driven by integrity, excellence, and client success.",
     img: team1,
   },
   {
     name: "Ardaman",
     role: "Immigration Documentation Specialist",
-    desc: "Committed to accuracy and efficiency in every application.",
+    desc: "Ensuring accuracy and efficiency in every application.",
     img: team2,
   },
   {
     name: "Arjinder",
     role: "Case Processing Specialist",
-    desc: "Supporting clients with professionalism and care.",
+    desc: "Supporting clients with precision and care.",
     img: team3,
   },
   {
     name: "Harveen",
     role: "Client Documentation Coordinator",
-    desc: "Maintaining organized case records at every stage.",
+    desc: "Maintaining structured and reliable case records.",
     img: team4,
   },
   {
     name: "Maphy",
-    role: "Marketing & Client Relations Coordinator",
-    desc: "Building strong client relationships and trust.",
+    role: "Marketing & Client Relations",
+    desc: "Building strong client relationships globally.",
     img: team5,
   },
   {
@@ -52,50 +52,67 @@ const team = [
   {
     name: "Ahmed",
     role: "Finance & Accounts Officer",
-    desc: "Ensuring financial accuracy and transparency.",
+    desc: "Ensuring financial transparency and accuracy.",
     img: team7,
   },
   {
     name: "Mariyam",
     role: "Immigration Case Coordinator",
-    desc: "Managing client files with precision and care.",
+    desc: "Managing client files with detail and structure.",
     img: team8,
   },
   {
     name: "Anureet",
     role: "Accounts & Admin Coordinator",
-    desc: "Ensuring smooth administrative operations.",
+    desc: "Supporting smooth administrative operations.",
     img: team9,
   },
 ];
 
 const AboutTeam = () => {
   return (
-    <section id="leadership" className="py-24 bg-white text-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 bg-gradient-to-r from-black via-gray-900 to-black text-white relative overflow-hidden">
 
-        {/* HEADER (MATCH YOUR HTML STYLE) */}
-        <div className="border-t border-gray-300 pt-10 mb-20">
-          <h2 className="text-3xl font-semibold text-center md:text-left">
+      {/* Background Accent (MATCH ABOUT COMPANY) */}
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.3)_0%,transparent_70%)]"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+
+        {/* HEADER (EXACT STYLE LIKE ABOUT COMPANY) */}
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <p className="text-red-500 font-semibold uppercase tracking-wide">
             Meet Our Experts
-          </h2>
-        </div>
+          </p>
 
-        {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
+          <h2 className="text-4xl lg:text-5xl font-extrabold leading-snug bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+            Professional Immigration <br />
+            <span className="text-white">
+              Leadership Team
+            </span>
+          </h2>
+        </motion.div>
+
+        {/* GRID (same clean system vibe as leadership HTML) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-20">
 
           {team.map((member, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
+              transition={{ duration: 0.7, delay: index * 0.05 }}
               viewport={{ once: true }}
               className="flex flex-col items-start"
             >
 
               {/* CIRCLE IMAGE (FIX FACE CUT ISSUE) */}
-              <div className="w-40 h-40 rounded-full overflow-hidden bg-gray-200 mb-6 border border-gray-200">
+              <div className="w-40 h-40 rounded-full overflow-hidden bg-gray-800 mb-6 border-2 border-gray-700">
                 <img
                   src={member.img}
                   alt={member.name}
@@ -103,19 +120,19 @@ const AboutTeam = () => {
                 />
               </div>
 
-              {/* NAME */}
-              <h4 className="text-xl font-semibold text-[#007396] mb-1">
+              {/* NAME (MATCH DESIGN SYSTEM) */}
+              <h4 className="text-xl font-semibold text-white mb-1">
                 {member.name}
               </h4>
 
-              {/* ROLE */}
-              <span className="text-sm uppercase tracking-wider text-gray-600 font-semibold mb-4">
+              {/* ROLE (RED ACCENT LIKE ABOUT COMPANY) */}
+              <span className="text-red-500 text-sm uppercase tracking-wider font-semibold mb-4">
                 {member.role}
               </span>
 
-              {/* DIVIDER (like your CSS border-top) */}
-              <div className="w-full border-t border-gray-200 pt-4">
-                <p className="text-gray-600 text-sm leading-relaxed">
+              {/* DIVIDER + DESCRIPTION (GRAY SYSTEM LIKE ABOUT COMPANY TEXT) */}
+              <div className="w-full border-t border-gray-700 pt-4">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   {member.desc}
                 </p>
               </div>
