@@ -3,6 +3,7 @@ import image from "../../assets/hero/WorkVisa.webp";
 import AboutCompany from "./AboutCompany ";
 import AboutSevices from "./AboutSevices";
 import AboutConsultants from "./AboutConsultants";
+import AboutTeam from "./AboutTeam";
 
 const AboutHeroSection = () => {
   return (
@@ -21,6 +22,7 @@ const AboutHeroSection = () => {
       </div>
       <AboutCompany />
       <AboutSevices />
+      <AboutTeam />
       <AboutConsultants />
     </>
   );
