@@ -45,7 +45,7 @@ const AppRouter = () => {
         <Route path="/inadmissibility" element={<InadmissibilityServices />} />
         <Route path="/detention-removal" element={<DetentionRemoval />} />
         <Route path="/tech-immigration" element={<TechImmigration />} />
-        <Route path="/us-visas-travel-waivers" element={<USVisasTravelWaivers} />
+        <Route path="/us-visas-travel-waivers" element={<USVisasTravelWaivers />} />
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
        
