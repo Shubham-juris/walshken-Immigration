@@ -14,6 +14,10 @@ import VisitorVisa from "./Pages/services/VisitorVisa";
 import BusinessInvestorVisa from "./Pages/services/BusinessInvestorVisa";
 import FamilySpousalSponsorship from "./Pages/services/FamilySpousalSponsorship";
 import RefugeeClaims from "./Pages/services/RefugeeClaims";
+import InadmissibilityServices from "./pages/services/InadmissibilityServices";
+import DetentionRemoval from "./pages/services/DetentionRemoval";
+import TechImmigration from "./pages/services/TechImmigration";
+import USVisasTravelWaivers from "./pages/services/USVisasTravelWaivers";
 import CanadaImmigrationForm from "./Pages/CanadaImmigrationForms";
 import ScrollToTop from "./Components/ScrollToTop";
 import Services from "./Pages/Service/Services";
@@ -37,6 +41,11 @@ const AppRouter = () => {
         <Route path="/business-visa" element={<BusinessInvestorVisa />} />
         <Route path="/family" element={<FamilySpousalSponsorship />} />
         <Route path="/refugee" element={<RefugeeClaims />} />
+        <Route path="/refugee-claims" element={<RefugeeClaims />} />
+        <Route path="/inadmissibility" element={<InadmissibilityServices />} />
+        <Route path="/detention-removal" element={<DetentionRemoval />} />
+        <Route path="/tech-immigration" element={<TechImmigration />} />
+        <Route path="/us-visas-travel-waivers" element={<USVisasTravelWaivers />}
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
        
