@@ -300,7 +300,7 @@
 // export default StudyVisa;
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const StudyVisa = () => {
@@ -381,7 +381,10 @@ const StudyVisa = () => {
             <p className="text-gray-300 leading-relaxed mb-4">
               With the right guidance, you can secure admission to your dream
               university, experience cultural diversity, and set the foundation
-              for a successful career abroad.
+              for a successful career abroad. If you wish to transition to employment 
+              after graduation, explore our <Link to="/work-visa" className="text-red-500 hover:underline">Work Visa Options</Link>. 
+              Many candidates also utilize their academic background as a pathway 
+              to <Link to="/pr" className="text-red-500 hover:underline">Permanent Residency</Link>.
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 py-1 italic">
               Coming to study in a new country is one of the most significant decisions 
@@ -474,7 +477,7 @@ const StudyVisa = () => {
                 Preliminary Consultation Value
               </h4>
               <p className="text-gray-300 leading-relaxed">
-                We believe in providing an honest eligibility assessment. Our initial consultation session is a mutual opportunity to evaluate your qualifications, carry out a thorough interview regarding your chosen course of study, and map out post-study opportunities, such as work permits or potential long-term permanent residency pathways.
+                We believe in providing an honest eligibility assessment. Our initial consultation session is a mutual opportunity to evaluate your qualifications, carry out a thorough interview regarding your chosen course of study, and map out post-study opportunities, such as <Link to="/work-visa" className="text-red-500 hover:underline">work permits</Link> or potential long-term <Link to="/pr" className="text-red-500 hover:underline">permanent residency pathways</Link>.
               </p>
             </div>
           </motion.div>
