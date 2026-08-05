@@ -25,6 +25,7 @@ const Navbar = () => {
         { label: "Visitor Visa", path: "/visitor-visa" },
         { label: "Business/Investor Visa", path: "/business-visa" },
         { label: "Family & Spousal Sponsorship", path: "/family" },
+        { label: "Refugee Claims", path: "/refugee" },
         { label: "inadmissibility Services", path: "/inadmissibility" },
         { label: "Detention Removal", path: "/detention-removal" },
         { label: "Tech Immigration", path: "/tech-immigration" },
