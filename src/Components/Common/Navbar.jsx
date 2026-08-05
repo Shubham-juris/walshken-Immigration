@@ -29,7 +29,7 @@ const Navbar = () => {
         { label: "inadmissibility Services", path: "/inadmissibility" },
         { label: "Detention Removal", path: "/detention-removal" },
         { label: "Tech Immigration", path: "/tech-immigration" },
-        { label: "US Visas Travel Waivers", path: "/us-visas-travel-waivers" },
+        { label: "US Visas Travel Waivers", path: "/us-visas-travel-waivers" }, 
       ],
     },
     { label: "Blog", path: "/blog" },
