@@ -13,6 +13,7 @@ import PermanentResidency from "./Pages/services/PermanentResidency";
 import VisitorVisa from "./Pages/services/VisitorVisa";
 import BusinessInvestorVisa from "./Pages/services/BusinessInvestorVisa";
 import FamilySpousalSponsorship from "./Pages/services/FamilySpousalSponsorship";
+import RefugeeClaims from "./Pages/services/RefugeeClaims";
 import CanadaImmigrationForm from "./Pages/CanadaImmigrationForms";
 import ScrollToTop from "./Components/ScrollToTop";
 import Services from "./Pages/Service/Services";
@@ -35,6 +36,7 @@ const AppRouter = () => {
         <Route path="/visitor-visa" element={<VisitorVisa />} />
         <Route path="/business-visa" element={<BusinessInvestorVisa />} />
         <Route path="/family" element={<FamilySpousalSponsorship />} />
+        <Route path="/refugee" element={<RefugeeClaims />} />
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
        
