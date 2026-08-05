@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import heroImage from "../../assets/hero/HeroBGImage.webp"; 
 import CoachingCards from "./Services";
@@ -86,7 +87,7 @@ const Header = () => {
               </span>
             </motion.h1>
 
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, delay: 0.6, ease: "easeInOut" }}
@@ -94,6 +95,26 @@ const Header = () => {
             >
               Trusted solutions for Study Visa, Work Visa, PR, and more.  
               Start your journey to a better future today.
+            </motion.p> */}
+             <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.6, ease: "easeInOut" }}
+              className="mt-4 text-lg md:text-xl text-gray-300"
+            >
+              Trusted solutions for{" "}
+              <Link to="/study-visa" className="text-red-400 hover:underline font-semibold">
+                Study Visa
+              </Link>
+              ,{" "}
+              <Link to="/work-visa" className="text-red-400 hover:underline font-semibold">
+                Work Visa
+              </Link>
+              ,{" "}
+              <Link to="/pr" className="text-red-400 hover:underline font-semibold">
+                PR
+              </Link>
+              , and more. Start your journey to a better future today.
             </motion.p>
 
             <motion.div
