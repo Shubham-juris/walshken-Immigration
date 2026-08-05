@@ -478,7 +478,7 @@
 
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const WorkVisa = () => {
@@ -557,7 +557,9 @@ const WorkVisa = () => {
             <p className="text-gray-300 leading-relaxed mb-4">
               We provide end-to-end support including skill assessment, document preparation, 
               interview training, and job placement assistance to ensure your successful transition 
-              to working abroad.
+              to working abroad. If you work in the technology sector, we recommend reviewing our dedicated <Link to="/tech-immigration" className="text-red-500 hover:underline">Tech Immigration Pathways</Link>. 
+              Over time, many foreign work permits can be successfully transitioned 
+              into <Link to="/pr" className="text-red-500 hover:underline">Permanent Residency</Link>.
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 italic">
               Temporary work applications require deep scrutiny from government bodies. A single error in documenting your qualifications, your employer’s LMIA filing, or your past employment history can delay your start date or set back your relocation plans by months. We focus on getting the paperwork right the first time.
@@ -597,7 +599,7 @@ const WorkVisa = () => {
                 Labour shortages in competitive sectors are often a long-term operational hurdle. For organizations that rely on global talent, workforce planning is a critical operational strategy.
               </p>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                We work directly with corporate teams and employers to build immigration strategies covering LMIAs, intra-company transfers, compliance audits, and long-term retention pathways through permanent residency.
+                We work directly with corporate teams and employers to build immigration strategies covering LMIAs, intra-company transfers, compliance audits, and long-term retention pathways through <Link to="/pr" className="text-red-500 hover:underline">permanent residency</Link>.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm italic">
                 If your enterprise has not developed an immigration approach beyond basic ad-hoc work permits, let us assist you in formulating a stable strategy before the next critical hiring gap.
