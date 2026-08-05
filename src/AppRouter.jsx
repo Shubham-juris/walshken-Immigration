@@ -41,7 +41,6 @@ const AppRouter = () => {
         <Route path="/business-visa" element={<BusinessInvestorVisa />} />
         <Route path="/family" element={<FamilySpousalSponsorship />} />
         <Route path="/refugee" element={<RefugeeClaims />} />
-        <Route path="/refugee-claims" element={<RefugeeClaims />} />
         <Route path="/inadmissibility" element={<InadmissibilityServices />} />
         <Route path="/detention-removal" element={<DetentionRemoval />} />
         <Route path="/tech-immigration" element={<TechImmigration />} />
