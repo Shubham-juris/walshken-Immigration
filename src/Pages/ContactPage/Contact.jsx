@@ -772,7 +772,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 import contactImage from "../../assets/hero/ContactImg.jpg";
-import faqImage from "../../assets/hero/logo.webp";
+import faqImage from "../../assets/hero/logo1.jpg";
 
 const faqs = [
   {
