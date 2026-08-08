@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const DetentionRemoval = () => {
@@ -69,7 +69,9 @@ const DetentionRemoval = () => {
               During these high-pressure enforcement events, knowing your regulatory rights is 
               essential. Our authorized consulting team specializes in representing clients directly 
               before the Immigration Division (ID) and the Immigration Appeal Division (IAD) 
-              of the Immigration and Refugee Board (IRB).
+              of the Immigration and Refugee Board (IRB). If your case is linked to asylum, we provide 
+              full <Link to="/refugee" className="text-red-500 hover:underline">Refugee Claims Support</Link>. We also assist with resolving 
+              underlying factors under our <Link to="/inadmissibility" className="text-red-500 hover:underline">Inadmissibility Services</Link>.
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 py-1 italic text-sm">
               In detention and removal cases, every hour counts. We prioritize urgent file mobilization, 
