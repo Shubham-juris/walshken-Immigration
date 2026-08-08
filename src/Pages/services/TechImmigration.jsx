@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const TechImmigration = () => {
@@ -73,7 +73,9 @@ const TechImmigration = () => {
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 py-1 italic text-sm">
               In a sector where opportunities evolve rapidly, a minor delay in your work permit 
               or nominee application can impact project timelines. We design technical files with the 
-              efficiency and precision required by rapid-growth tech firms.
+              efficiency and precision required by rapid-growth tech firms. If your firm needs fast-track LMIAs, 
+              read about the Global Talent Stream under our <Link to="/work-visa" className="text-red-500 hover:underline">Work Visa Options</Link>, 
+              or explore points-based conversions to <Link to="/pr" className="text-red-500 hover:underline">Permanent Residency</Link>.
             </p>
           </motion.div>
 
