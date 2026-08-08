@@ -434,7 +434,7 @@
 // export default FamilySpousalSponsorship;
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const FamilySpousalSponsorship = () => {
@@ -578,7 +578,7 @@ const FamilySpousalSponsorship = () => {
               Family and Spousal Sponsorship programs allow citizens or permanent
               residents to sponsor their spouse, partner, children, parents, or other
               eligible relatives to live with them abroad. While immigration frameworks are
-              designed to keep families united, these pathways are subject to extensive regulatory checks.
+              designed to keep families united, these pathways are subject to extensive regulatory checks. Upon landing, sponsored relatives are granted <Link to="/pr" className="text-red-500 hover:underline">Permanent Residency</Link>.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
               Our team provides end-to-end assistance, from verifying sponsor eligibility and financial thresholds to assembling relationship records and managing visa processing.
@@ -643,8 +643,8 @@ const FamilySpousalSponsorship = () => {
               <p className="text-gray-300 mb-4 leading-relaxed text-sm">
                 Sponsoring parents and grandparents under programs like Canada's PGP or regional parent streams involves navigating strict quota intakes and income evaluation thresholds over multiple tax years.
               </p>
-              <p className="text-gray-300 leading-relaxed text-sm">
-                Additionally, Super Visas and dependent child applications require careful alignment with age limits and medical health standards. We manage these multi-layered details patiently to safeguard your family's residency transition.
+             <p className="text-gray-300 mb-4 leading-relaxed text-sm">
+                Additionally, Super Visas and dependent child applications require careful alignment with age limits and medical health standards. We manage these multi-layered details patiently to safeguard your family's residency transition. For parents and grandparents seeking temporary visits, we also manage these options through standard <Link to="/visitor-visa" className="text-red-500 hover:underline">Visitor Visa</Link> pathways.
               </p>
               <div className="bg-red-950/30 border border-red-800/20 p-4 rounded-lg mt-4">
                 <span className="font-semibold text-red-400 block text-xs tracking-widest uppercase mb-1">Our Approach</span>
