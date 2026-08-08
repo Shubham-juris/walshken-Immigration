@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const InadmissibilityServices = () => {
@@ -65,10 +65,10 @@ const InadmissibilityServices = () => {
               complex medical conditions that may cause excessive demand on public systems, lack of 
               sufficient financial resources, or accidental administrative misrepresentations.
             </p>
-            <p className="text-gray-300 leading-relaxed mb-4">
+           <p className="text-gray-300 leading-relaxed mb-4">
               Encountering these barriers is highly stressful, as they often involve strict 
               procedural deadlines. Our consulting team assists you by reviewing the underlying facts, 
-              assessing governmental guidelines, and developing structured responses to overcome these challenges.
+              assessing governmental guidelines, and developing structured responses to overcome these challenges. If you require temporary entry during processing, we can arrange a Temporary Resident Permit under our <Link to="/visitor-visa" className="text-red-500 hover:underline">Visitor Visa Framework</Link>, or build a permanent path via <Link to="/pr" className="text-red-500 hover:underline">Humanitarian & Compassionate PR</Link>.
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 py-1 italic text-sm">
               Whether you have received a Procedural Fairness Letter (PFL) or are proactively addressing 
