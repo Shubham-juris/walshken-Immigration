@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import { motion } from "framer-motion";
 
 const RefugeeClaims = () => {
@@ -68,7 +68,9 @@ const RefugeeClaims = () => {
             <p className="text-gray-300 leading-relaxed mb-4">
               The application journey is complex and demands thorough preparation, patience, and 
               accurate decision-making. We stand by you to offer clear regulatory strategy, 
-              patience, and detailed attention to your personal file.
+              patience, and detailed attention to your personal file. If your claim encounters complications, 
+              we also provide specialized <Link to="/inadmissibility" className="text-red-500 hover:underline">Inadmissibility Services</Link> and represent 
+              clients facing <Link to="/detention-removal" className="text-red-500 hover:underline">Detention & Removal</Link> challenges.
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-red-700 pl-4 py-1 italic text-sm">
               We help make sure your story is communicated truthfully, comprehensively, and 
