@@ -365,7 +365,7 @@
 // export default BusinessInvestorVisa;
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const BusinessInvestorVisa = () => {
@@ -426,7 +426,7 @@ const BusinessInvestorVisa = () => {
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
               A Business or Investor Visa provides individuals and companies the
-              opportunity to invest capital, establish new ventures, or transfer key personnel to a foreign country. These programs serve as pathways to permanent residency, citizenship, global networking, and access to major trade zones.
+              opportunity to invest capital, establish new ventures, or transfer key personnel to a foreign country. These programs serve as pathways to <Link to="/pr" className="text-red-500 hover:underline">permanent residency</Link>, citizenship, global networking, and access to major trade zones. Depending on your operational strategy, you may also qualify for fast-tracked <Link to="/work-visa" className="text-red-500 hover:underline">Work Visas</Link> like intra-company transfers.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
               Our expert visa consultants help you navigate the process with
@@ -471,7 +471,7 @@ const BusinessInvestorVisa = () => {
                 For organizations that rely on global talent or wish to scale internationally, business immigration planning is an essential operational strategy. 
               </p>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm">
-                We work with employers and enterprise clients to structure immigration strategies that serve both the organization and the employees arriving to support it. This covers Labour Market Impact Assessments (LMIAs), intra-company transfers, government audits, and long-term talent retention plans through permanent residency pathways.
+                We work with employers and enterprise clients to structure immigration strategies that serve both the organization and the employees arriving to support it. This covers Labour Market Impact Assessments (LMIAs), intra-company transfers, government audits, and long-term talent retention plans through <Link to="/pr" className="text-red-500 hover:underline">permanent residency pathways</Link>.
               </p>
               <p className="text-gray-400 leading-relaxed text-xs italic">
                 If your business has not formulated an immigration plan beyond individual ad-hoc work permits, let us assist you in building a stable strategy before the next critical talent gap arises.
