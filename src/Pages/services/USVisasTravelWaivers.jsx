@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const USVisasTravelWaivers = () => {
@@ -144,7 +144,7 @@ const USVisasTravelWaivers = () => {
               <div className="bg-red-950/30 border border-red-800/20 p-4 rounded-lg">
                 <span className="font-semibold text-red-400 block text-xs tracking-widest uppercase mb-1">Corporate Relocations</span>
                 <p className="text-xs text-gray-300">
-                  Where US-bound work authorizations require E-2 Treaty Investor status or L-1 Intra-Company transfers, we coordinate closely to structure compliant business files.
+                  Where US-bound work authorizations require E-2 Treaty Investor status or L-1 Intra-Company transfers, we coordinate closely with <Link to="/business-visa" className="text-red-500 hover:underline font-semibold text-xs">Business Visa Options</Link> and assist professional class applicants with CUSMA requirements under our <Link to="/work-visa" className="text-red-500 hover:underline font-semibold text-xs">Work Visa Services</Link>.
                 </p>
               </div>
             </div>
