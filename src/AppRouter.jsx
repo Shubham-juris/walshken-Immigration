@@ -18,6 +18,7 @@ import InadmissibilityServices from "./Pages/services/InadmissibilityServices";
 import DetentionRemoval from "./Pages/services/DetentionRemoval";
 import TechImmigration from "./Pages/services/TechImmigration";
 import USVisasTravelWaivers from "./Pages/services/USVisasTravelWaivers";
+import TheLandingPoint from "./Pages/services/TheLandingPoint";
 import CanadaImmigrationForm from "./Pages/CanadaImmigrationForms";
 import ScrollToTop from "./Components/ScrollToTop";
 import Services from "./Pages/Service/Services";
@@ -45,6 +46,7 @@ const AppRouter = () => {
         <Route path="/detention-removal" element={<DetentionRemoval />} />
         <Route path="/tech-immigration" element={<TechImmigration />} />
         <Route path="/us-visas-travel-waivers" element={<USVisasTravelWaivers />} />
+        <Route path="/the-landing-point" element={<TheLandingPoint />} />
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
        
