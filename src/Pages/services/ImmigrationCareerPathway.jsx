@@ -119,9 +119,7 @@ const ImmigrationCareerPathway = () => {
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-400">
             For more details on approved educational programs or exam timelines, consult the official portal of the{" "}
-            <a href="https://college-immigration.ca/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:underline font-semibold">
-              College of Immigration and Citizenship Consultants (CICC)
-            </a>.
+           College of Immigration and Citizenship Consultants (CICC)
           </p>
         </div>
       </section>
