@@ -420,4 +420,4 @@ const HomeCoursesSection = () => {
   );
 };
 
-export default HomeCoursesSection;
+export default HomeCoursesSection; 
