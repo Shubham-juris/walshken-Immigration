@@ -169,7 +169,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import heroImage from "../../assets/hero/HeroBGImage.webp"; 
 import CoachingCards from "./Services";
-import HomeCoursesSection from "./HomeCourseSection";
+import HomeCoursesSection from "./HomeCoursesSection";
 import ContactForm from "../../Components/ContactForm";
 import logo from "../../assets/hero/logo.webp"; 
 
