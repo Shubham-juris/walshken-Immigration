@@ -1204,9 +1204,9 @@ const Header = () => {
             {/* <p className="text-red-500 font-semibold uppercase tracking-wide text-xs mb-2">
               About Company
             </p> */}
-            <h2 className="text-3xl md:text-5xl font-extrabold text-red-500 mb-6 leading-tight">
+            <p className="text-2xl md:text-5xl font-extrabold text-red-500 mb-6 leading-tight">
               About Walshken Immigration
-            </h2>
+            </p>
             <p className="text-2xl font-bold bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent mb-6">
               Clear Advice. Personalized Attention.
             </p>
