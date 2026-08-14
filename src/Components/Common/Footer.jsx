@@ -34,9 +34,11 @@ const Footer = () => {
             </NavLink>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6 text-center md:text-left">
-            We specialize in IELTS, PTE, and TOEFL coaching, along with
+            {/* We specialize in IELTS, PTE, and TOEFL coaching, along with
             Citizenship Test preparation — guiding you step by step toward
-            success abroad.
+            success abroad. */}
+            Walshken Immigration provides Canadian immigration guidance and
+            test-preparation support for individuals, families and employers.
           </p>
 
           {/* Socials */}
@@ -119,7 +121,8 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-5">Newsletter</h2>
           <p className="text-gray-400 text-sm mb-4">
-            Sign up to get updates & exclusive offers directly to your inbox.
+            {/* Sign up to get updates & exclusive offers directly to your inbox. */}
+            Receive practical immigration updates, service information and study tips from Walshken Immigration.
           </p>
           <form
             onSubmit={(e) => {
