@@ -360,10 +360,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { 
+  FaCheckCircle, 
+  FaClock, 
+  FaComments, 
+  FaCompass, 
+  FaGlobeAmericas, 
+  FaBuilding, 
+  FaStar, 
+  FaGraduationCap 
+} from "react-icons/fa";
+
+// Image Imports
 import Studentvisa from "../../assets/hero/studentVisa.webp";
 import BusinessVisa from "../../assets/hero/BusinessVisa.webp";
 import WorkVisa from "../../assets/hero/WorkVisa.webp";
 import TouristVisa from "../../assets/hero/TouristVisa.webp";
+import photo1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
+import photo2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
+import photo3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
 
 const services = [
   {
@@ -396,40 +411,37 @@ const services = [
   },
 ];
 
+const secondaryStats = [
+  { figure: "2,975+", label: "Positive Decisions Documented", icon: <FaCheckCircle className="text-red-500" /> },
+  { figure: "9+", label: "Years of Immigration Experience", icon: <FaClock className="text-red-500" /> },
+  { figure: "6,000+", label: "Consultations Completed", icon: <FaComments className="text-red-500" /> },
+  { figure: "20+", label: "Immigration Pathways Supported", icon: <FaCompass className="text-red-500" /> },
+  { figure: "10+", label: "Languages Available", icon: <FaGlobeAmericas className="text-red-500" /> },
+  { figure: "3", label: "Canadian Office Locations", icon: <FaBuilding className="text-red-500" /> },
+  { figure: "300+", label: "Verified Public Reviews", icon: <FaStar className="text-red-500" /> },
+  { figure: "1,000+", label: "Coaching Enrolments Completed", icon: <FaGraduationCap className="text-red-500" /> },
+];
+
 const AboutServices = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-black via-gray-900 to-black text-white text-center relative overflow-hidden border-t border-red-950/20">
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.4)_0%,transparent_70%)]"></div>
-
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-red-500 font-semibold text-xs uppercase mb-2 tracking-wide"
-        >
-          Services We Provide
-        </motion.p>
-
-        <motion.h2
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="text-4xl font-extrabold mb-12"
-        >
-          <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">Explore Our Canadian</span>{" "}
-          <br />
-          <span className="text-red-500">Immigration & Citizenship Services</span>
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="h-1 w-32 bg-red-500 mx-auto mt-3 rounded-full"
-          />
-        </motion.h2>
+    <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white relative overflow-hidden">
+      {/* ────────────────────────────────────────────────────────
+          PART 1: 4 CANADIAN IMMIGRATION SERVICE CARDS
+          ──────────────────────────────────────────────────────── */}
+      <section className="py-20 px-6 max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <p className="text-red-500 font-semibold text-xs uppercase mb-2 tracking-wide">
+            Services We Provide
+          </p>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-white">
+            <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+              Explore Our Canadian Immigration
+            </span>{" "}
+            <br />
+            <span className="text-red-500">& Citizenship Services</span>
+          </h2>
+          <div className="h-1 w-32 bg-red-500 mx-auto mt-4 rounded-full" />
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
@@ -437,36 +449,92 @@ const AboutServices = () => {
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.15 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
-              className="p-6 flex flex-col justify-between bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="p-6 flex flex-col justify-between bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-lg border border-gray-800 hover:border-red-500/50 transition-all duration-300"
             >
               <div>
                 <Link to={service.path} className="group">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-red-500 transition-colors">
-                    <span className="text-white group-hover:text-white">{service.title.split(" ")[0]}</span>{" "}
-                    <span className="text-red-500">
-                      {service.title.split(" ")[1] || ""}
-                    </span>
+                  <h3 className="text-xl font-bold mb-3 text-red-400 group-hover:text-red-500 transition-colors">
+                    {service.title}
                   </h3>
                 </Link>
                 <p className="text-xs text-gray-300 leading-relaxed">{service.description}</p>
               </div>
               <Link to={service.path} className="block mt-6 overflow-hidden rounded-lg">
-                <motion.img
+                <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-40 object-cover rounded-lg border-2 border-red-600"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
+                  className="w-full h-44 object-cover rounded-lg border-2 border-red-600/80 hover:scale-105 transition-transform duration-300"
                 />
               </Link>
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────
+          PART 2: EXPERIENCE YOU CAN VERIFY (MOCKUP PLATE 2)
+          ──────────────────────────────────────────────────────── */}
+      <section className="py-20 px-6 max-w-7xl mx-auto border-t border-red-950/30">
+        <div className="grid lg:grid-cols-12 gap-12 items-center mb-16">
+          {/* Left Text */}
+          <div className="lg:col-span-5 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+              Experience You Can <br />
+              <span className="text-red-500">Verify</span>
+            </h2>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              With 9+ years of immigration experience, Walshken Immigration has supported Canadian immigration
+              matters across a broad range of programs. These figures reflect the practice’s recorded work and service
+              activity. They describe past work—not guaranteed outcomes.
+            </p>
+            <p className="text-xs text-gray-400 border-l-2 border-red-600 pl-3 py-1 italic leading-relaxed">
+              Approval rate calculated from 2,975 documented positive decisions across 3,500 applications. Past results do not guarantee future outcomes.
+            </p>
+          </div>
+
+          {/* Right 3 Photo-Stat Cards */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              { figure: "35+", label: "Countries Represented", img: photo1 },
+              { figure: "3,500+", label: "Applications Prepared", img: photo2 },
+              { figure: "85%", label: "Documented Approval Rate", img: photo3 }
+            ].map((stat, i) => (
+              <div key={i} className="bg-gray-950 rounded-xl overflow-hidden border border-gray-800 shadow-xl flex flex-col">
+                <img src={stat.img} alt={stat.label} className="w-full h-28 object-cover opacity-80" />
+                <div className="p-4 text-center bg-gray-900/90 flex-1 flex flex-col justify-center">
+                  <div className="text-2xl font-extrabold text-white mb-1">{stat.figure}</div>
+                  <p className="text-[11px] text-gray-300 font-medium leading-tight">{stat.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ────────────────────────────────────────────────────────
+            PART 3: PRACTICE AT A GLANCE - THE PRACTICE IN NUMBERS
+            ──────────────────────────────────────────────────────── */}
+        <div className="bg-gray-950/60 border border-red-950/40 p-8 rounded-2xl">
+          <div className="mb-6">
+            <span className="text-red-500 font-semibold text-[11px] uppercase tracking-wider block">PRACTICE AT A GLANCE</span>
+            <h3 className="text-xl font-bold text-white">The Practice in Numbers</h3>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {secondaryStats.map((item, idx) => (
+              <div key={idx} className="flex items-center gap-3.5 p-4 bg-gray-900/40 rounded-xl border border-gray-800/60">
+                <div className="text-xl flex-shrink-0">{item.icon}</div>
+                <div>
+                  <div className="text-lg font-extrabold text-white">{item.figure}</div>
+                  <p className="text-[11px] text-gray-400 font-medium leading-tight">{item.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 
