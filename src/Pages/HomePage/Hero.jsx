@@ -846,7 +846,7 @@ import ielts from "../../assets/hero/ielts.jpg";
 import toefl from "../../assets/hero/coaching.jpg";
 import oet from "../../assets/hero/oet.jpg";
 import studentVisa from "../../assets/hero/studentVisa.webp"; 
-import visa2 from "../../assets/hero/VisaImg.jpg";
+import visa2 from "../../assets/hero/visaimg.jpg";
 
 // ==========================================
 // 1. LOADING SCREEN COMPONENT
