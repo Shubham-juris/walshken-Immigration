@@ -34,7 +34,7 @@ import React from "react";
 import image from "../../assets/hero/WorkVisa.jpg";
 import AboutCompany from "./AboutCompany ";
 import AboutSevices from "./AboutSevices";
-import AboutConsultants from "./AboutConsultants";
+import AboutConsultants from "./AboutConsultants"; 
 import AboutTeam from "./AboutTeam";
 
 const AboutHeroSection = () => {
