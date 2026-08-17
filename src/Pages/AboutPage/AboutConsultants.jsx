@@ -152,10 +152,10 @@ import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 // Image Imports
-import photo1 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
-import photo2 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
-import photo3 from "../../assets/hero/AboutImage2.webp";
-import photo4 from "../../assets/hero/AboutImage3.webp";
+import photo1 from "../../assets/hero/clearcommunication.jpg";
+import photo2 from "../../assets/hero/carefulpreparation.jpg";
+import photo3 from "../../assets/hero/organizedpreparation.jpg";
+import photo4 from "../../assets/hero/professionalsupport.jpg";
 
 const expectationsAndValues = [
   {
