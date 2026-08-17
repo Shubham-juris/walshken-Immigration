@@ -144,7 +144,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import mainImage from "../../assets/hero/TouristVisa.webp";
-import smallImage from "../../assets/hero/home3.webp";
+import smallImage from "../../assets/hero/smallimageabout.jpg";
 
 // Repurposed CircleCallout (No percentages, fully compliant)
 const CircleCallout = ({ label, desc, delay }) => {
