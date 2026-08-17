@@ -840,7 +840,7 @@ import { useInView } from "react-intersection-observer";
 
 // Asset Imports (Relative to src/Pages/HomePage/)
 import logo from "../../assets/hero/logo.webp";
-import heroImage from "../../assets/hero/HeroBGImage.webp";
+import heroImage from "../../assets/hero/HeroImage2.jpg";
 import citizen from "../../assets/hero/citizentest.jpg";
 import ielts from "../../assets/hero/ielts.jpg";
 import toefl from "../../assets/hero/coaching.jpg";
