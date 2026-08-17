@@ -411,15 +411,25 @@ const services = [
   },
 ];
 
+// const secondaryStats = [
+//   { figure: "2,975+", label: "Positive Decisions Documented", icon: <FaCheckCircle className="text-red-500" /> },
+//   { figure: "9+", label: "Years of Immigration Experience", icon: <FaClock className="text-red-500" /> },
+//   { figure: "6,000+", label: "Consultations Completed", icon: <FaComments className="text-red-500" /> },
+//   { figure: "20+", label: "Immigration Pathways Supported", icon: <FaCompass className="text-red-500" /> },
+//   { figure: "10+", label: "Languages Available", icon: <FaGlobeAmericas className="text-red-500" /> },
+//   { figure: "3", label: "Canadian Office Locations", icon: <FaBuilding className="text-red-500" /> },
+//   { figure: "300+", label: "Verified Public Reviews", icon: <FaStar className="text-red-500" /> },
+//   { figure: "1,000+", label: "Coaching Enrolments Completed", icon: <FaGraduationCap className="text-red-500" /> },
+// ];
 const secondaryStats = [
-  { figure: "2,975+", label: "Positive Decisions Documented", icon: <FaCheckCircle className="text-red-500" /> },
-  { figure: "9+", label: "Years of Immigration Experience", icon: <FaClock className="text-red-500" /> },
-  { figure: "6,000+", label: "Consultations Completed", icon: <FaComments className="text-red-500" /> },
-  { figure: "20+", label: "Immigration Pathways Supported", icon: <FaCompass className="text-red-500" /> },
-  { figure: "10+", label: "Languages Available", icon: <FaGlobeAmericas className="text-red-500" /> },
-  { figure: "3", label: "Canadian Office Locations", icon: <FaBuilding className="text-red-500" /> },
-  { figure: "300+", label: "Verified Public Reviews", icon: <FaStar className="text-red-500" /> },
-  { figure: "1,000+", label: "Coaching Enrolments Completed", icon: <FaGraduationCap className="text-red-500" /> },
+  { figure: "2,975+", label: "Positive Decisions Documented", icon: <FaCheckCircle /> },
+  { figure: "9+", label: "Years of Immigration Experience", icon: <FaClock /> },
+  { figure: "6,000+", label: "Consultations Completed", icon: <FaComments /> },
+  { figure: "20+", label: "Immigration Pathways Supported", icon: <FaCompass /> },
+  { figure: "10+", label: "Languages Available", icon: <FaGlobeAmericas /> },
+  { figure: "3", label: "Canadian Office Locations", icon: <FaBuilding /> },
+  { figure: "300+", label: "Verified Public Reviews", icon: <FaStar /> },
+  { figure: "1,000+", label: "Coaching Enrolments Completed", icon: <FaGraduationCap /> },
 ];
 
 const AboutServices = () => {
@@ -521,7 +531,7 @@ const AboutServices = () => {
             <h3 className="text-xl font-bold text-white">The Practice in Numbers</h3>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {secondaryStats.map((item, idx) => (
               <div key={idx} className="flex items-center gap-3.5 p-4 bg-gray-900/40 rounded-xl border border-gray-800/60">
                 <div className="text-xl flex-shrink-0">{item.icon}</div>
@@ -531,7 +541,44 @@ const AboutServices = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+  {secondaryStats.map((item, idx) => (
+    <motion.div
+      key={idx}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: idx * 0.06 }}
+      viewport={{ once: true }}
+      className="group relative flex items-center gap-4 p-5 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950 rounded-2xl border border-gray-800/80 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(220,38,38,0.12)]"
+    >
+      {/* Icon */}
+      <div className="relative flex-shrink-0">
+        <div className="absolute inset-0 bg-red-600/20 rounded-xl blur-md group-hover:bg-red-500/30 transition-all duration-300" />
+
+        <div className="relative w-12 h-12 rounded-xl bg-gradient-to-br from-red-600/20 to-red-950/40 border border-red-500/30 flex items-center justify-center text-red-500 group-hover:text-red-400 group-hover:border-red-500/60 group-hover:scale-105 transition-all duration-300">
+          <span className="text-xl">
+            {item.icon}
+          </span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="min-w-0">
+        <div className="text-xl font-extrabold text-white tracking-tight group-hover:text-red-400 transition-colors duration-300">
+          {item.figure}
+        </div>
+
+        <p className="text-[11px] text-gray-400 font-medium leading-snug mt-0.5">
+          {item.label}
+        </p>
+      </div>
+
+      {/* Decorative accent */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-7 bg-red-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    </motion.div>
+  ))}
+</div>
         </div>
       </section>
     </div>
