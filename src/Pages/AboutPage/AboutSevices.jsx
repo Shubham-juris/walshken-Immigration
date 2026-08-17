@@ -376,9 +376,9 @@ import Studentvisa from "../../assets/hero/studypermit1.jpg";
 import BusinessVisa from "../../assets/hero/businessimmigration1.jpg";
 import WorkVisa from "../../assets/hero/workpermit1.jpg";
 import TouristVisa from "../../assets/hero/visitorvisa1.jpg";
-import photo1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
-import photo2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
-import photo3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
+import photo1 from "../../assets/hero/countriesrepresented.jpg";
+import photo2 from "../../assets/hero/applicationprepared.jpg";
+import photo3 from "../../assets/hero/approvalrates.jpg";
 
 const services = [
   {
