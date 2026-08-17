@@ -378,7 +378,7 @@ import WorkVisa from "../../assets/hero/workpermit1.jpg";
 import TouristVisa from "../../assets/hero/visitorvisa1.jpg";
 import photo1 from "../../assets/hero/countriesrepresented.jpg";
 import photo2 from "../../assets/hero/applicationprepared.jpg"; 
-import photo3 from "../../assets/hero/approvalrates.jpg";
+import photo3 from "../../assets/hero/documentapproval1.jpg";
 
 const services = [
   {
