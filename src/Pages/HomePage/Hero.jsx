@@ -1365,7 +1365,7 @@ const Header = () => {
               </ul>
             </div>
             <Link
-              to="/form"
+              to="/contact"
               className="w-full block text-center py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition"
             >
               Book Consultation
