@@ -31,7 +31,7 @@
 // export default AboutHeroSection;
 
 import React from "react";
-import image from "../../assets/hero/WorkVisa.jpg";
+import image from "../../../assets/hero/workvisa.jpg";
 import AboutCompany from "./AboutCompany ";
 import AboutSevices from "./AboutSevices";
 import AboutConsultants from "./AboutConsultants"; 
@@ -60,5 +60,4 @@ const AboutHeroSection = () => {
     </>
   );
 };
-
 export default AboutHeroSection;
