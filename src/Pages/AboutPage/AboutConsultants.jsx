@@ -155,7 +155,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import photo1 from "../../assets/hero/clearcommunication.jpg";
 import photo2 from "../../assets/hero/carefulpreparation.jpg";
 import photo3 from "../../assets/hero/organizedpreparation.jpg";
-import photo4 from "../../assets/hero/professionalsupport.jpg";
+import photo4 from "../../assets/hero/professionalsupport1.jpg";
 
 const expectationsAndValues = [
   {
