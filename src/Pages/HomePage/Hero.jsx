@@ -1037,7 +1037,7 @@ const Header = () => {
               transition={{ duration: 1.5, delay: 0.3, ease: "easeInOut" }}
               className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent"
             >
-              Professional Guidance for Your Canadian Immigration Journey
+              Professional Guidance for Your Immigration Journey
             </motion.h1>
 
             <motion.div
@@ -1047,7 +1047,7 @@ const Header = () => {
               className="mt-4 text-base md:text-lg text-gray-300 space-y-4"
             >
               <p>
-                Clear, personalized support for individuals, families and employers navigating Canadian
+                Clear, personalized support for individuals, families and employers navigating Your
                 immigration programs and application requirements.
               </p>
               <p>
@@ -1213,7 +1213,7 @@ const Header = () => {
             
             <div className="text-gray-300 text-sm md:text-base mb-8 space-y-4 leading-relaxed">
               <p>
-                Walshken Immigration helps individuals, families and employers understand their Canadian 
+                Walshken Immigration helps individuals, families and employers understand their 
                 immigration options. We explain requirements, documentation and next steps in plain language 
                 so clients can make informed decisions about how to proceed.
               </p>
