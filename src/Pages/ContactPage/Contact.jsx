@@ -1135,7 +1135,7 @@ import {
 } from "react-icons/fa";
 
 // Image Imports
-import heroBg from "../../assets/hero/WorkVisa.webp";
+import heroBg from "../../assets/hero/visaimg.jpg";
 import logo from "../../assets/hero/logo.webp";
 
 const Contact = () => {
