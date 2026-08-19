@@ -483,7 +483,7 @@ const team = [
     role: "Senior RCIC",
     desc: (
       <span>
-        Harman Kaur is a Regulated Canadian Immigration Consultant (RCIC) in good standing with extensive experience in Canadian immigration policies and consulting practices. She specializes in{" "}
+        Harman Kaur is a Regulated Canadian Immigration Consultant (RCIC) in good standing with extensive experience in your immigration policies and consulting practices. She specializes in{" "}
         <Link to="/pr" className="text-red-500 hover:underline">permanent residence</Link>,{" "}
         <Link to="/work-visa" className="text-red-500 hover:underline">work permits</Link>,{" "}
         <Link to="/study-visa" className="text-red-500 hover:underline">study permits</Link>, and{" "}
@@ -495,7 +495,7 @@ const team = [
   {
     name: "Ardaman Singh",
     role: "Senior Immigration Paralegal ",
-    desc: "Ardaman Singh is an immigration specialist focusing on immigration documentation, submission drafting, and administrative case management. He has extensive experience preparing complex applications, reviewing supporting documents, and maintaining compliance with Canadian immigration regulations. His attention to detail and professional commitment support clients as they navigate the migration process efficiently.",
+    desc: "Ardaman Singh is an immigration specialist focusing on immigration documentation, submission drafting, and administrative case management. He has extensive experience preparing complex applications, reviewing supporting documents, and maintaining compliance with your immigration regulations. His attention to detail and professional commitment support clients as they navigate the migration process efficiently.",
     img: team2,
   },
   {
