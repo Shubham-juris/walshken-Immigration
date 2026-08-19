@@ -250,7 +250,7 @@ const AboutCompany = () => {
           </h2>
 
           <p className="text-gray-300 text-base leading-relaxed">
-            Walshken Immigration provides Canadian immigration guidance to individuals, families, students, workers, visitors and employers. We begin by understanding your circumstances, then explain the available options, requirements and next steps in clear language.
+            Walshken Immigration provides immigration guidance to individuals, families, students, workers, visitors and employers. We begin by understanding your circumstances, then explain the available options, requirements and next steps in clear language.
           </p>
 
           {/* APPROVED APPOINTMENT NOTICE */}
@@ -284,7 +284,7 @@ const AboutCompany = () => {
           <ul className="space-y-3.5 text-gray-300 font-semibold text-sm">
             <motion.li whileHover={{ x: 10 }} className="flex items-center">
               <FaCheckCircle className="text-red-500 mr-2 text-xs" />
-              Canadian Immigration Guidance
+              Your Immigration Guidance
             </motion.li>
 
             <motion.li whileHover={{ x: 10 }} className="flex items-center">
