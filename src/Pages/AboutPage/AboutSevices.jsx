@@ -384,21 +384,21 @@ const services = [
   {
     title: "Business Immigration",
     description:
-      "Guidance for eligible entrepreneurs, investors and business applicants exploring Canadian immigration programs. We explain applicable requirements and help organize supporting documentation.",
+      "Guidance for eligible entrepreneurs, investors and business applicants exploring your immigration programs. We explain applicable requirements and help organize supporting documentation.",
     image: BusinessVisa,
     path: "/business-visa",
   },
   {
     title: "Study Permits",
     description:
-      "Support for Canadian study permit applications, including document review, purpose-of-study presentation and careful application organization.",
+      "Support for your study permit applications, including document review, purpose-of-study presentation and careful application organization.",
     image: Studentvisa,
     path: "/study-visa",
   },
   {
     title: "Work Permits",
     description:
-      "Assistance with eligible Canadian work permit applications, extensions and related documentation, with employer-side support where included in the service offered.",
+      "Assistance with eligible work permit applications, extensions and related documentation, with employer-side support where included in the service offered.",
     image: WorkVisa,
     path: "/work-visa",
   },
@@ -427,7 +427,7 @@ const secondaryStats = [
   { figure: "6,000+", label: "Consultations Completed", icon: <FaComments /> },
   { figure: "20+", label: "Immigration Pathways Supported", icon: <FaCompass /> },
   { figure: "10+", label: "Languages Available", icon: <FaGlobeAmericas /> },
-  { figure: "3", label: "Canadian Office Locations", icon: <FaBuilding /> },
+  { figure: "3", label: "your Office Locations", icon: <FaBuilding /> },
   { figure: "300+", label: "Verified Public Reviews", icon: <FaStar /> },
   { figure: "1,000+", label: "Coaching Enrolments Completed", icon: <FaGraduationCap /> },
 ];
@@ -445,7 +445,7 @@ const AboutServices = () => {
           </p>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white">
             <span className="bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
-              Explore Our Canadian Immigration
+              Explore Our Immigration
             </span>{" "}
             <br />
             <span className="text-red-500">& Citizenship Services</span>
@@ -495,7 +495,7 @@ const AboutServices = () => {
               <span className="text-red-500">Verify</span>
             </h2>
             <p className="text-sm text-gray-300 leading-relaxed">
-              With 9+ years of immigration experience, Walshken Immigration has supported Canadian immigration
+              With 9+ years of immigration experience, Walshken Immigration has supported your immigration
               matters across a broad range of programs. These figures reflect the practice’s recorded work and service
               activity. They describe past work—not guaranteed outcomes.
             </p>
