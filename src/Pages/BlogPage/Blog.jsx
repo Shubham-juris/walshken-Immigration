@@ -270,12 +270,12 @@ import {
 } from "react-icons/fa";
 
 // Image Imports (Using verified available assets)
-import heroBg from "../../assets/hero/WorkVisa.webp";
-import imgArjun from "../../assets/hero/pexels-cottonbro-5137969.jpg";
-import imgEmily from "../../assets/hero/pexels-ekrulila-2305114.jpg";
-import imgDavid from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
-import imgMaria from "../../assets/hero/pexels-freestockpro-1008155.jpg";
-import imgResource1 from "../../assets/hero/studentVisa.webp";
+import heroBg from "../../assets/hero/visaimg.jpg";
+import imgArjun from "../../assets/hero/journey.jpg";
+import imgEmily from "../../assets/hero/employment.jpg";
+import imgDavid from "../../assets/hero/trip.jpg";
+import imgMaria from "../../assets/hero/permenantresidency.jpg";
+import imgResource1 from "../../assets/hero/immigrationpathways.jpg";
 import imgResource2 from "../../assets/hero/TouristVisa.webp";
 
 const Blog = () => {
