@@ -58,7 +58,7 @@ const ImmigrationCareerPathway = () => {
             For individuals who are new to Canada or exploring a career in immigration, entering the system can seem challenging. While educational courses teach the regulatory frameworks, understanding the day-to-day realities of consulting is where genuine professional readiness is built.
           </p>
           <p className="text-gray-300 leading-relaxed text-base max-w-4xl mx-auto">
-            At **Walshken Immigration**, we believe in opening our doors to aspiring practitioners. We offer structured opportunities to observe how professional consultants work, manage clients, and process files in a compliant, real-world setting.
+            At Walshken Immigration, we believe in opening our doors to aspiring practitioners. We offer structured opportunities to observe how professional consultants work, manage clients, and process files in a compliant, real-world setting.
           </p>
         </motion.div>
       </section>
