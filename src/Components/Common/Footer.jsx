@@ -37,10 +37,10 @@ const Footer = () => {
             {/* We specialize in IELTS, PTE, and TOEFL coaching, along with
             Citizenship Test preparation — guiding you step by step toward
             success abroad. */}
-            {/* Walshken Immigration provides Canadian immigration guidance and
-            test-preparation support for individuals, families and employers. */}
-            Dedicated to providing quality education and fostering holistic growth.
-            We strive to create a supportive environment where every student learns and grows.
+            Walshken Immigration provides Canadian immigration guidance and
+            test-preparation support for individuals, families and employers.
+            {/* Dedicated to providing quality education and fostering holistic growth.
+            We strive to create a supportive environment where every student learns and grows. */}
           </p>
 
           {/* Socials */}
