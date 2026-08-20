@@ -363,37 +363,37 @@ const DetentionRemoval = () => {
     {
       title: "Immigration Detention Reviews",
       desc: "Representing detainees before the Immigration Division (IRB) to advocate for release under viable, structured bond and supervision plans.",
-      img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMru-deT8ZL60x7QstrAvIuHCz1DIKwNqgRFgy3m8MHg&s=10",
       icon: <FaShieldAlt className="text-red-500" />,
     },
     {
       title: "IAD Removal Order Appeals",
       desc: "Filing and arguing formal removal appeals before the Immigration Appeal Division for permanent residents and sponsored sponsors.",
-      img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHH6lduGk7HEkQYJq8GX42QLQgqBAcYXuXIJVZcchiA&s=10",
       icon: <FaGavel className="text-red-500" />,
     },
     {
       title: "Admissibility Hearing Support",
       desc: "Representing clients facing formal admissibility allegations due to security, criminality, or misrepresentation concerns.",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGgNqJ17unhmFbHvDhnbnVrW6qUUPAdESAPk3eu8xBw&s=10",
       icon: <FaFileAlt className="text-red-500" />,
     },
     {
       title: "Authorizations to Return (ARC)",
       desc: "Drafting highly structured, comprehensive ARC applications for individuals seeking to re-enter Canada after past deportations.",
-      img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQePRHsMHaDYr7qI6IZuvBb1iE01bLDss6pDF6bV6ZFg&s=10",
       icon: <FaPassport className="text-red-500" />,
     },
     {
       title: "Pre-Removal Risk Assessments",
       desc: "Compiling exhaustive PRRA submissions as a final protection evaluation prior to scheduled removal orders.",
-      img: "https://images.unsplash.com/photo-1505664194779-8bebcb95c557?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrzuGvrOLK9B6rwU-r77CC50NUcDb8zCz7B2ujmDO-g&s=10",
       icon: <FaExclamationTriangle className="text-red-500" />,
     },
     {
       title: "Judicial Review Documentation",
       desc: "Compiling the essential administrative records and coordinating with litigation counsel for Federal Court review filings.",
-      img: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkPuBhyeEyaczR6LouWmpbNTcaAygSRXX4_5RgGLnmg&s=10",
       icon: <FaLandmark className="text-red-500" />,
     },
   ];
@@ -496,7 +496,7 @@ const DetentionRemoval = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1505664194779-8bebcb95c557?auto=format&fit=crop&w=900&q=80"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfCQBo4kd47vzmNdhVvt6U7veLfEOOBa6O-ZLzgs4yA&s=10"
               alt="Urgent Immigration Defense"
               className="rounded-2xl shadow-2xl border border-red-950 w-full object-cover h-[380px]"
             />
