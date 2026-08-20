@@ -1813,7 +1813,7 @@ const PermanentResidency = () => {
               <img
                 src={country.bgImg}
                 alt={country.country}
-                className="absolute inset-0 w-full h-full object-cover filter blur-[1px] opacity-45 group-hover:opacity-65 group-hover:scale-105 transition-all duration-500"
+                className="absolute inset-0 w-full h-full object-cover filter blur-[1px] opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/90 to-black/80"></div>
 
