@@ -824,37 +824,37 @@ const BusinessInvestorVisa = () => {
     {
       title: "Global Expansion",
       desc: "Access competitive international markets and grow your operational presence across borders.",
-      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwv7hZc2ATuGttTQEAuveiUMrPJqP04zcytE3J4Q3ig&s=10",
       icon: <FaGlobeAmericas className="text-red-500" />,
     },
     {
       title: "Residency Options",
       desc: "Many countries offer pathways to permanent residency and citizenship based on compliant investments.",
-      img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ez8icu_pR3lS20eVqMN6KM0pQOkNS9r2v_tMk5Txzw&s=10",
       icon: <FaPassport className="text-red-500" />,
     },
     {
       title: "Tax Advantages",
       desc: "Benefit from favorable tax frameworks, regional incentives, and investment-friendly climates.",
-      img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8S1-MmOMJ-EAAwPH6P6bSwmVm4u1FLe7aCVzdxLI6xw&s=10",
       icon: <FaPercent className="text-red-500" />,
     },
     {
       title: "Family Inclusion",
       desc: "Secure dependent visas to bring your spouse, children, and eligible family members with you.",
-      img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzhWssDp0xIIQ3-T5-CUuOMVLU3icEMtIhJcAWCJbZ_w&s=10",
       icon: <FaUsers className="text-red-500" />,
     },
     {
       title: "Diverse Investments",
       desc: "Qualify through custom real estate, venture capital, government bonds, or active commercial operations.",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw01Dvtig3z08ec0vpctNlCnRbOjhYWf65oaq8vnGvFA&s=10",
       icon: <FaCoins className="text-red-500" />,
     },
     {
       title: "Strategic Trade Networks",
       desc: "Build professional relationships, establish local vendor partnerships, and expand trade operations.",
-      img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcLH0kL7De26EJlC9DEfqXOPinW8ExxHadkkbDFcg0w&s=10",
       icon: <FaHandshake className="text-red-500" />,
     },
   ];
@@ -1231,7 +1231,7 @@ const BusinessInvestorVisa = () => {
               <img
                 src={item.bgImg}
                 alt={item.country}
-                className="absolute inset-0 w-full h-full object-cover filter blur-[2px] opacity-25 group-hover:opacity-35 group-hover:scale-105 transition-all duration-500"
+                className="absolute inset-0 w-full h-full object-cover filter blur-[1px] opacity-90 group-hover:opacity-95 group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/90 to-black/80"></div>
 
