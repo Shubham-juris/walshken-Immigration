@@ -1593,25 +1593,25 @@ const PermanentResidency = () => {
     {
       category: "Skilled Professionals",
       details: "Individuals with work history, educational degrees, and language abilities evaluated under skilled worker points programs.",
-      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFMkFEMloZyiFqAusDCtPS_Ans_crhOHIfXN2hqn9eSw&s=10",
       icon: <FaBriefcase className="text-red-500 text-sm" />
     },
     {
       category: "International Graduates",
       details: "Students who completed qualifying foreign degrees and hold regional work experience to convert to permanent statuses.",
-      img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYC4V6Puvm92J4PcrF4cbYAsoNgbQwkgd7JGmmO56Fg&s=10",
       icon: <FaUserGraduate className="text-red-500 text-sm" />
     },
     {
       category: "Business Investors",
       details: "Entrepreneurs, startup founders, and investors committing capital to boost local economic performance.",
-      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9cNtb1BSnIUAuFX36VkLn4USRaY25N7pOiBj2XH7vw&s=10",
       icon: <FaGlobeAmericas className="text-red-500 text-sm" />
     },
     {
       category: "Family Sponsored",
       details: "Eligible relatives sponsored by resident citizens, helping family reunification occur safely.",
-      img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ53dFqQWy9eTOhuKxjtTl0RBDHSl-tyHfEFBJvAZcPw&s=10",
       icon: <FaUsers className="text-red-500 text-sm" />
     }
   ];
