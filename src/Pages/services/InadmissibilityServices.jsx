@@ -381,7 +381,7 @@ const InadmissibilityServices = () => {
     {
       title: "Procedural Fairness Responses",
       desc: "Structuring highly evidence-based, formal responses to address officer doubts regarding eligibility or document truthfulness.",
-      img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3v09c8i7TfjaDEiXFd1VY1AluAZXbo2oHxeRws01oLg&s=10",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3v09c8i7TfjaDEiXFd1VY1AluAZXbo2oHxeRws01oLg&s=10",
       icon: <FaFileAlt className="text-red-500" />,
     },
     {
