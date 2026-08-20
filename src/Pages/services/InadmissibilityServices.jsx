@@ -363,37 +363,37 @@ const InadmissibilityServices = () => {
     {
       title: "Criminal Rehabilitation",
       desc: "Assisting individuals with past foreign convictions to apply for formal, permanent rehabilitation to resolve criminal barriers.",
-      img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-L0tkcGxG_hmMWRY2G5sz2srinqE_qHABZXRTUky7vQ&s=10",
       icon: <FaGavel className="text-red-500" />,
     },
     {
       title: "Temporary Resident Permits (TRP)",
       desc: "Drafting compelling applications for individuals who need temporary entry despite being technically inadmissible.",
-      img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIKss_sBfIip8nkI4y9FRimw6ouMGZYR2LNGkCJonFw&s=10",
       icon: <FaPassport className="text-red-500" />,
     },
     {
       title: "Medical Inadmissibility Responses",
       desc: "Compiling detailed medical mitigation plans and financial outlines to counter excessive demand concerns on social systems.",
-      img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_m_C1bteE_nGbXmqkifyUN3Q7rawdWTrOSz1Yp6nJSg&s=10",
       icon: <FaHeartbeat className="text-red-500" />,
     },
     {
       title: "Procedural Fairness Responses",
       desc: "Structuring highly evidence-based, formal responses to address officer doubts regarding eligibility or document truthfulness.",
-      img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3v09c8i7TfjaDEiXFd1VY1AluAZXbo2oHxeRws01oLg&s=10",
       icon: <FaFileAlt className="text-red-500" />,
     },
     {
       title: "Humanitarian & Compassionate (H&C)",
       desc: "Developing complete permanent residency portfolios based on severe hardship and strong establishment in Canada.",
-      img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37LwEm7kkHYqMeT9RT_HwaCKgmodG3i55FOT6XZwp_w&s=10",
       icon: <FaHandsHelping className="text-red-500" />,
     },
     {
       title: "Record Suspensions / Pardons",
       desc: "Guiding clients through administrative processes to clear past domestic records and restore smooth travel pathways.",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXX16RzxyNgpYu6Ll4bIR5FmALNyqBQBZRZoaQfZj1g&s=10",
       icon: <FaShieldAlt className="text-red-500" />,
     },
   ];
