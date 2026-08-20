@@ -1557,37 +1557,37 @@ const FamilySpousalSponsorship = () => {
     {
       title: "Family Reunification",
       desc: "Live, reside, and establish a household with your spouse, children, or parents without long separations.",
-      img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-KF9Wm9NJ-1BHpZQZQpDmxczgY9meigRdXeW646lqA&s=10",
       icon: <FaUsers className="text-red-500" />,
     },
     {
       title: "Permanent Residency Status",
       desc: "Sponsored family members generally receive immediate permanent resident status with full security.",
-      img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZnfLaFnpOadACs3Lf4KlREHEW56mzojA2qSChM99uMw&s=10",
       icon: <FaAward className="text-red-500" />,
     },
     {
       title: "Work & Study Authorization",
       desc: "Dependents can acquire open work permits or study in public institutions at resident tuition rates.",
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjPI8ZePhm4PxX7HVHbXqH_Bn1crgR5gt88kl9qlKbA&s=10",
       icon: <FaBriefcase className="text-red-500" />,
     },
     {
       title: "Healthcare Coverage",
       desc: "Gain immediate access to domestic public healthcare coverage, social insurance, and resident welfare.",
-      img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwBbLsWhmJELiySpG_-jd4y_sz6H1SjB6CQ-9x8Z1bA&s=10",
       icon: <FaShieldAlt className="text-red-500" />,
     },
     {
       title: "Direct Citizenship Path",
       desc: "Sponsorship establishes a clear residency record required to apply for full naturalization and passport privileges.",
-      img: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtPFlrmEXz7SF-s5CHgFG9TohSbR0CkNwl2vsEQw6Hw&s=10",
       icon: <FaPassport className="text-red-500" />,
     },
     {
       title: "Stable Household Security",
       desc: "Establish your household safely and plan your long-term future without temporary residency anxieties.",
-      img: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2na7RxdVtIifo5B9kVqLpFZpY21xe1XUKDyBa5VY2Q&s=10",
       icon: <FaHeart className="text-red-500" />,
     },
   ];
@@ -1780,7 +1780,7 @@ const FamilySpousalSponsorship = () => {
               <img
                 src={country.bgImg}
                 alt={country.country}
-                className="absolute inset-0 w-full h-full object-cover filter blur-[2px] opacity-25 group-hover:opacity-35 group-hover:scale-105 transition-all duration-500"
+                className="absolute inset-0 w-full h-full object-cover filter blur-[1px] opacity-75 group-hover:opacity-85 group-hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/90 to-black/80"></div>
 
