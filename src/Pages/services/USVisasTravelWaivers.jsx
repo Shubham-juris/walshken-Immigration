@@ -361,37 +361,37 @@ const USVisasTravelWaivers = () => {
     {
       title: "US Waiver Applications (I-192)",
       desc: "Assembling comprehensive packages for Advance Permission to Enter as a Nonimmigrant, addressing past inadmissibility concerns.",
-      img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisRHuSwCi0J9qfWpy4z91sohgnH1hi7GK_U4hJ5esjg&s=10",
       icon: <FaPassport className="text-red-500" />,
     },
     {
       title: "CUSMA TN Visa Support",
       desc: "Drafting detailed employer support letters and verifying candidate credentials to support TN application reviews at the border.",
-      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfptxW1X2Ab5FW6yk_dL0oX3zQYFUnzC1bhar9Xc2Fdg&s=10",
       icon: <FaBriefcase className="text-red-500" />,
     },
     {
       title: "L-1 Intra-Company Transfers",
       desc: "Structuring business transfer files for executives, managers, or specialized knowledge personnel relocating to US affiliates.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Y574OHgKMjvVIIPU199R8yqX4EQ30yaOWbqhgYBfAw&s=10",
       icon: <FaExchangeAlt className="text-red-500" />,
     },
     {
       title: "B-1 / B-2 Travel Portfolios",
       desc: "Assisting business travelers and tourists in organizing robust proof of ties and purpose-of-travel portfolios.",
-      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqjiW7qhsDPutqaaeK7XWJWbab4xZ3RlUlNfD8ydfoA&s=10",
       icon: <FaSuitcaseRolling className="text-red-500" />,
     },
     {
       title: "E-2 Treaty Investor Support",
       desc: "Coordinating with cross-border partners to structure business investment files for entrepreneurs starting ventures in the US.",
-      img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAAz6wz-gocAJX8ZTvFWYcujTZzKJk0Zf22AdDgj4HgA&s=10",
       icon: <FaHandshake className="text-red-500" />,
     },
     {
       title: "Prior US Refusal Consultation",
       desc: "Analyzing past US visa denials or border turn-backs to determine appropriate corrective strategies.",
-      img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AsUxehLAZYg7Ep7b5cQnCb6rmZjBBYPuLpK6rHB3iA&s=10",
       icon: <FaRedoAlt className="text-red-500" />,
     },
   ];
