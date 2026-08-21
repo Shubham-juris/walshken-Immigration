@@ -34,7 +34,7 @@ const Navbar = () => {
     },
     { label: "Blog", path: "/blog" },
     { label: "Contact", path: "/contact" },
-    { label: "Immigration Form", path: "/form" },
+    // { label: "Immigration Form", path: "/form" },
   ];
 
   const isDropdownActive = (dropdown) =>
