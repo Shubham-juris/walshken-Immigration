@@ -1614,7 +1614,7 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 
 // Asset Import
-import logo from "../../assets/hero/logo.webp";
+import logo from "../assets/hero/logo.webp";
 
 const CanadaImmigrationForm = () => {
   const [formData, setFormData] = useState({
