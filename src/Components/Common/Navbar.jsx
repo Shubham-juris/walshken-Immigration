@@ -17,7 +17,7 @@ const Navbar = () => {
     { label: "Home", path: "/" },
     { label: "About Us", path: "/about" },
     {
-      label: "Services",
+      label: "Our Services",
       dropdown: [
         { label: "Study Visa", path: "/study-visa" },
         { label: "Work Visa", path: "/work-visa" },
@@ -33,7 +33,7 @@ const Navbar = () => {
       ],
     },
     { label: "Blog", path: "/blog" },
-    { label: "Contact", path: "/contact" },
+    { label: "Contact Us", path: "/contact" },
     // { label: "Immigration Form", path: "/form" },
   ];
 
