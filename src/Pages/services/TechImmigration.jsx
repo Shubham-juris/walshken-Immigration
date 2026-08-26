@@ -369,7 +369,7 @@ const TechImmigration = () => {
     {
       title: "Provincial Tech Nominations",
       desc: "Strategic guidance for tech workers utilizing priority nominee pathways in British Columbia, Alberta, and Ontario.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1J3qUY5IixlYQJKpZiIyUBFwN59_Xb6WuEq8oQubLAA&s",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAk0xntneLl_p7csOcWvlOY31sCh0uh0-IeMgONJfZjw&s=10",
       icon: <FaMapMarkedAlt className="text-red-500" />,
     },
     {
