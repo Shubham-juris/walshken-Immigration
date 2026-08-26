@@ -799,13 +799,13 @@ const RefugeeClaims = () => {
     {
       title: "Basis of Claim (BOC) Preparation",
       desc: "Assistance with structuring and drafting your primary narrative, which serves as the core foundation for your entire claim.",
-      img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ExYeAwXs7oYQpJgKFQRyj7WrWsVcqUolRumMRWHqRw&s=10",
       icon: <FaFileAlt className="text-red-500" />,
     },
     {
       title: "RPD Hearing Prep",
       desc: "Complete simulation and structural preparation for your hearing before the Refugee Protection Division.",
-      img: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcvsairMNPqnT_WlV-7ttoZJ_T0Ud6iqLKibwrcRUZ8A&s=10",
       icon: <FaUsers className="text-red-500" />,
     },
     {
