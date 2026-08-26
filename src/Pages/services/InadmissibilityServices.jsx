@@ -494,7 +494,7 @@ const InadmissibilityServices = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3Nwj-baxK03Ci8dZ7obvwucpD5qlI_dvB34G2VUrLg&s=10"
               alt="Regulatory Compliance"
               className="rounded-2xl shadow-2xl border border-red-950 w-full object-cover h-[380px]"
             />
