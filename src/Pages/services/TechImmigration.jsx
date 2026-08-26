@@ -148,7 +148,7 @@
 //                 <p className="text-xs text-gray-300">
 //                   Federal Express Entry systems routinely conduct category-based selection draws targeting STEM candidates with strong language and education credentials.
 //                 </p>
-//               </div>
+//               </div> 
 //             </div>
 //           </motion.div>
 //         </div>
