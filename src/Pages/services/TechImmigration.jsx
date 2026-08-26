@@ -440,7 +440,7 @@ const TechImmigration = () => {
             </span>
             <span className="h-[1px] w-8 bg-red-500"></span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r pb-2 leading-[1.2] from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent overflow-visible">
             Tech Immigration Pathways
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-6 leading-relaxed">
