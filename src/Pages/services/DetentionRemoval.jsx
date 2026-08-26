@@ -363,7 +363,7 @@ const DetentionRemoval = () => {
     {
       title: "Immigration Detention Reviews",
       desc: "Representing detainees before the Immigration Division (IRB) to advocate for release under viable, structured bond and supervision plans.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMru-deT8ZL60x7QstrAvIuHCz1DIKwNqgRFgy3m8MHg&s=10",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmXVnF4rIJtkL5cCyIiKkpt5SKztIYz_I3ElHWK0S4w&s=10",
       icon: <FaShieldAlt className="text-red-500" />,
     },
     {
@@ -375,7 +375,7 @@ const DetentionRemoval = () => {
     {
       title: "Admissibility Hearing Support",
       desc: "Representing clients facing formal admissibility allegations due to security, criminality, or misrepresentation concerns.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGgNqJ17unhmFbHvDhnbnVrW6qUUPAdESAPk3eu8xBw&s=10",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfrgqddoQPuApjhhA9os3hXx8qxin3Ecp_OXTcnkO-w&s=10",
       icon: <FaFileAlt className="text-red-500" />,
     },
     {
