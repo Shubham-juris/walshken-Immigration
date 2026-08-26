@@ -817,7 +817,7 @@ const RefugeeClaims = () => {
     {
       title: "Humanitarian & Compassionate (H&C)",
       desc: "Formulating detailed residency applications based on domestic establishment and best interests of affected children.",
-      img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoTKEQZ0u-yCI--AP19gj-4eRuqKrdAbUySNiagPiGQ&s=10",
       icon: <FaHeart className="text-red-500" />,
     },
     {
