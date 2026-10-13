@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/hero/logo.webp"; // ✅ Import logo
 
-const Footer = () => {
+const Footer = () => { 
   const services = [
     { name: "Study Visa", path: "/study-visa" },
     { name: "Work Visa", path: "/work-visa" },
