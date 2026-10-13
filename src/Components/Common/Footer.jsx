@@ -149,8 +149,38 @@ const Footer = () => {
       </div>
 
       {/* Bottom Note */}
-      <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+      {/* <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
         © {new Date().getFullYear()} Walshken Immigration. All rights reserved.
+      </div> */}\
+      {/* Bottom Note with Legal & Policy Links */}
+      <div className="border-t border-gray-800 mt-10 pt-6 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500 text-center md:text-left">
+        <div>
+          © {new Date().getFullYear()} Walshken Immigration. All rights reserved.
+        </div>
+
+        {/* Policy Links */}
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <NavLink
+            to="/privacy-policy"
+            className="hover:text-red-500 transition"
+          >
+            Privacy Policy
+          </NavLink>
+          <span>•</span>
+          <NavLink
+            to="/privacy-policy#terms"
+            className="hover:text-red-500 transition"
+          >
+            Terms & Conditions
+          </NavLink>
+          <span>•</span>
+          <NavLink
+            to="/privacy-policy#refund"
+            className="hover:text-red-500 transition"
+          >
+            Refund Policy
+          </NavLink>
+        </div>
       </div>
     </footer>
   );
