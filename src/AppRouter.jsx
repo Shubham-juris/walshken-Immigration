@@ -22,7 +22,7 @@ import ImmigrationCareerPathway from "./Pages/services/ImmigrationCareerPathway"
 import CanadaImmigrationForm from "./Pages/CanadaImmigrationForms";
 import ScrollToTop from "./Components/ScrollToTop";
 import Services from "./Pages/Service/Services";
-
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 const AppRouter = () => {
   return (
     <>
@@ -49,6 +49,7 @@ const AppRouter = () => {
         <Route path="/immigration-career-pathway" element={<ImmigrationCareerPathway />} />
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
        
       </Routes>
     </>
