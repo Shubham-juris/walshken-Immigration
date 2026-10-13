@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaShieldAlt, FaFileContract, FaUndoAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -23,16 +23,19 @@ const PrivacyPolicy = () => {
   return (
     <div className="bg-gradient-to-br from-black via-gray-900 to-red-950 text-white min-h-screen font-sans">
       {/* ────────────────────────────────────────────────────────
-          HERO HEADER
+          HERO HEADER (FIXED DESCENDER CLIPPING)
           ──────────────────────────────────────────────────────── */}
       <section className="py-20 px-6 text-center border-b border-red-950/40 relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
           <p className="text-red-500 font-semibold uppercase tracking-widest text-xs mb-3">
             Walshken Immigration Services
           </p>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent">
+          
+          {/* Added leading-[1.25], pb-3, and overflow-visible to prevent clipping 'g' and 'p' */}
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 pb-3 leading-[1.25] bg-gradient-to-r from-[rgb(254,230,186)] to-[rgb(240,200,140)] bg-clip-text text-transparent overflow-visible">
             Legal & Compliance Policies
           </h1>
+          
           <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Effective Date: October 9, 2026 • Review our commitments to transparency, confidentiality, and professional standards.
           </p>
@@ -40,7 +43,7 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* ────────────────────────────────────────────────────────
-          TAB SELECTOR
+          TAB SELECTOR (WITH DARK TEXT ON HOVER)
           ──────────────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-6 pt-10">
         <div className="flex flex-wrap items-center justify-center gap-3 p-1.5 bg-gray-950/90 rounded-2xl border border-gray-800">
@@ -49,7 +52,7 @@ const PrivacyPolicy = () => {
             className={`flex items-center gap-2 px-6 py-3 rounded-xl text-xs md:text-sm font-bold uppercase tracking-wider transition-all ${
               activeTab === "privacy"
                 ? "bg-red-600 text-white shadow-lg shadow-red-900/40"
-                : "text-gray-400 hover:text-white hover:bg-gray-900"
+                : "text-gray-400 hover:text-black hover:bg-white"
             }`}
           >
             <FaShieldAlt /> Privacy Policy
@@ -60,7 +63,7 @@ const PrivacyPolicy = () => {
             className={`flex items-center gap-2 px-6 py-3 rounded-xl text-xs md:text-sm font-bold uppercase tracking-wider transition-all ${
               activeTab === "terms"
                 ? "bg-red-600 text-white shadow-lg shadow-red-900/40"
-                : "text-gray-400 hover:text-white hover:bg-gray-900"
+                : "text-gray-400 hover:text-black hover:bg-white"
             }`}
           >
             <FaFileContract /> Terms & Conditions
@@ -71,7 +74,7 @@ const PrivacyPolicy = () => {
             className={`flex items-center gap-2 px-6 py-3 rounded-xl text-xs md:text-sm font-bold uppercase tracking-wider transition-all ${
               activeTab === "refund"
                 ? "bg-red-600 text-white shadow-lg shadow-red-900/40"
-                : "text-gray-400 hover:text-white hover:bg-gray-900"
+                : "text-gray-400 hover:text-black hover:bg-white"
             }`}
           >
             <FaUndoAlt /> Refund & Cancellation
