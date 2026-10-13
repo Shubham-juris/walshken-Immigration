@@ -151,7 +151,7 @@ const Footer = () => {
       {/* Bottom Note */}
       {/* <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
         © {new Date().getFullYear()} Walshken Immigration. All rights reserved.
-      </div> */}\
+      </div> */}
       {/* Bottom Note with Legal & Policy Links */}
       <div className="border-t border-gray-800 mt-10 pt-6 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500 text-center md:text-left">
         <div>
