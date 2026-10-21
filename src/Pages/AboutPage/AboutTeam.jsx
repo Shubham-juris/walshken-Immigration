@@ -629,6 +629,7 @@ import team9 from "../../assets/hero/team9.png";
 import team10 from "../../assets/hero/team10.jpeg";
 import team11 from "../../assets/hero/team11.jpeg";
 import team12 from "../../assets/hero/team12.jpeg";
+import team13 from "../../assets/hero/team13.jpeg";
 
 const team = [
   {
@@ -710,6 +711,12 @@ const team = [
     role: "RCIC ONTARIO",
     desc: "Ruth Andrea Peters is a Regulated Canadian Immigration Consultant (RCIC) serving Ontario and international clients across diverse immigration streams. With a strong focus on policy compliance, strategic pathway planning, and ethical practice, she supports individuals, families, and employers through every stage of the immigration process.",
     img: team12,
+  },
+  {
+    name: "Yue Nie",
+    role: "RCIC Calgary",
+    desc: "Yue Nie is a Regulated Canadian Immigration Consultant (RCIC) serving clients in Calgary, Alberta, and internationally. With expertise in Alberta Advantage Immigration Program (AAIP) pathways, Express Entry, and temporary resident visas, Yue delivers strategic, compliant, and client-focused immigration solutions.",
+    img: team13,
   },
 ];
 
