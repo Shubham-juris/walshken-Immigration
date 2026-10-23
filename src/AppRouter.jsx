@@ -23,6 +23,7 @@ import CanadaImmigrationForm from "./Pages/CanadaImmigrationForms";
 import ScrollToTop from "./Components/ScrollToTop";
 import Services from "./Pages/Service/Services";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import MississaugaConsultation from "./Pages/MississaugaConsultation";
 const AppRouter = () => {
   return (
     <>
@@ -50,6 +51,10 @@ const AppRouter = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/form" element={<CanadaImmigrationForm/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route
+          path="/mississauga-immigration-consultation"
+          element={<MississaugaConsultation />}
+        />
        
       </Routes>
     </>
