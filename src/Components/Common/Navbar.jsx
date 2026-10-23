@@ -34,6 +34,10 @@ const Navbar = () => {
     },
     { label: "Blog", path: "/blog" },
     { label: "Contact Us", path: "/contact" },
+    {
+      label: "Mississauga Consultation",
+      path: "/mississauga-immigration-consultation",
+    },
     // { label: "Immigration Form", path: "/form" },
   ];
 
@@ -65,7 +69,10 @@ const Navbar = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
+// 👇 ADD THIS RIGHT BEFORE return (
+  if (location.pathname === "/mississauga-immigration-consultation") {
+    return null;
+  }
   return (
     <motion.header
       initial={{ y: -60, opacity: 0 }}
