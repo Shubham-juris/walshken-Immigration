@@ -39,18 +39,19 @@ export default function FAQAccordion({ ctaLabel }) {
                 key={item.question}
                 className="overflow-hidden rounded-xl border border-[#D8B79B] bg-white transition-shadow duration-200 hover:shadow-2xs"
               >
-                <h3>
+                <h3 className="m-0">
                   <button
                     id={buttonId}
                     type="button"
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => toggleItem(idx)}
-                    className="flex min-h-[56px] w-full items-center justify-between gap-4 px-5 py-4 text-left font-heading text-base font-bold text-black transition-colors hover:bg-[#FEE6BA]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D40000] focus-visible:ring-inset sm:px-6 sm:text-lg"
+                    style={{ backgroundColor: "#FFFFFF", color: "#000000" }}
+                    className="flex min-h-[56px] w-full cursor-pointer items-center justify-between gap-4 !bg-white px-5 py-4 text-left font-heading text-base font-bold !text-black transition-colors hover:!bg-[#FEE6BA]/30 hover:!text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D40000] focus-visible:ring-inset sm:px-6 sm:text-lg"
                   >
-                    <span>{item.question}</span>
+                    <span className="!text-black">{item.question}</span>
                     <ChevronDown
-                      className={`h-5 w-5 shrink-0 text-[#D40000] transition-transform duration-200 ${
+                      className={`h-5 w-5 shrink-0 !text-[#D40000] transition-transform duration-200 ${
                         isOpen ? "rotate-180" : ""
                       }`}
                       aria-hidden="true"
@@ -64,11 +65,11 @@ export default function FAQAccordion({ ctaLabel }) {
                   hidden={!isOpen}
                   className={
                     isOpen
-                      ? "border-t border-neutral-100 px-5 pt-3 pb-5 text-base leading-relaxed text-[#444444] sm:px-6"
+                      ? "border-t border-neutral-200 bg-white px-5 pt-3 pb-5 text-base leading-relaxed !text-[#444444] sm:px-6"
                       : "hidden"
                   }
                 >
-                  <p>{item.answer}</p>
+                  <p className="!text-[#444444]">{item.answer}</p>
                 </div>
               </div>
             );
