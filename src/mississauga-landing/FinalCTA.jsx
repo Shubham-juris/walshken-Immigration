@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { MapPin, Mail, Globe, ExternalLink } from "lucide-react";
 import { PAGE_COPY, SITE_CONFIG } from "./siteConfig";
 import BookingButton from "./BookingButton";
+import logo from "../assets/hero/logo.webp";
 
 export default function FinalCTA({ ctaLabel }) {
   const [logoError, setLogoError] = useState(false);
@@ -61,7 +62,7 @@ export default function FinalCTA({ ctaLabel }) {
                 {!logoError ? (
                   <div className="inline-block rounded-lg bg-white px-3.5 py-2">
                     <img
-                      src="/logo.png"
+                      src={logo}
                       alt={PAGE_COPY.section12Footer.companyLabel}
                       width={180}
                       height={48}
