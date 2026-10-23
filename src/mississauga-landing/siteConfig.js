@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
     "https://walshkenimmigration.com/mississauga-immigration-consultation",
   corporateWebsite: "https://walshkenimmigration.com",
   privacyPolicyUrl: "https://walshkenimmigration.com/privacy-policy",
-  termsUrl: "https://walshkenimmigration.com/terms-and-conditions",
+  termsUrl: "https://www.walshkenimmigration.com/privacy-policy#terms",
   ciccRegisterUrl:
     "https://register.college-ic.ca/Public-Register-EN/Public-Register-EN/RCIC_Search.aspx",
   irccWebsiteUrl:
