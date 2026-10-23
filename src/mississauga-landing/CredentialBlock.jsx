@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ShieldCheck,
   UserCheck,
@@ -11,11 +11,26 @@ import { PAGE_COPY, SITE_CONFIG } from "./siteConfig";
 const PILLAR_ICONS = [ShieldCheck, UserCheck, MessageCircle];
 
 export default function CredentialBlock() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section
       aria-labelledby="why-walshken-heading"
       className="border-t border-[#D8B79B]/50 bg-[#FEE6BA]/25 py-14 sm:py-20"
     >
+      {/* Scoped override so global dark-theme anchor styles cannot turn this button white */}
+      <style>{`
+        a.cicc-verify-btn,
+        a.cicc-verify-btn span,
+        a.cicc-verify-btn svg {
+          color: ${isHovered ? "#FFFFFF" : "#000000"} !important;
+        }
+        a.cicc-verify-btn {
+          background-color: ${isHovered ? "#000000" : "#FFFFFF"} !important;
+          border-color: #000000 !important;
+        }
+      `}</style>
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
@@ -32,7 +47,9 @@ export default function CredentialBlock() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-[#444444] sm:text-[18px]">
               {PAGE_COPY.section08WhyWalshken.descriptionParagraphs.map(
                 (paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
+                  <p key={idx} className="!text-[#444444]">
+                    {paragraph}
+                  </p>
                 )
               )}
             </div>
@@ -48,10 +65,10 @@ export default function CredentialBlock() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#FEE6BA] text-[#D40000]">
                       <IconComponent className="h-5 w-5" aria-hidden="true" />
                     </div>
-                    <h3 className="mt-4 font-heading text-lg font-bold text-black">
+                    <h3 className="mt-4 font-heading text-lg font-bold !text-black">
                       {pillar.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[#444444]">
+                    <p className="mt-2 text-sm leading-relaxed !text-[#444444]">
                       {pillar.description}
                     </p>
                   </div>
@@ -70,7 +87,7 @@ export default function CredentialBlock() {
                   <span className="text-xs font-bold tracking-wider text-[#D40000] uppercase">
                     Authorized Regulatory Oversight
                   </span>
-                  <h3 className="font-heading text-xl font-extrabold text-black">
+                  <h3 className="font-heading text-xl font-extrabold !text-black">
                     Verified RCIC Credentials
                   </h3>
                 </div>
@@ -78,25 +95,25 @@ export default function CredentialBlock() {
 
               <dl className="mt-5 space-y-4 text-sm sm:text-base">
                 <div className="rounded-lg bg-[#FEE6BA]/35 p-3.5">
-                  <dt className="text-xs font-bold tracking-wider text-[#444444] uppercase">
+                  <dt className="text-xs font-bold tracking-wider !text-[#444444] uppercase">
                     Responsible Regulated Canadian Immigration Consultant
                   </dt>
-                  <dd className="mt-1 font-heading text-lg font-extrabold text-black">
+                  <dd className="mt-1 font-heading text-lg font-extrabold !text-black">
                     {SITE_CONFIG.rcicDetails.fullLegalName}
                   </dd>
                 </div>
 
                 <div className="rounded-lg bg-[#FEE6BA]/35 p-3.5">
-                  <dt className="text-xs font-bold tracking-wider text-[#444444] uppercase">
+                  <dt className="text-xs font-bold tracking-wider !text-[#444444] uppercase">
                     CICC Licence Number
                   </dt>
-                  <dd className="mt-1 font-heading text-lg font-extrabold text-black">
+                  <dd className="mt-1 font-heading text-lg font-extrabold !text-black">
                     {SITE_CONFIG.rcicDetails.licenceNumber}
                   </dd>
                 </div>
               </dl>
 
-              <p className="mt-4 text-xs leading-relaxed text-[#444444] sm:text-sm">
+              <p className="mt-4 text-xs leading-relaxed !text-[#444444] sm:text-sm">
                 Regulated Canadian Immigration Consultants (RCICs) are licensed
                 by the College of Immigration and Citizenship Consultants (CICC)
                 to provide Canadian immigration advice and representation.
@@ -107,10 +124,26 @@ export default function CredentialBlock() {
                   href={SITE_CONFIG.ciccRegisterUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white px-5 py-3 text-sm font-bold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  style={{
+                    backgroundColor: isHovered ? "#000000" : "#FFFFFF",
+                    color: isHovered ? "#FFFFFF" : "#000000",
+                    borderColor: "#000000",
+                  }}
+                  className="cicc-verify-btn inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 px-5 py-3 text-sm font-bold no-underline transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
                 >
-                  <span>Verify Status on CICC Public Register</span>
-                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                  <span
+                    style={{ color: isHovered ? "#FFFFFF" : "#000000" }}
+                    className="font-bold transition-colors duration-200"
+                  >
+                    Verify Status on CICC Public Register
+                  </span>
+                  <ExternalLink
+                    style={{ color: isHovered ? "#FFFFFF" : "#000000" }}
+                    className="h-4 w-4 shrink-0 transition-colors duration-200"
+                    aria-hidden="true"
+                  />
                 </a>
               </div>
             </div>
