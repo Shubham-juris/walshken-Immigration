@@ -40,13 +40,14 @@ export default function BookingButton({
         ariaLabel ||
         `${label} - Schedule your CAD $50 immigration consultation in Mississauga`
       }
-      className={`group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#D40000] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#b50000] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D40000] focus-visible:ring-offset-2 active:scale-[0.99] ${sizeStyles} ${
+      style={{ color: "#FFFFFF" }}
+      className={`group inline-flex items-center justify-center gap-2.5 rounded-lg !bg-[#D40000] font-semibold !text-white no-underline shadow-sm transition-all duration-200 hover:!bg-[#b50000] hover:!text-white hover:shadow-md focus:!text-white visited:!text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D40000] focus-visible:ring-offset-2 active:scale-[0.99] ${sizeStyles} ${
         fullWidthMobile ? "w-full sm:w-auto" : ""
       } ${className}`}
     >
-      <span>{label}</span>
+      <span className="!text-white group-hover:!text-white">{label}</span>
       <ArrowRight
-        className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
+        className="h-4 w-4 shrink-0 !text-white transition-transform duration-200 group-hover:translate-x-1 group-hover:!text-white"
         aria-hidden="true"
       />
     </a>
