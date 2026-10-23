@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
 import { PAGE_COPY, SITE_CONFIG } from "./siteConfig";
 import BookingButton from "./BookingButton";
-
+import logo from "../assets/hero/logo.webp";
 export default function CompactHeader({ ctaLabel }) {
   const [logoError, setLogoError] = useState(false);
 
@@ -19,7 +19,7 @@ export default function CompactHeader({ ctaLabel }) {
           >
             {!logoError ? (
               <img
-                src="/logo.png"
+                src={logo}
                 alt={SITE_CONFIG.companyName}
                 width={190}
                 height={52}
