@@ -69,10 +69,15 @@ export default function AddressPanel({ ctaLabel }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Get Directions to 30 Topflight Drive, Suite 101, Mississauga on Google Maps"
-                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg border-2 border-black bg-white px-6 py-3.5 text-base font-semibold text-black transition-colors hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+                className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg border-2 border-black !bg-white px-6 py-3.5 text-base font-semibold !text-black no-underline transition-colors hover:!bg-black hover:!text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               >
-                <Navigation className="h-4 w-4" aria-hidden="true" />
-                <span>{PAGE_COPY.section09Location.mapCta}</span>
+                <Navigation
+                  className="h-4 w-4 !text-black transition-colors group-hover:!text-white"
+                  aria-hidden="true"
+                />
+                <span className="!text-black transition-colors group-hover:!text-white">
+                  {PAGE_COPY.section09Location.mapCta}
+                </span>
               </a>
             </div>
           </div>
